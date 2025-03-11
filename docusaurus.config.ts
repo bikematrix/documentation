@@ -37,8 +37,6 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/bikematrix/web-components"
         },
         blog: false,
@@ -55,17 +53,22 @@ const config: Config = {
     navbar: {
       logo: {
         alt: "Bike Matrix Logo",
-        src: "img/logo.svg",
-        srcDark: "img/white-logo.svg"
+        src: "img/logo.png",
+        srcDark: "img/white-logo.png"
       },
       items: [
         {
           type: "docSidebar",
           sidebarId: "documentationSidebar",
-          position: "left",
+          position: "right",
           label: "Documentation"
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        {
+          type: "docSidebar",
+          sidebarId: "documentationSidebar",
+          position: "right",
+          label: "In Action"
+        },
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",

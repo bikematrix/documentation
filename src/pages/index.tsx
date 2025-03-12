@@ -9,7 +9,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="Bike Matrix is a compatibility solution for the entire industry, removing confusion for all."
     >
       <HomepageHeader />
     </Layout>

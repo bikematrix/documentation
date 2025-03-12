@@ -1,15 +1,68 @@
 @import "../../css/custom.css";
 
+.title {
+  font-family: "Nunito";
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-family: "Nunito";
+  font-size: 1.3rem;
+}
+
 .heroContainer {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  gap: 4rem;
+  height: 60vh;
 
   .leftSection {
     flex: 0 50%;
   }
   .rightSection {
     flex: 0 50%;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .heroContainer {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+    height: auto;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .main {
+    width: 70vw;
+  }
+  .leftSection {
+    width: 70vw;
+  }
+}
+
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    width: 90vw;
+  }
+  .leftSection {
+    width: 90vw;
   }
 }

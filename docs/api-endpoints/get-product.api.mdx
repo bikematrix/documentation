@@ -1,0 +1,71 @@
+---
+id: get-product
+title: "Get Product"
+description: "Get Product"
+sidebar_label: "Get Product"
+hide_title: true
+hide_table_of_contents: true
+api: eJztlMtu2zAQRX/FuKsWIGrD3WmXPmB4Uxh9rAwhoKWxxZgiGXIUVBD47wUpxZWTAvUHZCVqhvM6I90B1pGXrKzZ1ihwIt55W3cVQ4DlKaDY49lSCjjpZUtMPjkGGNkSCoRzBwFlUMBJbiDg6bFTnmoU7DsSCNzrfFO1ThMEQtVQK1EM4N5lD3tlToixTNHBWRMoJP96tUqPmkLllUudosCPrqooBAhU1jAZzpnoNy+dlqmR4XUFe3igPJfzaWhWY343Tnf/WTKdrO/vt19mQcownchD4Gh9K3k0fVwjiteR3zKOlyMJmE5reUgAEo0oMrBb7pnbEkYBWdcqsZF6N5vuKHUgAVac6T8vMgc4p1WVN798CPYN2f+R5e/rjdUNrGKKuf5jN8SLv9LSEjd2EpyELKlGgeXmIj/LIZy7mFXlaHOPU5FP6kyLu90WAk/kw5h8/WGVidnArczrmZTpuupVR5exZ7IRBTqv89pyR3ts5oJYJLClQGMDJ+cwHGSgX17HmMyPHfkexb4UeJJejQT3A2oV0rm+AHvRx0XC8O77pJvvF0l//9XfZJSmTwSk7tIbBM7UT0ocyyjQkKzJ5/Kj566qyPEsZp62nG1k8/UnYvwDAyAaVA==
+sidebar_class_name: "get api-method"
+info_path: docs/api-endpoints/bike-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Product"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/GetProduct/{sku}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Product
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"sku","in":"path","required":true,"style":"simple","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"object","properties":{"product_Category_ID":{"type":"integer","format":"int32"},"product_Category_Name":{"type":"string","nullable":true},"sku":{"type":"string","nullable":true},"name":{"type":"string","nullable":true}},"additionalProperties":false,"title":"Product"}},"application/json":{"schema":{"type":"object","properties":{"product_Category_ID":{"type":"integer","format":"int32"},"product_Category_Name":{"type":"string","nullable":true},"sku":{"type":"string","nullable":true},"name":{"type":"string","nullable":true}},"additionalProperties":false,"title":"Product"}},"text/json":{"schema":{"type":"object","properties":{"product_Category_ID":{"type":"integer","format":"int32"},"product_Category_Name":{"type":"string","nullable":true},"sku":{"type":"string","nullable":true},"name":{"type":"string","nullable":true}},"additionalProperties":false,"title":"Product"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

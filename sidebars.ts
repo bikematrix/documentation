@@ -43,6 +43,29 @@ const sidebars: SidebarsConfig = {
       type: "doc",
       id: "framework-intergration",
       label: "Framework Intergration"
+    },
+    {
+      type: "category",
+      label: "API",
+      items: [
+        "api-endpoints/bike-api",
+        "api-endpoints/get-bike-brands",
+        "api-endpoints/get-bike-models",
+        "api-endpoints/get-bike-frame-series",
+        "api-endpoints/get-bike-spec-specs",
+        "api-endpoints/get-bike-spec-years",
+        "api-endpoints/get-bike-spec-sizes",
+        "api-endpoints/get-bike-spec-bikes",
+        "api-endpoints/get-bike-brand-product-categories",
+        "api-endpoints/compatibility-check-sku",
+        "api-endpoints/compatibility-check-sku-language",
+        "api-endpoints/compatibility-check-skus",
+        "api-endpoints/compatibility-check-skus-language",
+        "api-endpoints/compatibility-check-skus-with-results",
+        "api-endpoints/compatibility-check-skus-with-results-language",
+        "api-endpoints/get-product",
+        "api-endpoints/get-products"
+      ]
     }
   ]
 };

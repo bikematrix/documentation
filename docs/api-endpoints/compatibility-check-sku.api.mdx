@@ -1,0 +1,71 @@
+---
+id: compatibility-check-sku
+title: "Compatibility Check SKU"
+description: "Compatibility Check SKU"
+sidebar_label: "Compatibility Check SKU"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVl1r2zAU/SvhPG0gltBHv3VllNKNlWZ9CiEo9k2sRrZUSc5mjP77uIoTnLQdGYw9lD451v06957rHHUwlpwMytQ3BTLkprIyqKXSKrRXJeWb6aaBQJBrj2yGq6EdcwErnawokGNzh1pWhAxLtaHFhloIqBoZrAwlBBw9NcpRgSy4hgR8aDW7e1VZTRDweUmVRNYhtDZZglP1GjGKQ26fAP2jtHOO9tbUnjzbLyYTfhTkc6csjwUZpk2ek/cQyE0dqA4pE/0KY6slA+meVzDLR8oDBKzjCQe1y8+DuaX2ORSButFaLhk4dxFFavQcvz1nfHRwXxqjSdZ/8k8cfiPv5ZrOKvRTuppNZ1Xpnf8m/xGwr2Z93ajipcCVcZUMyNCww2kiZlQW32vd9omjgCwKxWRKfTegYyW1J4GgQlqXo92+J9/ogBRsrVZ5+kbGj9688/3G+U5f9jvRb53oyPHHf/RHjqMkf6Pp7QMEKgqlYYFcU+KehSfD+ChgsdfLcbfXvzju/KaJSa9WJrXcY/qsNjS6vLuBwJac39W/+DRBFLDGh0qm9es173VgRw0cJjoQpyjQOM22HegTDV8MRD4byHbGSzoXKI0PHNR1S+npwekY+fipIdcim80FttKpHUmzDoXy/Ls4cHCC7yCg+HDfq/bHEd8vXsLdH8qaAW2lbvgNAoxwcMfgu8F/rMuDifMoUJIsyKW2d5bLPCcbBjHDtPPBEl1/+YEYfwMRJk9X
+sidebar_class_name: "get api-method"
+info_path: docs/api-endpoints/bike-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Compatibility Check SKU"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/Compatibility_CheckSku/{bike_key}/{sku}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Compatibility Check SKU
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"bike_key","in":"path","required":true,"style":"simple","schema":{"type":"string"}},{"name":"sku","in":"path","required":true,"style":"simple","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"object","properties":{"bikeKey":{"type":"string","nullable":true},"sku":{"type":"string","nullable":true},"compatible":{"type":"boolean","nullable":true},"compatibilityMessage":{"type":"string","nullable":true},"warning":{"type":"boolean","nullable":true},"warningMessage":{"type":"string","nullable":true},"compatibilityLogGuid":{"type":"string","format":"uuid","nullable":true,"readOnly":true}},"additionalProperties":false,"title":"CompatibilityResult"}},"application/json":{"schema":{"type":"object","properties":{"bikeKey":{"type":"string","nullable":true},"sku":{"type":"string","nullable":true},"compatible":{"type":"boolean","nullable":true},"compatibilityMessage":{"type":"string","nullable":true},"warning":{"type":"boolean","nullable":true},"warningMessage":{"type":"string","nullable":true},"compatibilityLogGuid":{"type":"string","format":"uuid","nullable":true,"readOnly":true}},"additionalProperties":false,"title":"CompatibilityResult"}},"text/json":{"schema":{"type":"object","properties":{"bikeKey":{"type":"string","nullable":true},"sku":{"type":"string","nullable":true},"compatible":{"type":"boolean","nullable":true},"compatibilityMessage":{"type":"string","nullable":true},"warning":{"type":"boolean","nullable":true},"warningMessage":{"type":"string","nullable":true},"compatibilityLogGuid":{"type":"string","format":"uuid","nullable":true,"readOnly":true}},"additionalProperties":false,"title":"CompatibilityResult"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

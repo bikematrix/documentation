@@ -1,0 +1,71 @@
+---
+id: compatibility-check-skus-with-results
+title: "Compatibility Check SKUs With Results"
+description: "Compatibility Check SKUs With Results"
+sidebar_label: "Compatibility Check SKUs With Results"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVk1P4zAQ/SvVO+2Hd0Ecc4NqtULsCkRBe6gqNE2G1tSJg+0AUZT/vhqnLSmtVmW5IXppYj/PvPG8yUwDW7KjoG1xmiFBavOSgp5qo0M9nHO6GC0q/0eH+SX7ygQPhUAzj2SMYR+LiUJJjnIO7GS7QUE5I8FUL/hmwTUUdIEEJYU5FBzfV9pxhiS4ihV8qI3Avc5Lw1Dw6ZxzQtIg1GXcCU4XM7TtpDvNPpzYrBZEaovARZBHKkuj0xjRwZ23haxtmSLnKBIKnPtdLlqFwE/hbRb6VL58fYMpMebYl7bwHBFHh4fyl7FPnS7FARKMqjRlLxnqXUeMojSkX+fbTu84DVAonQgk6M6v5PKM622SCkVlDE0lhZLPVsEvqr1wK8nJ0ho+tdYwFf/CR9n9Zu9pxns5eiRXyNZeXpbg19jfIPbLzn5WOtt18Na6nAISVAJ4aUgyTdl5YeqlYRFSlmlJMpmLXjpuyXhWCDrEwtkox65at2X4ahF+COH9COH/vmgfCngvCogi2OwZG8hBbPiD0dm1H0jLHzz3/JzD3MqAUFoftSBNPMHBxvmbXQPDQbMaAFooiPoun3v3jyeK3T4Zr+5kIlPCrY2XtYzmRC94cHxxCoUHdr4jfvT9EK2KdHKKgl6OG/tGtHEP68z02mWrUDkje12wLwaencFCIVnPOxOFudxWMkbTTMnztTNtK8v3FbsayXii8EBOdxkfN8i0l+dsndAXJNd9HZ8ul+PT54FMZLvIr8q6kKJ+IFPJGxSEWm8qayetwpwpYxc5dNvDztO3KzHyfHyrlbRqdeI4TbkMPWyfzaSnoIvz0RUUpsvRLbeZoB09ylBIjx1JG2OOH5q41sBQMati/aHzLL+/R2nFVw==
+sidebar_class_name: "post api-method"
+info_path: docs/api-endpoints/bike-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Compatibility Check SKUs With Results"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/Compatibility_CheckSkusWithResults/{bike_key}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Compatibility Check SKUs With Results
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"bike_key","in":"path","required":true,"style":"simple","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}},"text/json":{"schema":{"type":"array","items":{"type":"string"}}},"application/*+json":{"schema":{"type":"array","items":{"type":"string"}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"array","items":{"type":"object","properties":{"bikeKey":{"type":"string","nullable":true},"sku":{"type":"string","nullable":true},"compatible":{"type":"boolean","nullable":true},"compatibilityMessage":{"type":"string","nullable":true},"warning":{"type":"boolean","nullable":true},"warningMessage":{"type":"string","nullable":true},"compatibilityLogGuid":{"type":"string","format":"uuid","nullable":true,"readOnly":true}},"additionalProperties":false,"title":"CompatibilityResult"}}},"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"bikeKey":{"type":"string","nullable":true},"sku":{"type":"string","nullable":true},"compatible":{"type":"boolean","nullable":true},"compatibilityMessage":{"type":"string","nullable":true},"warning":{"type":"boolean","nullable":true},"warningMessage":{"type":"string","nullable":true},"compatibilityLogGuid":{"type":"string","format":"uuid","nullable":true,"readOnly":true}},"additionalProperties":false,"title":"CompatibilityResult"}}},"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"bikeKey":{"type":"string","nullable":true},"sku":{"type":"string","nullable":true},"compatible":{"type":"boolean","nullable":true},"compatibilityMessage":{"type":"string","nullable":true},"warning":{"type":"boolean","nullable":true},"warningMessage":{"type":"string","nullable":true},"compatibilityLogGuid":{"type":"string","format":"uuid","nullable":true,"readOnly":true}},"additionalProperties":false,"title":"CompatibilityResult"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

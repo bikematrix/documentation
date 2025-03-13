@@ -1,0 +1,71 @@
+---
+id: compatibility-check-skus-language
+title: "Compatibility Check SKUs - Language"
+description: "Compatibility Check SKUs - Language"
+sidebar_label: "Compatibility Check SKUs - Language"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVMtu2zAQ/BVjTi3AVkaOvKVGUQRtgSBuToYQ0NLaYkRJDEkZNQT+e7G0o0hpgPbQ5pCTHssdzuyQM6Cz5FTQXXtVQqLoGquC3mqjw3FVUVGv695/U+2+V3uCQFB7D7nBaroQuYBVTjUUyHF5QKsagsRW13RX0xECuoWEVaGCgKOHXjsqIYPrScCHo+HlXjfW8Da+qKhRkAPC0aZKcLrdI0YxYvu69/8D1zyp/SfYAiXtVG8CJKhFjDmDedu1njwvv1gu+VGSL5y27AUk1n1RkGeBRdcGakMCpp8hs0Yxr+H3DbvtPRUBAtaxrUGf8B9NNcRmvkSw7Y1RW5bD2qKYn4Pv5D3P48+NUUCVpWYJylxPSOyU8SQQdEgzW80Y3ZDn6aRua40u0nnM7n33VmUmH9+svsgA89M8i4tFCpbF+uutX3xYTMKloVB1HEN7SvL54klks+a7MZWy4TFdYjZwGMRseLy7MV3eXZfEntl+0jUtLq+vIHAg50/ELj4uEQVs50Ojkh3nFPg7xjOV41wn1zQK9M5w7aTmWXI+qYGAnKSlPKebHNMoF6g6HxhiGLbK060zMfLvh57cEXKTCxyU0ycjNwNK7fm9HH17xnYMFry7OYfb+wVn/Esqzj9Vy+wOyvT8BQGmO8l5ztFX3DdN6ZX3HB2JeRSoSJXk0rxP5cuiIBsmjVPsfHLIv3z+gRh/AYslmzQ=
+sidebar_class_name: "get api-method"
+info_path: docs/api-endpoints/bike-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Compatibility Check SKUs - Language"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/Compatibility_CheckSkus/{bike_key}/{skus}/{language}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Compatibility Check SKUs - Language
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"bike_key","in":"path","required":true,"style":"simple","schema":{"type":"string"}},{"name":"skus","in":"path","required":true,"style":"simple","schema":{"type":"string"}},{"name":"language","in":"path","required":true,"style":"simple","schema":{"type":"string","default":"en"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"object","properties":{"compatibleSkus":{"type":"string","nullable":true},"compatibilityMessage":{"type":"string","nullable":true}},"additionalProperties":false,"title":"CompatibleSkusResult"}},"application/json":{"schema":{"type":"object","properties":{"compatibleSkus":{"type":"string","nullable":true},"compatibilityMessage":{"type":"string","nullable":true}},"additionalProperties":false,"title":"CompatibleSkusResult"}},"text/json":{"schema":{"type":"object","properties":{"compatibleSkus":{"type":"string","nullable":true},"compatibilityMessage":{"type":"string","nullable":true}},"additionalProperties":false,"title":"CompatibleSkusResult"}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-bike-brands
+title: "Get Bike Brands"
+description: "Get Bike Brands"
+sidebar_label: "Get Bike Brands"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVMGK2zAQ/ZXwzqIJ6c23XVpCbgvb0kMIy8SexNrIkiuNQ4PRv5eRQ3C6h973ZDTSm3nvjWdGhJ4jiQ1+26DCieXZnvk5km8SDIROCdUOGsTeoKdIHQtHjY7w1DEqWF+7obmhfllpw1DSaAbrUeH3wPEKgyRXp4BjiJ0e65Y7QjVCrr3GDyE4Jg+Dho80OEF1JJc4571B5NQHnzgpYL1a6afhVEfbK39UeB3qmpNWrYMX9lJS8x9Z9o6UyPixJMVISs0Kd2kWD4d3rgUGfVSLxE51D/bMb0Xo2/bb7Ln1wieOMEUbyRT6ukY2M8wMkCRaf4KBH5yjg9oiceCcDahprCoi9zKrXYwwECvFwnubkAum752tSyOX7yl8aq2lo59bZNH5+HNvWBb6ZnEfzo6lDbepVV0kLSosN//MsPXHUHjOCi2eXrYwuHBMU/b1l5Uq60OSjoqxt9n+WPaB1l3+bMyywRCd3k2UdniktDdoQxK9GMcDJf4ZXc4anvaEbpbGJvWwudt05ut/Ns2F3KBMoMviQtFOTdjts0HL1HAsmadET3XNvcxQc/77mbeb7z+Q81+b58N2
+sidebar_class_name: "get api-method"
+info_path: docs/api-endpoints/bike-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Bike Brands"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/GetBikeBrands"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Bike Brands
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"includeBrandsWithoutBikes","in":"query","style":"form","schema":{"type":"boolean","default":false}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"array","items":{"type":"object","properties":{"bike_Brand_ID":{"type":"integer","format":"int32"},"bike_Brand":{"type":"string","nullable":true}},"additionalProperties":false,"title":"BikeBrand"}}},"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"bike_Brand_ID":{"type":"integer","format":"int32"},"bike_Brand":{"type":"string","nullable":true}},"additionalProperties":false,"title":"BikeBrand"}}},"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"bike_Brand_ID":{"type":"integer","format":"int32"},"bike_Brand":{"type":"string","nullable":true}},"additionalProperties":false,"title":"BikeBrand"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

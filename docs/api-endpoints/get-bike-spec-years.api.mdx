@@ -1,0 +1,71 @@
+---
+id: get-bike-spec-years
+title: "Get Bike Specification Years"
+description: "Get Bike Specification Years"
+sidebar_label: "Get Bike Specification Years"
+hide_title: true
+hide_table_of_contents: true
+api: eJzVVE2L2zAQ/SvhnUUT0ptvWyghh8LCtocSfJjIk1gb2VKlydJg9N/L2OnWIaUfxz0ZjWbmvXmj5wEhciJxod82qHBk+eBO/BTZfmVKGQZCx4xqB42jNoiUqGPhpNEBPXWMCnt34k+hYa+l2wYGrkeFb2dOFxhkuXhNO4TU6dG23BGqAXKJGne98JETzJhBMoXer1GKucHQ9v/bPEty/RGl1AaJcwx95qz369VKPw1nm1xUEVDh6WwtZ53chl64l7ETf5dl9KS4wz0CpUTKxAl3eRYP+2e2AoOYVGdxE+6FKf3j8KCmccqM/OOsx4F8ZgNxMk6uu9F9oYwlMXpnx6Uun3N4C5RHfd8E15Hu7YvZsCw0ZaGP0x2u0i9+GqhjacPVXMqVpEWF5ebeaq4/hJH4DHfx8LiFwQunPKGt361QDGLI0tGo19Uef6Fxw/lVnNnDLgbn5PVuorjDHcXaoA1Z9G4Y9pT5S/KlaHjyov4QGpdp77l5VfHEl9/+IF7In5UC1OJ/qLpa/ld6rYfkNB/Vri4GLVPDaYSf6h6s5Sizqvmc9Wwnm4+fUcoP33u0qQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api-endpoints/bike-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Bike Specification Years"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/GetBikeSpecYears"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Bike Specification Years
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"bikeModelSpecId","in":"query","style":"form","schema":{"type":"integer","format":"int32"}},{"name":"bikeSpec","in":"query","style":"form","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"array","items":{"type":"object","properties":{"year":{"type":"integer","format":"int32"}},"additionalProperties":false,"title":"BikeYear"}}},"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"year":{"type":"integer","format":"int32"}},"additionalProperties":false,"title":"BikeYear"}}},"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"year":{"type":"integer","format":"int32"}},"additionalProperties":false,"title":"BikeYear"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

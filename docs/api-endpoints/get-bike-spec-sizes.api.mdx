@@ -1,0 +1,71 @@
+---
+id: get-bike-spec-sizes
+title: "Get Bike Specification Sizes"
+description: "Get Bike Specification Sizes"
+sidebar_label: "Get Bike Specification Sizes"
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVE2L2zAQ/SvhnUUT0ptvW1pCDoWFtKdgFsWeJNrIliqNl7pG/72M7Ga9pKXbQy97Mh7Nx3tvpDfAeQqajWu3NQqciD+YC+08VTvzgyIUWJ8iij0kjlLB66AbYgoSHdDqhlDgYC702dVkpXRbQ8G0KPCto9BDIXJvJe3oQiO/1ZkajWIA917ipmU6UYDKGZrH0Ps1UlLXGT3p8F8aHybK/9o8cjDtCSmVCoGid22kKOfr1Uo+NcUqGC/qosCuqyqKImnlWqaWcyf6zktvtcwdbifoELQgMUxNnMXd4ZEqhoIPskA241wh8iCLe9h+fJUI6rnklpdC21mrD6IBh45SUtB1bYSPtvezyUdtIymw4axXvkLSMuUS762p8h1bPkb3donmXb5hhpnkyzu9IV5IykKejzlOa1788o6G+OwmXxGGms8osNzcuoxpjy7Dns1d3N1vofBEIY7T1u9WwtO7yI3OKk8P+C8wXmC+SjN7ekmhC1bORoh73EAsFc4uspwNw0FH+hpsShIe3UK8sDZRJK6vKl6o/603PmnbCQSICf2hanK716TO/Os5vZSfYMad78ukcCZdU8hIx7q7qiLPs6q5JOVsfZtPX5DSTxlPGCM=
+sidebar_class_name: "get api-method"
+info_path: docs/api-endpoints/bike-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Bike Specification Sizes"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/GetBikeSpecSizes"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Bike Specification Sizes
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"bikeModelSpecId","in":"query","style":"form","schema":{"type":"integer","format":"int32"}},{"name":"year","in":"query","style":"form","schema":{"type":"integer","format":"int32"}},{"name":"bikeSpec","in":"query","style":"form","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"array","items":{"type":"object","properties":{"bike_Size_ID":{"type":"integer","format":"int32"},"bike_Size":{"type":"string","nullable":true}},"additionalProperties":false,"title":"BikeSize"}}},"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"bike_Size_ID":{"type":"integer","format":"int32"},"bike_Size":{"type":"string","nullable":true}},"additionalProperties":false,"title":"BikeSize"}}},"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"bike_Size_ID":{"type":"integer","format":"int32"},"bike_Size":{"type":"string","nullable":true}},"additionalProperties":false,"title":"BikeSize"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

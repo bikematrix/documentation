@@ -1,0 +1,71 @@
+---
+id: get-bike-models
+title: "Get Bike Models"
+description: "Get Bike Models"
+sidebar_label: "Get Bike Models"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVcGK2zAQ/ZUwZ9GE9ObbLm1DDoWF3T2FECbWJNZGllRpHOoa/XsZeQlOAyXHPezJeKSn9/yePDOADxSRjXdrDRUciR/NiX56TTaBAsZjgmoDUoStgoARW2KKUh3AYUtQwd6c6DGi02sNCoyDCn51FHtQkLi3suXgYyuvdUMtQjUA90HqxjEdKYIqO5DH0tcl5LxVECkF7xIlQSwXC3loSnU0QSRDBc9dXVMSqbV3TI7L2fSb58GiKBluOTFGFG2GqU2Tut+/Uc2gIERxhc3I24oZux/YGtvv1t/uEq+uUBNI4mjcERS4zlrcizccO8qqmLgrLt5PUjDP5g/tVtF34U7gf8nv0JoVoNZGEkD7NPHqgDaRAjZcMr/cJMgFE4I1dblr87fkP7P5QNmUP+YzlI8USsnlutmtiGeyZ3bpzy1x498bt+SA3EAF89U/bdy4gy86J0Szh6c1KDhTTOPpyy8LsSj4xC2Wi/De3m9pr2RdPn/SdrOCLlpZGyVt4FrSVkHjE8vCMOwx0Wu0OUt5HBwyXLRJ4qG+2HSi/mbYnNF2wg0yLs4YzWj7ZpsVNISaYjlrhD7UNQWeoKaKtxM3V99fIOe/oAdr9A==
+sidebar_class_name: "get api-method"
+info_path: docs/api-endpoints/bike-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Bike Models"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/GetBikeModels"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Bike Models
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"bikeBrandId","in":"query","style":"form","schema":{"type":"integer","format":"int32"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"array","items":{"type":"object","properties":{"model_Family_ID":{"type":"integer","format":"int32"},"model_Family":{"type":"string","nullable":true},"bike_Brand_ID":{"type":"integer","format":"int32"},"bike_Size_Group_ID":{"type":"integer","format":"int32","nullable":true},"bike_Brand":{"type":"string","nullable":true}},"additionalProperties":false,"title":"BikeModel"}}},"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"model_Family_ID":{"type":"integer","format":"int32"},"model_Family":{"type":"string","nullable":true},"bike_Brand_ID":{"type":"integer","format":"int32"},"bike_Size_Group_ID":{"type":"integer","format":"int32","nullable":true},"bike_Brand":{"type":"string","nullable":true}},"additionalProperties":false,"title":"BikeModel"}}},"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"model_Family_ID":{"type":"integer","format":"int32"},"model_Family":{"type":"string","nullable":true},"bike_Brand_ID":{"type":"integer","format":"int32"},"bike_Size_Group_ID":{"type":"integer","format":"int32","nullable":true},"bike_Brand":{"type":"string","nullable":true}},"additionalProperties":false,"title":"BikeModel"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

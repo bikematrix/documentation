@@ -1,6 +1,6 @@
 # Installation
 
-You can install Bike Matrix Web Components using either npm or by including it directly via CDN.
+You can install Bike Matrix Web Components using npm, including it directly via CDN, or from the Shopify App Store.
 
 ### NPM
 
@@ -26,3 +26,7 @@ Alternatively, include the script directly in your HTML:
 ```
 
 Note: Replace version `1.1` in the above URL with the latest version number, or the specific version you want to use.
+
+### Shopify
+
+Install the our App from the [Shopify App Store](https://apps.shopify.com/bike-matrix) then come back and check the onboarding section [here](shopify/shopify-intro).

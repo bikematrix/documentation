@@ -39,9 +39,9 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/bikematrix/web-components",
           docItemComponent: "@theme/ApiItem"
         },
+
         blog: false,
         theme: {
           customCss: "./src/css/custom.css"
@@ -87,62 +87,17 @@ const config: Config = {
           label: "Documentation"
         },
         {
-          type: "docSidebar",
-          sidebarId: "documentationSidebar",
+          href: "https://github.com/bikematrix/web-components",
           position: "right",
-          label: "In Action"
-        },
-        {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
-          position: "right"
+          className: "header-github-link",
+          "aria-label": "GitHub repository"
         }
       ]
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro"
-            }
-          ]
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus"
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus"
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus"
-            }
-          ]
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog"
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/bikematrix/web-components"
-            }
-          ]
-        }
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Bike Matrix, Inc. Built with Docusaurus.`
+      links: [],
+      copyright: `Copyright © ${new Date().getFullYear()} Bike Matrix, Inc.`
     },
     prism: {
       theme: prismThemes.github,

@@ -38,7 +38,19 @@ const sidebars: SidebarsConfig = {
         "web-components/compatible-list"
       ]
     },
-
+    {
+      type: "category",
+      label: "Shopify",
+      items: [
+        "shopify/shopify-intro",
+        "shopify/bike-selector-app-embed",
+        "shopify/bike-icon",
+        "shopify/product-check-panel",
+        "shopify/bike-compatibility-list-panel",
+        "shopify/product-collection-compatibility-result",
+        "shopify/configure-app-proxy"
+      ]
+    },
     {
       type: "doc",
       id: "framework-intergration",

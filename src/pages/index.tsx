@@ -1,17 +1,19 @@
-import type { ReactNode } from "react";
+import { useEffect, type ReactNode } from "react";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import styles from "./index.module.css";
 import { HomepageHeader } from "../components/HomepageHeader";
 
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
+
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Bike Matrix is a compatibility solution for the entire industry, removing confusion for all."
-    >
-      <HomepageHeader />
-    </Layout>
+    <>
+      <Layout
+        title={`${siteConfig.title}`}
+        description="Bike Matrix is a compatibility solution for the entire industry, removing confusion for all."
+      >
+        <HomepageHeader />
+      </Layout>
+    </>
   );
 }

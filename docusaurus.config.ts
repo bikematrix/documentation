@@ -1,7 +1,6 @@
 import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
-import type * as Plugin from "@docusaurus/types/src/plugin";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
@@ -85,6 +84,11 @@ const config: Config = {
           sidebarId: "documentationSidebar",
           position: "right",
           label: "Documentation"
+        },
+        {
+          label: "In Action",
+          position: "right",
+          to: "/in-action"
         },
         {
           href: "https://github.com/bikematrix/web-components",

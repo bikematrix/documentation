@@ -30,6 +30,7 @@ export const CompatibleList = () => {
   return (
     <>
       {/* Bike Matrix Web Component - Compatible List */}
+      {/* @ts-ignore */}
       <bikematrix-compatiblelist data-title="Compatible products in collection">
         {/* OPTIONAL: Custom compatible list product card template */}
         <template
@@ -38,6 +39,7 @@ export const CompatibleList = () => {
             __html: productCardHtml
           }}
         ></template>
+        {/* @ts-ignore */}
       </bikematrix-compatiblelist>
 
       {/* Bike Matrix Config - Compatible List */}

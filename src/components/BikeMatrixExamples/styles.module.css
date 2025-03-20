@@ -1,1 +1,7 @@
-@import "../../css/custom.css";
+.exampleWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 2rem auto;
+  gap: 1rem;
+}

@@ -14,24 +14,19 @@ export const BikeMatrixCore = () => {
   }, []);
 
   // Reload BikeMatrix Web Components
-  useEffect(
-    () => {
-      // Dont reload on first render
-      if (!initialized.current) {
-        initialized.current = true;
-        return;
-      }
+  useEffect(() => {
+    // Dont reload on first render
+    // if (!initialized.current) {
+    //   initialized.current = true;
+    //   return;
+    // }
 
-      // Simple check for BikeMatrix availability and initialization
-      if (!BikeMatrix?.isInitialized()) return;
+    // Simple check for BikeMatrix availability and initialization
+    if (!BikeMatrix?.isInitialized()) return;
 
-      // Reload BikeMatrix Web Components
-      BikeMatrix.reload();
-    },
-    [
-      // Variables to watch eg. location.pathname
-    ]
-  );
+    // Reload BikeMatrix Web Components
+    BikeMatrix.reload();
+  }, []);
 
   return null;
 };

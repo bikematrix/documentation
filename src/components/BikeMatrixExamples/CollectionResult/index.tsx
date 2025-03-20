@@ -19,10 +19,13 @@ export const CollectionResult = () => {
       {results.map((product, key) => {
         return (
           <div className={s.card} key={key}>
+            {/* @ts-ignore */}
             <bikematrix-collectionresult
               data-product-id={product.id}
               data-product-skus={product.skus.join(",")}
-            ></bikematrix-collectionresult>
+            >
+              {/* @ts-ignore */}
+            </bikematrix-collectionresult>
           </div>
         );
       })}

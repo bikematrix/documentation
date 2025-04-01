@@ -1,0 +1,25 @@
+.footer {
+  width: 100vw;
+  margin-top: auto;
+  background-color: #000;
+  color: #fff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.footerContainer {
+  display: flex;
+  gap: 8rem;
+  margin: 0 auto;
+  max-width: var(--ifm-container-width);
+  padding: 0 var(--ifm-spacing-horizontal);
+  width: 100%;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: var(--ifm-container-width-xl);
+  }
+}

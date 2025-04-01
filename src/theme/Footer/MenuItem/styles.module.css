@@ -1,0 +1,14 @@
+.menuItem {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: ease-in-out all 0.2s;
+
+  padding: 0 6px;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #fba157;
+}

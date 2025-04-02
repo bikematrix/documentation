@@ -4,11 +4,13 @@
   font-family: "Nunito";
   font-size: 4rem;
   font-weight: 700;
+  line-height: 110%;
 }
 
 .subtitle {
   font-family: "Nunito";
   font-size: 1.3rem;
+  line-height: 110%;
 }
 
 .heroContainer {
@@ -17,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 4rem;
-  height: 60vh;
+  height: 65vh;
 
   .leftSection {
     flex: 0 50%;
@@ -25,6 +27,16 @@
   .rightSection {
     flex: 0 50%;
     height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
   }
 }
 

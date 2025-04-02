@@ -21,13 +21,11 @@ export const HomepageHeader = () => {
             confusion for all.
           </p>
           <div className={s.buttonWrapper}>
+            <Button text={"Documentation"} link={"/docs/intro"} />
             <Button
-              text={"Learn More"}
-              onClick={() => console.log("Here is more information")}
-            />
-            <Button
-              text={"Request a demo"}
-              onClick={() => console.log("Here is more information")}
+              text={"The Solution"}
+              link={"https://www.bikematrix.io/see-it-in-action"}
+              blank
               secondary
             />
           </div>

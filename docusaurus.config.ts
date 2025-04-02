@@ -88,7 +88,7 @@ const config: Config = {
         {
           label: "In Action",
           position: "right",
-          to: "/in-action"
+          href: "https://www.bikematrix.io"
         },
         {
           href: "https://github.com/bikematrix/web-components",

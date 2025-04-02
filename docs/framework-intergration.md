@@ -35,11 +35,11 @@ function BikeMatrixCore() {
 
 ### Complete Examples
 
-- [HTML](./examples/basic)
-- [NextJS](./examples/nextjs)
-- [PHP](./examples/php)
-- [React](./examples/react)
-- [Vue](./examples/vue)
+- [HTML](https://github.com/bikematrix/web-components/tree/main/examples/basic)
+- [NextJS](https://github.com/bikematrix/web-components/tree/main/examples/nextjs)
+- [PHP](https://github.com/bikematrix/web-components/tree/main/examples/php)
+- [React](https://github.com/bikematrix/web-components/tree/main/examples/react)
+- [Vue](https://github.com/bikematrix/web-components/tree/main/examples/vue)
 
 ## Common Scenarios
 

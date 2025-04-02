@@ -14,4 +14,4 @@ Attributes:
 - `data-product-id`: Product ID
 - `data-product-skus`: Comma-separated list of SKUs
 
-[Configuration options](#collection-result-configuration)
+[Configuration options](docs/configuration#collection-result-configuration)

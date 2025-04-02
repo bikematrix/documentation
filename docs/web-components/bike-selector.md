@@ -22,4 +22,4 @@ The core component for selecting a bike.
 <bikematrix-bikeselector></bikematrix-bikeselector>
 ```
 
-[Configuration options](#bike-selector-configuration)
+[Configuration options](/docs/configuration#bike-selector-configuration)

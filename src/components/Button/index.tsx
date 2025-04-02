@@ -1,22 +1,24 @@
 import React from "react";
 import s from "./styles.module.css";
-import Link from "@docusaurus/Link";
 import clsx from "clsx";
+import Link from "@docusaurus/Link";
 
 export const Button = ({
-  external,
   text,
   secondary,
-  onClick
+  onClick,
+  link,
+  blank
 }: {
-  external?: boolean;
   text: string;
   secondary?: boolean;
-  onClick: () => void;
+  onClick?: () => void;
+  link?: string;
+  blank?: boolean;
 }) => {
   return (
     <>
-      {!external && (
+      {onClick && !link && (
         <button
           className={clsx(s.button, secondary && s.secondary)}
           onClick={onClick}
@@ -24,7 +26,15 @@ export const Button = ({
           {text}
         </button>
       )}
-      {external && <Link className={s.button}></Link>}
+      {!onClick && link && (
+        <Link
+          className={clsx(s.button, secondary && s.secondary)}
+          href={link}
+          target={blank ? "_blank" : "_parent"}
+        >
+          {text}
+        </Link>
+      )}
     </>
   );
 };

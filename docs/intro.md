@@ -2,14 +2,14 @@
 
 Our Mission is to transform the bicycle industry by offering a comprehensive compatibility solution to all retailers, service providers, manufacturers, and riders, by seamlessly connecting replacement parts to a specific bike.
 
-Using the Bike Matrix Web Components allows any web application to provide its users the accurate selection of a bike from our database of over 50,000 Bikes by Brand, Model, Spec, Year and Size. The web application can then run a series of complex compatibility algorithms over the nominated EAN, UPC or Manufacturer Part Number, returning a Compatibility Result with messages for display to your users for the selected bike and component.
+Using the Bike Matrix Web Components allows any web application to provide its users the accurate selection of a bike from our database of over 65,000 Bikes by Brand, Model, Spec, Year and Size. The web application can then run a series of complex compatibility algorithms over the nominated EAN, UPC or Manufacturer Part Number, returning a Compatibility Result with messages for display to your users for the selected bike and component.
 
 ![Bike Matrix Compatibility](/img/compatibility-indicator.png)
 
 Bike Matrix is a compatibility solution that answers the question, which parts fit this bike?
 We provide the ability for a user to select a bike and see which parts, from your available products, are suitable replacement or upgrades by processing mechanic-led, component-level compatibility assessment on the products being viewed, searched or filtered.
 
-The Web Components are pre-built Javascript components that can quickly be placed on your website and can provide you with the list of bikes that we have in our database and, along with images, can allow a user to easily select their bike. We have over 50,000 Bikes by Brand, Make, Model, Spec, Year and Size and are currently working to enrich the data of the remaining 100,000+ bikes in our dataset.
+The Web Components are pre-built Javascript components that can quickly be placed on your website and can provide you with the list of bikes that we have in our database and, along with images, can allow a user to easily select their bike. We have over 65,000 Bikes by Brand, Make, Model, Spec, Year and Size and are currently working to enrich the data of the remaining 100,000+ bikes in our dataset.
 
 We have built up a comprehensive database of components such as Brake Pads, Tyres, Tubes, Brake Rotors, Wheels, Chains, Cassettes, Headsets and many more.
 

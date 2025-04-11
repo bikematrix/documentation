@@ -11,7 +11,7 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://docs.bike-matrix.io",
+  url: "https://docs.bikematrix.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/",
@@ -88,7 +88,7 @@ const config: Config = {
         {
           label: "In Action",
           position: "right",
-          href: "https://www.bikematrix.io"
+          href: "https://examples.bikematrix.io"
         },
         {
           href: "https://github.com/bikematrix/web-components",

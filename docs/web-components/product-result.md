@@ -10,4 +10,4 @@ Attributes:
 
 - `data-sku`: Product SKU to check compatibility
 
-[Configuration options](docs/configuration#product-result-configuration)
+[Configuration options](/docs/configuration#product-result-configuration)

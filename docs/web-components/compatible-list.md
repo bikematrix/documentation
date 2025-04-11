@@ -39,4 +39,4 @@ Default template variables:
 - `{{price}}`: Product price
 - `{{compatibility}}`: Compatibility status
 
-[Configuration options](docs/configuration#compatible-list-configuration)
+[Configuration options](/docs/configuration#compatible-list-configuration)

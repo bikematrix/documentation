@@ -11,7 +11,7 @@ We provide the ability for a user to select a bike and see which parts, from you
 
 The Web Components are pre-built Javascript components that can quickly be placed on your website and can provide you with the list of bikes that we have in our database and, along with images, can allow a user to easily select their bike. We have over 65,000 Bikes by Brand, Make, Model, Spec, Year and Size and are currently working to enrich the data of the remaining 100,000+ bikes in our dataset.
 
-We have built up a comprehensive database of components such as Brake Pads, Tyres, Tubes, Brake Rotors, Wheels, Chains, Cassettes, Headsets and many more.
+We have built up a comprehensive database of components such as Brake Pads, Tyres, Tubes, Brake Rotors, Wheels, Chains, Cassettes, Headsets, Bottom Brackets, Cranksets, Chainrings, Axles, and many more.
 
 As part of the Onboarding process, it is important to talk to us to check that the products on your website that you would like to show compatibility for, are in our database. If the product does not exist in our database just provide us with the information we might need to get the product set up.
 

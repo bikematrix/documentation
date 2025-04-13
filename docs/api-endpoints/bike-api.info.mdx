@@ -1,8 +1,8 @@
 ---
 id: bike-api
-title: "Bike API"
+title: "Walkthrough"
 description: ""
-sidebar_label: Introduction
+sidebar_label: Walkthrough
 sidebar_position: 0
 hide_title: true
 custom_edit_url: null
@@ -17,19 +17,91 @@ import Export from "@theme/ApiExplorer/Export";
 <span
   className={"theme-doc-version-badge badge badge--secondary"}
   children={"Version: 2.0"}
->
-</span>
+></span>
 
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Bike API"}
->
-</Heading>
+  children={"Walkthrough"}
+></Heading>
 
+## Get a Bike
 
+### Brand
 
+You can get the list of Bike Brands by calling **GetBikeBrands**. This will return the available bike brands providing the bike_Brand_ID for each.
 
+### Model Families
 
+With a given **bike_Brand_ID**, you can get the available Bike Models by calling **GetBikeModels** passing in the **bike_Brand_ID**. This will return the available Model Families providing the **model_Family_ID**.
+Ie, passing in a **bike_Brand_ID** of 6 will return the Trek Model Families.
 
-      
+### Model Specs
+
+With a given **model_Family_ID**, you can get the available Model Specs by calling **GetBikeFrameSeries** passing in the **model_Family_ID**. This will return the available Model Specs providing the **model_Spec_ID**.
+Ie. passing a **model_Family_ID** of 87 will return a Trek, Fuel Ex.
+
+### Bike Specs
+
+With a given **model_Spec_ID** and an optional **year**, you can get a list of the available Bike Specs by calling **GetBikeSpecSpecs** passing in the **model_Spec_ID ** and optional **year**. This will return the available Bike Specs.
+Ie. **model_Spec_ID** of 237 and year of 2022 for Trek, Fuel EX 9.7 (and Trek, Fuel EX 9.5, Trek, Fuel EX 9.6, Trek, Fuel EX 9.8 and Trek, Fuel EX 9.9).
+
+### Years
+
+With a given **model_Spec_ID** and an optional **bike_Spec**, you can get a list of the available Years by calling **GetBikeSpecYears** passing in the **model_Spec_ID** and optional **bike_Spec**. This will return the available years.
+Ie. **model_Spec_ID** of 237**bike_Spec** of 'Fuel EX 9.7' for 2023, 2022, 2021, 2020, 2019 and 2018.
+
+### Sizes
+
+With a given **model_Spec_ID**, **bike_Spec** and **year**, you can get a list of the available Bike Sizes by calling **GetBikeSpecSizes** passing in the **model_Spec_ID**, **bike_Spec** and **year**. This will return the available Bike Size Ids corresponding to relevant Bike Sizes.
+Ie. **model_Spec_ID** of 237**bike_Spec** of 'Fuel EX 9.7', **year** of 2022 for sizes of 14", 15.5", 17.5", 18.5" (**bike_Size_ID** of 29), 19.5" and 21.5".
+
+### Bikes
+
+And finally, with a given **model_Spec_ID**, **bike_Spec** (optional), **year** (optional) and **bike_Size_ID** (optional), you can get one or more available Bikes by calling **GetBikeSpecBikes**. This will return one or more of the available Bikes.
+Ie. passing **model_Spec_ID** of 237, **bike_Spec** of 'Fuel EX 9.7', **year** of 2022 and **bike_Size_ID** of 29 will return a 2022 Trek Fuel Ex 9.7 18.5" with a **Bike_Key** of '8a113328-a512-4b14-8f31-711259d9c4c8'.
+
+### Bike Images
+
+For each bike there is a **bike_Thumbnail** and there may be additional **bike_Images**. The bike_Images field is a comma separated list of additional images. Each available colour is represented for a given bike to assist in the visual identification of the bike selection process.
+To display the bike image from the **Bike** that comes back from **GetBikeSpecBikes** you can get the image from the following URL template:
+https://imagestore.bikematrix.io/[bike_Reference]/[thumbnail/image name]
+Ie. https://imagestore.bikematrix.io/cube-ams-one11-c68x-tm-29-2022/400-4a1c9.jpeg
+
+### Bike Brand Product Category
+
+As we continue to roll-out compatibility for new product categories and increase the number of bikes for which we have enriched the bike spec data, not all bikes have the same ability to process compatibility assessment, so we need to identify which product categories are available for each brand of bikes. We use this information in our Bike Selector to guide the customer to the available product categories for the selected brand.
+With a given **bike_Brand_ID** you can get a list of available **product_Category_IDs** corresponding to a list of Product Categories using **GetBikeBrandProductCategories** call.
+Ie. passing in a **bike_Brand_ID** of 6 (Trek) will return Brake Pads, Brake Rotor, Front Wheel, Rear Wheel, Wheelset, Tyre and Tube.
+
+## Products
+
+### Get Product
+
+You can check if a product is in the Bike Matrix Database by calling **GetProduct** and passing in the **SKU** (EAN, UPC or Original Manufacturers Part Number).
+Ie. passing a **sku** of 4550170639464 will return Brake Pad Shimano D02S-MX D Type Disc Pads Sintered Metallic Compound.
+
+### Get Products
+
+You can check if a number of products are in the Bike Matrix Database by calling **GetProducts** and passing in a comma separated list of **SKUs** (EAN, UPC or Original Manufacturers Part Number). The result is a comma separated list of SKUs that **do** exist in the Bike Matrix database.
+Ie. passing **skus** of '4550170639464, 4550170639465, 4550170327361' will return '4550170639464, 4550170327361' because these are SKUs that exist in the Bike Matrix database.
+
+## Check Compatibility
+
+### Check Single SKU Compatibility
+
+With a **bike_Key** and a **sku**, you can call **Compatibility_CheckSku** to determine if the specific part (by SKU EAN, UPC or Manufacturer Part Number) is compatible with the selected Bike.
+Ie. passing **bike_Key** '8a113328-a512-4b14-8f31-711259d9c4c8' and **sku** of 4550170639464 will return a Compatibility Result of 'Compatible with Front and Rear Brake'.
+
+### Check Batch SKU Compatibility
+
+With a **bike_Key** it is possible to send batches of SKUs by calling **Compatibility_CheckSkus** for bulk compatibility assessment. This is currently limited to batches of 50 SKUs and will return the list of compatible SKUs (comma delimited) from those that were passed in.
+
+### Check Batch SKU Compatibility With Results
+
+With a **bike_Key** it is possible to send batches of SKUs by calling **Compatibility_CheckSkus** for bulk compatibility assessment. This is currently limited to batches of 50 SKUs and will return a result for every SKU that is passed in (not just a comma separated list of compatible SKUs). This allows detailed messages and warning indicators to be used.
+
+## Obtaining Credentials
+
+To request access to the Bike Matrix API, send us an email at adamb@bikematrix.io and we will create your subscription and provide you with access to our Staging environment APIs allowing you to explore and test functionality. Our Staging environment has a subset of the full bike database.
+When you’re ready, we can activate your licence and provide access to the entire bike database.

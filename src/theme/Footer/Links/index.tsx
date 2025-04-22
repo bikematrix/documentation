@@ -47,7 +47,7 @@ export const Links = () => {
           />
           <MenuItem title={"Riders"} link="https://bikematrix.io/riders" />
           <MenuItem title={"FAQs"} link="https://www.bikematrix.io/faq" />
-          <MenuItem title={"SLA"} link="/sla" />
+          {/* <MenuItem title={"SLA"} link="/sla" /> */}
         </LinkSection>
       </div>
     </div>

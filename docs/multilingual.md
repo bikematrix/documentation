@@ -1,6 +1,6 @@
-# Multilingual Support in the Bike Matrix Shopify app and SDK
+# Multilingual Support
 
-Bike Matrix provides seamless multilingual support based on the `lang` attribute in the HTML on your website. By setting the appropriate language code (and optional country code), the SDK will automatically display content in the desired language.
+Bike Matrix provides seamless multilingual support in the Shopify app and SDK based on the `lang` attribute in the HTML on your website. By setting the appropriate language code (and optional country code), the SDK will automatically display content in the desired language.
 
 ## Supported Languages
 

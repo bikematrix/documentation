@@ -38,8 +38,9 @@ Add the core configuration block to your HTML:
 ```html
 <script type="application/json" data-bikematrix-config>
   {
-    "apiUrl": "https://api-staging.bikematrix.io/bike/v2/",
+    "apiUrl": "https://api-staging.bikematrix.io/proxy/v3/",
     "apiKey": "YOUR_API_KEY",
+    "apiToken": "YOUR_API_TOKEN",
     "pageType": "collection",
     "currentCollectionHandle": "brake-pads",
     "collections": [

@@ -28,6 +28,11 @@ const sidebars: SidebarsConfig = {
       label: "Configuration"
     },
     {
+      type: "doc",
+      id: "multilingual",
+      label: "Multilingual Support"
+    },
+    {
       type: "category",
       label: "Web Components",
       items: [

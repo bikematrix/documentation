@@ -53,6 +53,7 @@ If you're calling from a secure backend server (e.g. Node.js, Next.js server rou
 
 ## Example Usage
 
+### PHP Example
 ```php
 $appId = '<your_app_id>'; // e.g., 'radbikeparts'
 $base64Secret = '<your_base64_encoded_secret>';
@@ -75,6 +76,7 @@ $token = "{$appId}|{$timestamp}|{$signature}";
 echo "bm-app-token: " . $token;
 ```
 
+### C# Example
 ```csharp
 using System;
 using System.Security.Cryptography;

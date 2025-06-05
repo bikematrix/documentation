@@ -22,7 +22,7 @@ If your `appId` is `radbikeparts` and your shared secret is `abc12345`, then:
 radbikeparts|1716901532
 ```
 
-2. **Sign the payload using HMAC-SHA256**, with your shared secret key, and encode the result in Base64.
+2. **Sign the payload using HMAC-SHA256**, with your shared secret key and encode the result in Base64. Your secret key is provided by us, and is Base64-encoded. Decode it before signing.
 
 ```plaintext
 YAbc123ExampleSignature==
@@ -50,3 +50,63 @@ Use the bm-app-token if:
 - You're calling the API from a browser-based JavaScript app
 
 If you're calling from a secure backend server (e.g. Node.js, Next.js server routes), use your bm-subscription-key (API key) instead.
+
+## Example Usage
+
+```php
+$appId = '<your_app_id>'; // e.g., 'radbikeparts'
+$base64Secret = '<your_base64_encoded_secret>';
+
+// Decode the Base64 secret
+$secret = base64_decode($base64Secret);
+
+// Current Unix timestamp
+$timestamp = time();
+
+// Create payload
+$payload = "{$appId}|{$timestamp}";
+
+// Generate HMAC-SHA256 and encode as base64
+$signature = base64_encode(hash_hmac('sha256', $payload, $secret, true));
+
+// Build token
+$token = "{$appId}|{$timestamp}|{$signature}";
+
+echo "bm-app-token: " . $token;
+```
+
+```csharp
+using System;
+using System.Security.Cryptography;
+using System.Text;
+
+class Program
+{
+    static void Main()
+    {
+        string appId = "<your_app_id>"; // e.g., "radbikeparts"
+        string base64Secret = "<your_base64_encoded_secret>";
+
+        // Decode the Base64 secret
+        byte[] secretBytes = Convert.FromBase64String(base64Secret);
+
+        // Get current Unix timestamp
+        long timestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+
+        // Create payload
+        string payload = $"{appId}|{timestamp}";
+        byte[] payloadBytes = Encoding.UTF8.GetBytes(payload);
+
+        // Compute HMAC-SHA256
+        using var hmac = new HMACSHA256(secretBytes);
+        byte[] hashBytes = hmac.ComputeHash(payloadBytes);
+        string signature = Convert.ToBase64String(hashBytes);
+
+        // Build token
+        string token = $"{appId}|{timestamp}|{signature}";
+
+        Console.WriteLine("bm-app-token: " + token);
+    }
+}
+```
+

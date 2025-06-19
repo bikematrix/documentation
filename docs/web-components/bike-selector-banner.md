@@ -17,5 +17,5 @@ Attributes:
 - `data-title`: Banner title
 - `data-color`: Background color
 - `data-full-width`: Whether banner spans full width
-- `data-font-color`: Text color
+- `data-font-color`: Text color - set to 'black' to show black text, or any other value will result in white text
 - `data-show`: Whether banner is visible

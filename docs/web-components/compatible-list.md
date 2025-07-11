@@ -29,7 +29,7 @@ Displays a list of compatible products.
 
 Attributes:
 
-- `data-title`: List title
+- `data-title`: Allows you to set a title for the component. Defaults to "Compatible Products" (or the equivalent in the current language).
 
 Default template variables:
 

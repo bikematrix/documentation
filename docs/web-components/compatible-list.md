@@ -72,7 +72,7 @@ An example of the configuration required and where the products can be passed in
 
 Attributes:
 
-- `data-title`: List title
+- `data-title`: Allows you to set a title for the component. Defaults to "Compatible Products" (or the equivalent in the current language).
 
 Default template variables:
 

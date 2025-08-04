@@ -29,6 +29,18 @@ An example of the web component:
 </bikematrix-compatiblelist>
 ```
 
+Attributes:
+
+- `data-title`: Allows you to set a title for the component. Defaults to "Compatible Products" (or the equivalent in the current language).
+
+Default template variables:
+
+- `{{productUrl}}`: Product page URL
+- `{{featuredImage}}`: Product image URL
+- `{{productTitle}}`: Product name
+- `{{price}}`: Product price
+- `{{compatibility}}`: Compatibility status
+
 An example of the configuration required and where the products can be passed in:
 
 ```html
@@ -70,16 +82,6 @@ An example of the configuration required and where the products can be passed in
 </script>
 ```
 
-Attributes:
-
-- `data-title`: Allows you to set a title for the component. Defaults to "Compatible Products" (or the equivalent in the current language).
-
-Default template variables:
-
-- `{{productUrl}}`: Product page URL
-- `{{featuredImage}}`: Product image URL
-- `{{productTitle}}`: Product name
-- `{{price}}`: Product price
-- `{{compatibility}}`: Compatibility status
+The Compatible List uses the Products collection to send the products to our API, we then pull out the required data from the products in order to check compatibility with the chosen bike then pass bike the data to the website in order to fill the template in the web component. This data can be passed in as above using JSON.stringify() or as one large string.
 
 [Configuration options](/docs/configuration#compatible-list-configuration)

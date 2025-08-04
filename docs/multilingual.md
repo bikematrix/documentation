@@ -16,10 +16,11 @@ The following languages are supported by the Bike Matrix SDK, and are based on t
 | Italian        | `it`              | `<html lang="it">`        |
 | Dutch          | `nl`              | `<html lang="nl">`        |
 | Finnish        | `fi`              | `<html lang="fi">`        |
+| Polish         | `pl`              | `<html lang="pl">`        |
 
 ## How It Works
 
 The SDK detects the `lang` attribute in the `<html>` tag of your website and adjusts the displayed content accordingly. 
 
 ## Notes
-If the lang attribute is not set or the specified language is not supported, the SDK will default to English (UK) (en-UK).
+If the lang attribute is not set or the specified language is not supported, the SDK will default to English (UK) (en-GB).

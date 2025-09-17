@@ -2,7 +2,7 @@
 
 On a Collection page, you can add the Compatibility results indicator on each product shown on the screen.
 
-![Image of compatibility results indicator on the product collection page](https://ecommerce.bikematrix.io/build/_assets/Collection-Result-54SFKM6C.png)
+![Image of compatibility results indicator on the product collection page](/img/shopify/Collection-Result.png)
 
 To add the Compatibility Results to a Collection page (which includes it on the Home page or Search Results page if turned on in the Bike Matrix App Embed section):
 

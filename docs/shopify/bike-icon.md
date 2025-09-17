@@ -2,11 +2,11 @@
 
 To allow customers to select their bike, you need to add the Bike Matrix Bike Icon to the Header:
 
-![Image of Bike Icon in a Shopify website's header](https://ecommerce.bikematrix.io/build/_assets/Header-Bike-Icon-WXE4X6CC.png)
+![Image of Bike Icon in a Shopify website's header](/img/shopify/Header-Bike-Icon.png)
 
 Clicking this will bring up the Bike Selector/Bike Lounge:
 
-![Image of the Bike Matrix Bike Lounge](https://ecommerce.bikematrix.io/build/_assets/Bike-Selector-QPXPV3IQ.png)
+![Image of the Bike Matrix Bike Lounge](/img/shopify/Bike-Selector.png)
 
 ### If your Theme supports adding App Blocks to the Header, follow these steps.
 
@@ -16,7 +16,7 @@ Add the Bike Matrix ‘Bike Header’ App Block.
 2. Find the theme that you want to edit, and then click Customise.
 3. On the sidebar, click the Sections icon.
 4. On the Home Page templage, under the 'Header' section, click 'Add block' to add the Bike Header block from the Apps tab:
-   ![Image showing how to add the Bike Icon to a website's header](https://ecommerce.bikematrix.io/build/_assets/Theme-Header-Bike-Icon-OH4TFBQM.png)
+   ![Image showing how to add the Bike Icon to a website's header](/img/shopify/Theme-Header-Bike-Icon.png)
 5. In the settings panel for the Bike Header, Tick the 'Show Custom Icon?' check box if you want to add custom configuration of the Icon including Width, Height, SVG Icon and Colour.
 
 ### If your Theme does not support adding an App Block to the header, follow these steps to edit the Theme code.

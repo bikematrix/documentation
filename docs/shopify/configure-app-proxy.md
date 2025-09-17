@@ -7,6 +7,6 @@ Ensure that the Storefront can communicate with the Bike Matrix App (and the com
 
    https://\<store name>.myshopify.com/apps/proxy
 
-![Image of setting the app proxy in the settings of Shopify](https://ecommerce.bikematrix.io/build/_assets/App-Proxy-PWLPE46S.png)
+![Image of setting the app proxy in the settings of Shopify](/img/shopify/App-Proxy.png)
 
 3. If it does not end with '/apps/proxy' then click 'Customize URL' and update the URL

@@ -20,22 +20,26 @@ const sidebars: SidebarsConfig = {
 
   documentationSidebar: [
     "intro",
+    {
+      type: "doc",
+      id: "quick-start",
+      label: "Quick Start - Web Components",
+    },
     { type: "doc", id: "installation", label: "Installation" },
-    { type: "doc", id: "getting-started", label: "Getting Started" },
     {
       type: "doc",
       id: "configuration",
-      label: "Configuration"
+      label: "Configuration",
     },
     {
       type: "doc",
       id: "security",
-      label: "Security"
+      label: "Security",
     },
     {
       type: "doc",
       id: "multilingual",
-      label: "Multilingual Support"
+      label: "Multilingual Support",
     },
     {
       type: "category",
@@ -45,8 +49,8 @@ const sidebars: SidebarsConfig = {
         "web-components/bike-selector-banner",
         "web-components/product-result",
         "web-components/collection-result",
-        "web-components/compatible-list"
-      ]
+        "web-components/compatible-list",
+      ],
     },
     {
       type: "category",
@@ -58,13 +62,13 @@ const sidebars: SidebarsConfig = {
         "shopify/product-check-panel",
         "shopify/bike-compatibility-list-panel",
         "shopify/product-collection-compatibility-result",
-        "shopify/configure-app-proxy"
-      ]
+        "shopify/configure-app-proxy",
+      ],
     },
     {
       type: "doc",
       id: "framework-intergration",
-      label: "Framework Intergration"
+      label: "Framework Intergration",
     },
     {
       type: "category",
@@ -86,10 +90,10 @@ const sidebars: SidebarsConfig = {
         "api-endpoints/compatibility-check-skus-with-results",
         "api-endpoints/compatibility-check-skus-with-results-language",
         "api-endpoints/get-product",
-        "api-endpoints/get-products"
-      ]
-    }
-  ]
+        "api-endpoints/get-products",
+      ],
+    },
+  ],
 };
 
 export default sidebars;

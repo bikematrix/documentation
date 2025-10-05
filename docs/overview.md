@@ -2,7 +2,7 @@
 
 This documentation is designed to allow you to quickly understand and integrate Bike Matrix into your offering.
 
-Please provide us with any feedback or questions you may have.
+Please [contact us](https://www.bikematrix.io/contact) with any feedback or questions you may have.
 
 ### How Bike Matrix works?
 

@@ -20,6 +20,7 @@ const sidebars: SidebarsConfig = {
 
   documentationSidebar: [
     "intro",
+    { type: "doc", id: "overview", label: "Overview" },
     {
       type: "doc",
       id: "quick-start",

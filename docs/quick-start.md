@@ -1,11 +1,11 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Quick Start - Web Components
+# Quick Start - SDK
 
 Follow these steps to quickly see our solution in action with our staging API, checking compatibility with some brake pads.
 
-This covers simple web component integration through either NPM installation or including the script from the CDN.
+This covers simple SDK integration through either NPM installation or including the script from the CDN.
 
 ### 1. Add the Script
 
@@ -14,7 +14,7 @@ Adding the BikeMatrix scripts varies on installation method.
 <Tabs>
 <TabItem value="npm" label="NPM Installation">
 
-Install our web components package:
+Install our SDK web components package:
 
 ```bash
 npm install @bikematrix/web-components

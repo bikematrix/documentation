@@ -1,13 +1,13 @@
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Web Components Configuration
+# SDK Configuration
 
-This details out all the web components JSON configuration, all stored under the object `data-bikematrix-config`.
+This details out all the SDK / Web Component JSON configuration, all stored under the object `data-bikematrix-config`.
 
 :::info
 
-The web components were originally designed for Shopify. This leads to much of the configuration seeming convoluted.
+The SDK web components were originally designed for Shopify. This leads to much of the configuration seeming convoluted.
 
 Our goal for this documentation is to simplify and explain the configuration as much as possible.
 
@@ -28,7 +28,7 @@ This configuration is to be placed at the top level of your HTML.
 <Tabs>
 <TabItem value="definition" label="Configuration Defintion">
 
-This is the **site-wide core configuration** definitions for the web components:
+This is the **site-wide core configuration** definitions for the SDK:
 
 ```html
 <script type="application/json" data-bikematrix-config>
@@ -61,7 +61,7 @@ This is the **site-wide core configuration** definitions for the web components:
 </TabItem>
 <TabItem value="example" label="Configuration Example">
 
-This is an example of the **site-wide core configuration** for the web components:
+This is an example of the **site-wide core configuration** for the SDK:
 
 ```html
 <script type="application/json" data-bikematrix-config>

@@ -3,7 +3,9 @@
 The **BM-App-Token** is a secure authentication method used to call the BikeMatrix APIs from client applications. Instead of exposing a static API key in browser-based JavaScript apps, we use a short-lived, HMAC-signed token to authorize each API call.
 
 ## How It Works
+
 - Your backend app generates a **BM-App-Token**, which contains:
+
   - `appId` – Your assigned application ID (e.g., `radbikeparts`)
   - `timestamp` – The current UTC time in **Unix seconds**
   - `signature` – A base64-encoded HMAC-SHA256 signature of `{appId}|{timestamp}`, signed using your shared secret
@@ -40,13 +42,15 @@ This will pass the token in the `bm-app-token` header for all API requests made 
 
 See more about the configuration options in our [Configuration Documentation](configuration.md).
 
-
 ## Benefits
+
 - No static API keys exposed in the frontend
 - Strong cryptographic validation of requests
 
 ## When to Use
+
 Use the bm-app-token if:
+
 - You're calling the API from a browser-based JavaScript app
 
 If you're calling from a secure backend server (e.g. Node.js, Next.js server routes), use your bm-subscription-key (API key) instead.
@@ -54,6 +58,7 @@ If you're calling from a secure backend server (e.g. Node.js, Next.js server rou
 ## Example Usage
 
 ### PHP Example
+
 ```php
 $appId = '<your_app_id>'; // e.g., 'radbikeparts'
 $base64Secret = '<your_base64_encoded_secret>';
@@ -77,6 +82,7 @@ echo "bm-app-token: " . $token;
 ```
 
 ### C# Example
+
 ```csharp
 using System;
 using System.Security.Cryptography;
@@ -111,4 +117,3 @@ class Program
     }
 }
 ```
-

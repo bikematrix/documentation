@@ -14,9 +14,9 @@ We have created a web components solution for customers to use, allowing fast an
 
 There are currently 3 integration methods for Bike Matrix.
 
-- Shopify
-- Web Components
-- API
+- **Shopify**
+- **Web Components (SDK)**
+- **API**
 
 #### Shopify
 
@@ -24,7 +24,7 @@ We have a Shopify App, which includes our web components and allows for smooth i
 
 Find out more in the Shopify Integration section.
 
-#### Web Components
+#### Web Components (SDK)
 
 Our web components are available through [NPM](https://www.npmjs.com/package/@bikematrix/web-components/v/1.0.18). These can be integrated into your website to allow for fast integration.
 

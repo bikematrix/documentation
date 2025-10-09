@@ -3,7 +3,7 @@ import TabItem from '@theme/TabItem';
 
 # Quick Start - Web Components
 
-Follow these steps to quickly see our solution in action with our staging API.
+Follow these steps to quickly see our solution in action with our staging API, checking compatibility with some brake pads.
 
 This covers simple web component integration through either NPM installation or including the script from the CDN.
 
@@ -75,7 +75,6 @@ If using a react based framework, the following configuration can be copied into
       }
     ],
     "currentCollectionHandle": "brake-pads",
-    "collectionUrl": "/collection/brake-pads",
     "productCollections": ["brake-pads"],
     "products": {
       "123": {

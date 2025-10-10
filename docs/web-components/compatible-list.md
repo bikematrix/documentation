@@ -1,8 +1,46 @@
 # Compatible List
 
-Displays a list of compatible products.
+<div className="image-wrapper">
+  <img
+    src="/img/web-components/compatible-list.png"
+    alt="Compatible List Component"
+    className="image-with-border"
+  />
+</div>
 
-An example of the web component:
+Displays a list of all products which are compatible.
+
+This is designed to be used at the top of a page of a collection.
+
+## Component Details
+
+The web component takes a child template element for use when displaying product cards. This allows you to customise the design of your product cards displayed inside of the Compatible List component.
+
+```html
+<bikematrix-compatiblelist data-title="Compatible List">
+  <!-- Product Card Template (optional) -->
+  <template slot="product-card">
+    <!-- Product Card HTML -->
+  </template>
+  <!-- End of Product Card Template -->
+</bikematrix-compatiblelist>
+```
+
+### Product Card Template
+
+To customise your product card, you can provide html inside the `<template slot="product-card">` element.
+
+You can use product data inside this template as you can see in the [example](#example).
+
+This product data is set in `products` variable in the [configuration](#configuration).
+
+### Attributes
+
+| Attribute    | Default                              | Required | Description                       | Example                 |
+| ------------ | ------------------------------------ | -------- | --------------------------------- | ----------------------- |
+| `data-title` | `"Compatible Products"` (Translated) | No       | Text at the top of the component. | `"Compatible Products"` |
+
+### Example
 
 ```html
 <bikematrix-compatiblelist data-title="Compatible Products">
@@ -29,59 +67,64 @@ An example of the web component:
 </bikematrix-compatiblelist>
 ```
 
-Attributes:
+## Configuration
 
-- `data-title`: Allows you to set a title for the component. Defaults to "Compatible Products" (or the equivalent in the current language).
+A more detailed overview of configuration can be found in the [Configuration section](/docs/configuration).
 
-Default template variables:
+These options are to be set on a per web page basis:
 
-- `{{productUrl}}`: Product page URL
-- `{{featuredImage}}`: Product image URL
-- `{{productTitle}}`: Product name
-- `{{price}}`: Product price
-- `{{compatibility}}`: Compatibility status
+| Option                        | Type                          | Required | Description                                                                                                                               | Example                                                  |
+| ----------------------------- | ----------------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
+| `currentCollectionHandle`     | string                        | Yes      | The collection handle of the current page. This must match a `handle` defined under `collections`.                                        | `"brake-pads"`                                           |
+| `products`                    | \{[key: string]: ProductInfo} | Yes      | Information for all products to check compatibility on. Find more information in the ['products' explained](#products-explained) section. | See ['products' explained](#products-explained) section. |
+| `collectionUrl`               | string                        | No       | URL for the current collection, used to link back to the first page of the collection. Default is empty.                                  | `"/collections/brake-pads"`                              |
+| `compatiblityListCurrentPage` | number                        | No       | Current page number of the collection. After 1st page we link back to the first page for the compatible results. Default is 0.            | `1`                                                      |
+| `showCompatibleList`          | boolean                       | No       | Whether to show compatible list component. Default is true.                                                                               | `true`                                                   |
 
-An example of the configuration required and where the products can be passed in:
+#### 'products' explained
 
-```html
-<script type="application/json" data-bikematrix-config>
-  {JSON.stringify({
-    currentCollectionHandle: "brake-rotors",
-    collectionUrl: "/collection/brake-rotors",
-    products: {
-      "6960918429875": {
-        "productUrl": "/products/hope-floating-disc-rotor",
-        "productTitle":"Hope Floating Disc Rotor",
-        "featuredImage": "//www.biketart.com/cdn/shop/products/hope-floating-disc-rotor-red-140mm-1135982118.jpg?v=1753214364",
-        "price": "From £53.95",
-        "skus": ["HBSP3301406FN","HBSP3301406FB","HBSP3301406FC","HBSP3301406FPU","HBSP3301406FR","HBSP3301406FS","HBSP3301606FN","HBSP3301606FB","HBSP3301606FC","HBSP3301606FPU","HBSP3301606FR","HBSP3301606FS","HBSP3301806FN","HBSP3301806FB","HBSP3301806FC","HBSP3301806FPU","HBSP3301806FR","HBSP3301806FS","HBSP3301836FN","HBSP3301836FB","HBSP3301836FC","HBSP3301836FPU","HBSP3301836FR","HBSP3301836FS","HBSP3301856FN","HBSP3301856FB","HBSP3301856FC","HBSP3301856FPU","HBSP3301856FR","HBSP3301856FS","HBSP3302006FN","HBSP3302006FB","HBSP3302006FC","HBSP3302006FPU","HBSP3302006FR","HBSP3302006FS","HBSP3302036FN","HBSP3302036FB","HBSP3302036FC","HBSP3302036FPU","HBSP3302036FR","HBSP3302036FS","HBSP3302056FN","HBSP3302056FB","HBSP3302056FC","HBSP3302056FPU","HBSP3302056FR","HBSP3302056FS","HBSP3302206FN","HBSP3302206FB","HBSP3302206FC","HBSP3302206FPU","HBSP3302206FR","HBSP3302206FS","HBSP3302256FN","HBSP3302036FA","HBSP3301406FK","HBSP3301606FK","HBSP3301806FK","HBSP3301836FK","HBSP3301856FK","HBSP3302006FK","HBSP3302036FK","HBSP3302056FK","HBSP3302206FK"]
-      },
-      "6961177559219": {
-        "productUrl": "/products/shimano-xt-sm-rt86-6-bolt-ice-tech-disc-brake-rotor",
-        "productTitle":"Shimano XT SM-RT86 6 Bolt Ice Tech Disc Brake Rotor",
-        "featuredImage": "//www.biketart.com/cdn/shop/products/1580135783-63196800.jpg?v=1635604093",
-        "price": "From £21.95",
-        "skus": ["4524667744672","4524667744702","4524667744689"]
-      },
-      "6960918790323": {
-        "productUrl": "/products/hope-centre-lock-disc-lockring",
-        "productTitle":"Hope Centre Lock Disc Lockring",
-        "featuredImage": "//www.biketart.com/cdn/shop/products/hope-centre-lock-disc-lockring-blue-1135947456.jpg?v=1753207026",
-        "price": "From £10.50",
-        "skus": [""]
-      },
-      "7315048071347": {
-        "productUrl": "/products/shimano-rt-mt800-disc-brake-rotor-with-internal-lockring-ice-tech-freeza",
-        "productTitle":"Shimano XT RT-MT800 Ice Tech Centre-Lock Disc Brake Rotor",
-        "featuredImage": "//www.biketart.com/cdn/shop/products/rtmt800m.jpg?v=1669121057",
-        "price": "From £24.95",
-        "skus": ["4550170442255","4550170442200","4550170442217","4550170442224"]
-      }
-    }
-  })}
-</script>
+`products` is defined as:
+
+```javascript
+{
+  [key: string]: {
+    "skus": string[],
+    "productUrl": string,
+    "productTitle": string,
+    "featuredImage": string,
+    "price": string,
+    "priceFrom": string,
+    [key: string]: any
+  }
+}
 ```
 
-The Compatible List uses the Products collection to send the products to our API, we then pull out the required data from the products in order to check compatibility with the chosen bike then pass bike the data to the website in order to fill the template in the web component. This data can be passed in as above using JSON.stringify() or as one large string.
+Therefore this is a keyed list of all the products to include as part of the compatible list check.
 
-[Configuration options](/docs/configuration#compatible-list-configuration)
+- The first `key` value should be your product ID.
+- The `skus` value should be a list of all the SKUs for the product. (As the product may have multiple variants)
+
+All other variables for the product are there to be used as part of the injected HTML into the web component. This HTML is for displaying the product card therefore will need to use some of this information, but usage will vary on your product card.
+
+An example of the `products` configuration option is:
+
+```javascript
+{
+  "123": {
+    "productUrl": "/product",
+    "productTitle": "SRAM Large Disc Brake Pads",
+    "featuredImage":
+      "https://www.biketart.com/cdn/shop/files/HeavyDuteSintered.jpg?v=1714977245&width=1950",
+    "price": "$40.00",
+    "skus": ["710845642012"]
+  },
+  "124": {
+    "productUrl": "/product",
+    "productTitle": "Jagwire Pro E-Bike Disc Pad - SRAM Code",
+    "featuredImage":
+      "https://www.biketart.com/cdn/shop/files/39869-pm.jpg?v=1692603872&width=750",
+    "price": "$34.00",
+    "skus": ["4715910041895"]
+  }
+}
+```

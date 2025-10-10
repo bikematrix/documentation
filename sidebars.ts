@@ -46,12 +46,47 @@ const sidebars: SidebarsConfig = {
       type: "category",
       label: "Web Components",
       items: [
-        "web-components/bike-selector",
-        "web-components/bike-selector-banner",
-        "web-components/product-result",
-        "web-components/collection-result",
-        "web-components/compatible-list",
-        "web-components/variant-selector",
+        {
+          type: "doc",
+          id: "web-components/bike-selector",
+          label: "Bike Selector",
+        },
+        {
+          type: "doc",
+          id: "web-components/bikon",
+          label: "Bikon",
+        },
+        {
+          type: "doc",
+          id: "web-components/bike-selector-banner",
+          label: "Bike Selector Banner",
+        },
+        {
+          type: "doc",
+          id: "web-components/compatibility-label",
+          label: "Compatibility Label",
+        },
+        {
+          type: "doc",
+          id: "web-components/collection-result",
+          label: "Collection Result",
+        },
+        {
+          type: "doc",
+          id: "web-components/compatible-list",
+          label: "Compatible List",
+        },
+        {
+          type: "doc",
+          id: "web-components/product-result",
+          label: "Product Result",
+        },
+
+        {
+          type: "doc",
+          id: "web-components/variant-selector",
+          label: "Variant Selector",
+        },
       ],
     },
     {

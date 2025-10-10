@@ -28,6 +28,8 @@ Find out more in the Shopify Integration section.
 
 Our SDK (with web components) are available through [NPM](https://www.npmjs.com/package/@bikematrix/web-components/v/1.0.18). These can be used on your website to allow for fast integration.
 
+You can integrate with our SDK and API in one solution. Therefore adding any extra capabilities our SDK does not currently offer.
+
 Find out more in the SDK Integration section.
 
 #### API

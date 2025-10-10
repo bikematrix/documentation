@@ -1,17 +1,43 @@
 # Collection Result
 
-Shows compatibility for products in a collection.
+<div className="image-wrapper">
+  <img
+    src="/img/web-components/collection-result.png"
+    alt="Collection Result Component"
+    className="image-with-border"
+  />
+</div>
+
+Shows compatibility status for a product.
+
+Designed to be added on a product card.
+
+## Component Details
 
 ```html
-<bikematrix-collectionresult
-  data-product-id="PRODUCT_ID"
-  data-product-skus="SKU1,SKU2"
-/>
+<bikematrix-collectionresult data-product-skus="SKU1,SKU2">
+</bikematrix-collectionresult>
 ```
 
-Attributes:
+### Attributes
 
-- `data-product-id`: Product ID
-- `data-product-skus`: Comma-separated list of SKUs
+| Attribute           | Default | Required | Description                                                | Example                  |
+| ------------------- | ------- | -------- | ---------------------------------------------------------- | ------------------------ |
+| `data-product-skus` | `""`    | Yes      | A comma separated list of SKUs to check compatibility for. | `"123456890,0987654321"` |
 
-[Configuration options](/docs/configuration#collection-result-configuration)
+### Example
+
+```html
+<bikematrix-collectionresult data-product-skus="123456890,0987654321">
+</bikematrix-collectionresult>
+```
+
+## Configuration
+
+A more detailed overview of configuration can be found in the [Configuration section](/docs/configuration).
+
+These options are to be set on a per web page basis:
+
+| Option                    | Type   | Required | Description                                                                                        | Example        |
+| ------------------------- | ------ | -------- | -------------------------------------------------------------------------------------------------- | -------------- |
+| `currentCollectionHandle` | string | Yes      | The collection handle of the current page. This must match a `handle` defined under `collections`. | `"brake-pads"` |

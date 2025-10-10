@@ -24,7 +24,7 @@ const sidebars: SidebarsConfig = {
     {
       type: "doc",
       id: "quick-start",
-      label: "Quick Start - Web Components",
+      label: "Quick Start - SDK",
     },
     { type: "doc", id: "installation", label: "Installation" },
     {
@@ -51,6 +51,7 @@ const sidebars: SidebarsConfig = {
         "web-components/product-result",
         "web-components/collection-result",
         "web-components/compatible-list",
+        "web-components/variant-selector",
       ],
     },
     {

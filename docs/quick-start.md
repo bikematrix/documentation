@@ -197,7 +197,6 @@ Here are the web components you can add and see in action:
 
 <!-- Product cards on collection pages -->
 <bikematrix-collectionresult
-  data-product-id="710845642012"
   data-product-skus="710845642012,4715910041895"
 ></bikematrix-collectionresult>
 
@@ -205,6 +204,7 @@ Here are the web components you can add and see in action:
 <bikematrix-variantselector
   data-title="Compatible Variants"
   data-override="true"
+  data-showall="true"
   data-variants="-|SRAM Bottom Bracket GXP Team Cups English MTB & Road 73 / 68|45546911891733|1~-|SRAM Bottom Bracket GXP Team Cups English 83|45546911990037|2~-|SRAM Bottom Bracket GXP Team Cups English 100 for GXP Fat Bike Crank|48195360456981|3"
   data-clickable="true"
 ></bikematrix-variantselector>

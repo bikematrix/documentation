@@ -1,6 +1,6 @@
 {
   "openapi": "3.0.1",
-  "info": { "title": "Bike API", "version": "2.0" },
+  "info": { "title": "BikeMatrixServer", "version": "1.0" },
   "paths":
     {
       "/GetBikeBrands":
@@ -8,7 +8,6 @@
           "get":
             {
               "summary": "Get Bike Brands",
-              "operationId": "getBikeBrands",
               "tags": ["Bike"],
               "parameters":
                 [
@@ -16,8 +15,8 @@
                     "name": "includeBrandsWithoutBikes",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "boolean", "default": false }
-                  }
+                    "schema": { "type": "boolean", "default": false },
+                  },
                 ],
               "responses":
                 {
@@ -32,8 +31,10 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeBrand" }
-                                }
+                                    {
+                                      "$ref": "#/components/schemas/BikeBrand",
+                                    },
+                                },
                             },
                           "application/json":
                             {
@@ -41,8 +42,10 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeBrand" }
-                                }
+                                    {
+                                      "$ref": "#/components/schemas/BikeBrand",
+                                    },
+                                },
                             },
                           "text/json":
                             {
@@ -50,20 +53,21 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeBrand" }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                    {
+                                      "$ref": "#/components/schemas/BikeBrand",
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
       "/GetBikeModels":
         {
           "get":
             {
               "summary": "Get Bike Models",
-              "operationId": "getBikeModels",
               "tags": ["Bike"],
               "parameters":
                 [
@@ -71,8 +75,8 @@
                     "name": "bikeBrandId",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
-                  }
+                    "schema": { "type": "integer", "format": "int32" },
+                  },
                 ],
               "responses":
                 {
@@ -87,8 +91,10 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeModel" }
-                                }
+                                    {
+                                      "$ref": "#/components/schemas/BikeModel",
+                                    },
+                                },
                             },
                           "application/json":
                             {
@@ -96,8 +102,10 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeModel" }
-                                }
+                                    {
+                                      "$ref": "#/components/schemas/BikeModel",
+                                    },
+                                },
                             },
                           "text/json":
                             {
@@ -105,20 +113,21 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeModel" }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                    {
+                                      "$ref": "#/components/schemas/BikeModel",
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
       "/GetBikeFrameSeries":
         {
           "get":
             {
               "summary": "Get Bike Frame Series",
-              "operationId": "getBikeFrameSeries",
               "tags": ["Bike"],
               "parameters":
                 [
@@ -126,8 +135,8 @@
                     "name": "bikeModelId",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
-                  }
+                    "schema": { "type": "integer", "format": "int32" },
+                  },
                 ],
               "responses":
                 {
@@ -143,9 +152,9 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/BikeFrameSeries"
-                                    }
-                                }
+                                      "$ref": "#/components/schemas/BikeFrameSeries",
+                                    },
+                                },
                             },
                           "application/json":
                             {
@@ -154,9 +163,9 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/BikeFrameSeries"
-                                    }
-                                }
+                                      "$ref": "#/components/schemas/BikeFrameSeries",
+                                    },
+                                },
                             },
                           "text/json":
                             {
@@ -165,21 +174,20 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/BikeFrameSeries"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                      "$ref": "#/components/schemas/BikeFrameSeries",
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
       "/GetBikeSpecSpecs":
         {
           "get":
             {
               "summary": "Get Bike Specification Specs",
-              "operationId": "getBikeSpecSpecs",
               "tags": ["Bike"],
               "parameters":
                 [
@@ -187,14 +195,14 @@
                     "name": "bikeModelSpecId",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
+                    "schema": { "type": "integer", "format": "int32" },
                   },
                   {
                     "name": "year",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
-                  }
+                    "schema": { "type": "integer", "format": "int32" },
+                  },
                 ],
               "responses":
                 {
@@ -209,8 +217,8 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeSpec" }
-                                }
+                                    { "$ref": "#/components/schemas/BikeSpec" },
+                                },
                             },
                           "application/json":
                             {
@@ -218,8 +226,8 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeSpec" }
-                                }
+                                    { "$ref": "#/components/schemas/BikeSpec" },
+                                },
                             },
                           "text/json":
                             {
@@ -227,20 +235,19 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeSpec" }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                    { "$ref": "#/components/schemas/BikeSpec" },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
       "/GetBikeSpecYears":
         {
           "get":
             {
               "summary": "Get Bike Specification Years",
-              "operationId": "getBikeSpecYears",
               "tags": ["Bike"],
               "parameters":
                 [
@@ -248,14 +255,14 @@
                     "name": "bikeModelSpecId",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
+                    "schema": { "type": "integer", "format": "int32" },
                   },
                   {
                     "name": "bikeSpec",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "string" }
-                  }
+                    "schema": { "type": "string" },
+                  },
                 ],
               "responses":
                 {
@@ -270,8 +277,8 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeYear" }
-                                }
+                                    { "$ref": "#/components/schemas/BikeYear" },
+                                },
                             },
                           "application/json":
                             {
@@ -279,8 +286,8 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeYear" }
-                                }
+                                    { "$ref": "#/components/schemas/BikeYear" },
+                                },
                             },
                           "text/json":
                             {
@@ -288,20 +295,19 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeYear" }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                    { "$ref": "#/components/schemas/BikeYear" },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
       "/GetBikeSpecSizes":
         {
           "get":
             {
               "summary": "Get Bike Specification Sizes",
-              "operationId": "getBikeSpecSizes",
               "tags": ["Bike"],
               "parameters":
                 [
@@ -309,20 +315,20 @@
                     "name": "bikeModelSpecId",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
+                    "schema": { "type": "integer", "format": "int32" },
                   },
                   {
                     "name": "year",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
+                    "schema": { "type": "integer", "format": "int32" },
                   },
                   {
                     "name": "bikeSpec",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "string" }
-                  }
+                    "schema": { "type": "string" },
+                  },
                 ],
               "responses":
                 {
@@ -337,8 +343,8 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeSize" }
-                                }
+                                    { "$ref": "#/components/schemas/BikeSize" },
+                                },
                             },
                           "application/json":
                             {
@@ -346,8 +352,8 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeSize" }
-                                }
+                                    { "$ref": "#/components/schemas/BikeSize" },
+                                },
                             },
                           "text/json":
                             {
@@ -355,20 +361,19 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/BikeSize" }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                    { "$ref": "#/components/schemas/BikeSize" },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
       "/GetBikeSpecBikes":
         {
           "get":
             {
               "summary": "Get Bike Specification Bikes",
-              "operationId": "getBikeSpecBikes",
               "tags": ["Bike"],
               "parameters":
                 [
@@ -376,26 +381,26 @@
                     "name": "bikeModelSpecId",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
+                    "schema": { "type": "integer", "format": "int32" },
                   },
                   {
                     "name": "year",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
+                    "schema": { "type": "integer", "format": "int32" },
                   },
                   {
                     "name": "bikeSpec",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "string" }
+                    "schema": { "type": "string" },
                   },
                   {
                     "name": "bikeSizeId",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
-                  }
+                    "schema": { "type": "integer", "format": "int32" },
+                  },
                 ],
               "responses":
                 {
@@ -410,8 +415,8 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/Bike" }
-                                }
+                                    { "$ref": "#/components/schemas/Bike" },
+                                },
                             },
                           "application/json":
                             {
@@ -419,8 +424,8 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/Bike" }
-                                }
+                                    { "$ref": "#/components/schemas/Bike" },
+                                },
                             },
                           "text/json":
                             {
@@ -428,20 +433,19 @@
                                 {
                                   "type": "array",
                                   "items":
-                                    { "$ref": "#/components/schemas/Bike" }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                    { "$ref": "#/components/schemas/Bike" },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
       "/GetBikeBrandProductCategories":
         {
           "get":
             {
               "summary": "Get Bike Brand Product Categories",
-              "operationId": "getBikeBrandProductCategories",
               "tags": ["Bike"],
               "parameters":
                 [
@@ -449,8 +453,8 @@
                     "name": "bikeBrandId",
                     "in": "query",
                     "style": "form",
-                    "schema": { "type": "integer", "format": "int32" }
-                  }
+                    "schema": { "type": "integer", "format": "int32" },
+                  },
                 ],
               "responses":
                 {
@@ -466,9 +470,9 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/BikeBrandProductCategory"
-                                    }
-                                }
+                                      "$ref": "#/components/schemas/BikeBrandProductCategory",
+                                    },
+                                },
                             },
                           "application/json":
                             {
@@ -477,9 +481,9 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/BikeBrandProductCategory"
-                                    }
-                                }
+                                      "$ref": "#/components/schemas/BikeBrandProductCategory",
+                                    },
+                                },
                             },
                           "text/json":
                             {
@@ -488,21 +492,20 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/BikeBrandProductCategory"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                      "$ref": "#/components/schemas/BikeBrandProductCategory",
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
       "/Compatibility_CheckSku/{bike_key}/{sku}":
         {
           "get":
             {
-              "summary": "Compatibility Check SKU",
-              "operationId": "compatibilityCheckSku",
+              "summary": "Check SKU",
               "tags": ["Compatibility"],
               "parameters":
                 [
@@ -511,15 +514,15 @@
                     "in": "path",
                     "required": true,
                     "style": "simple",
-                    "schema": { "type": "string" }
+                    "schema": { "type": "string" },
                   },
                   {
                     "name": "sku",
                     "in": "path",
                     "required": true,
                     "style": "simple",
-                    "schema": { "type": "string" }
-                  }
+                    "schema": { "type": "string" },
+                  },
                 ],
               "responses":
                 {
@@ -532,34 +535,33 @@
                             {
                               "schema":
                                 {
-                                  "$ref": "#/components/schemas/CompatibilityResult"
-                                }
+                                  "$ref": "#/components/schemas/CompatibilityResult",
+                                },
                             },
                           "application/json":
                             {
                               "schema":
                                 {
-                                  "$ref": "#/components/schemas/CompatibilityResult"
-                                }
+                                  "$ref": "#/components/schemas/CompatibilityResult",
+                                },
                             },
                           "text/json":
                             {
                               "schema":
                                 {
-                                  "$ref": "#/components/schemas/CompatibilityResult"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                  "$ref": "#/components/schemas/CompatibilityResult",
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
       "/Compatibility_CheckSku/{bike_key}/{sku}/{language}":
         {
           "get":
             {
-              "summary": "Compatibility Check SKU - Language",
-              "operationId": "compatibilityCheckSkuLanguage",
+              "summary": "Check SKU - Language",
               "tags": ["Compatibility"],
               "parameters":
                 [
@@ -568,22 +570,22 @@
                     "in": "path",
                     "required": true,
                     "style": "simple",
-                    "schema": { "type": "string" }
+                    "schema": { "type": "string" },
                   },
                   {
                     "name": "sku",
                     "in": "path",
                     "required": true,
                     "style": "simple",
-                    "schema": { "type": "string" }
+                    "schema": { "type": "string" },
                   },
                   {
                     "name": "language",
                     "in": "path",
                     "required": true,
                     "style": "simple",
-                    "schema": { "type": "string", "default": "en" }
-                  }
+                    "schema": { "type": "string", "default": "en" },
+                  },
                 ],
               "responses":
                 {
@@ -596,155 +598,33 @@
                             {
                               "schema":
                                 {
-                                  "$ref": "#/components/schemas/CompatibilityResult"
-                                }
+                                  "$ref": "#/components/schemas/CompatibilityResult",
+                                },
                             },
                           "application/json":
                             {
                               "schema":
                                 {
-                                  "$ref": "#/components/schemas/CompatibilityResult"
-                                }
+                                  "$ref": "#/components/schemas/CompatibilityResult",
+                                },
                             },
                           "text/json":
                             {
                               "schema":
                                 {
-                                  "$ref": "#/components/schemas/CompatibilityResult"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-      "/Compatibility_CheckSkus/{bike_key}/{skus}":
-        {
-          "get":
-            {
-              "summary": "Compatibility Check SKUs",
-              "operationId": "compatibilityCheckSkus",
-              "tags": ["Compatibility"],
-              "parameters":
-                [
-                  {
-                    "name": "bike_key",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string" }
-                  },
-                  {
-                    "name": "skus",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string" }
-                  }
-                ],
-              "responses":
-                {
-                  "200":
-                    {
-                      "description": "Success",
-                      "content":
-                        {
-                          "text/plain":
-                            {
-                              "schema":
-                                {
-                                  "$ref": "#/components/schemas/CompatibleSkusResult"
-                                }
+                                  "$ref": "#/components/schemas/CompatibilityResult",
+                                },
                             },
-                          "application/json":
-                            {
-                              "schema":
-                                {
-                                  "$ref": "#/components/schemas/CompatibleSkusResult"
-                                }
-                            },
-                          "text/json":
-                            {
-                              "schema":
-                                {
-                                  "$ref": "#/components/schemas/CompatibleSkusResult"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-      "/Compatibility_CheckSkus/{bike_key}/{skus}/{language}":
-        {
-          "get":
-            {
-              "summary": "Compatibility Check SKUs - Language",
-              "operationId": "compatibilityCheckSkusLanguage",
-              "tags": ["Compatibility"],
-              "parameters":
-                [
-                  {
-                    "name": "bike_key",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string" }
-                  },
-                  {
-                    "name": "skus",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string" }
-                  },
-                  {
-                    "name": "language",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string", "default": "en" }
-                  }
-                ],
-              "responses":
-                {
-                  "200":
-                    {
-                      "description": "Success",
-                      "content":
-                        {
-                          "text/plain":
-                            {
-                              "schema":
-                                {
-                                  "$ref": "#/components/schemas/CompatibleSkusResult"
-                                }
-                            },
-                          "application/json":
-                            {
-                              "schema":
-                                {
-                                  "$ref": "#/components/schemas/CompatibleSkusResult"
-                                }
-                            },
-                          "text/json":
-                            {
-                              "schema":
-                                {
-                                  "$ref": "#/components/schemas/CompatibleSkusResult"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                        },
+                    },
+                },
+            },
         },
       "/Compatibility_CheckSkusWithResults/{bike_key}":
         {
           "post":
             {
-              "summary": "Compatibility Check SKUs With Results",
-              "operationId": "compatibilityCheckSkusWithResults",
+              "summary": "Check SKUs With Results",
               "tags": ["Compatibility"],
               "parameters":
                 [
@@ -753,8 +633,8 @@
                     "in": "path",
                     "required": true,
                     "style": "simple",
-                    "schema": { "type": "string" }
-                  }
+                    "schema": { "type": "string" },
+                  },
                 ],
               "requestBody":
                 {
@@ -763,19 +643,19 @@
                       "application/json":
                         {
                           "schema":
-                            { "type": "array", "items": { "type": "string" } }
+                            { "type": "array", "items": { "type": "string" } },
                         },
                       "text/json":
                         {
                           "schema":
-                            { "type": "array", "items": { "type": "string" } }
+                            { "type": "array", "items": { "type": "string" } },
                         },
                       "application/*+json":
                         {
                           "schema":
-                            { "type": "array", "items": { "type": "string" } }
-                        }
-                    }
+                            { "type": "array", "items": { "type": "string" } },
+                        },
+                    },
                 },
               "responses":
                 {
@@ -791,9 +671,9 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
+                                      "$ref": "#/components/schemas/CompatibilityResult",
+                                    },
+                                },
                             },
                           "application/json":
                             {
@@ -802,9 +682,9 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
+                                      "$ref": "#/components/schemas/CompatibilityResult",
+                                    },
+                                },
                             },
                           "text/json":
                             {
@@ -813,21 +693,20 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                                      "$ref": "#/components/schemas/CompatibilityResult",
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
         },
       "/Compatibility_CheckSkusWithResults/{bike_key}/{language}":
         {
           "post":
             {
-              "summary": "Compatibility Check SKUs With Results - Language",
-              "operationId": "compatibilityCheckSkusWithResultsLanguage",
+              "summary": "Check SKUs With Results - Language",
               "tags": ["Compatibility"],
               "parameters":
                 [
@@ -836,15 +715,15 @@
                     "in": "path",
                     "required": true,
                     "style": "simple",
-                    "schema": { "type": "string" }
+                    "schema": { "type": "string" },
                   },
                   {
                     "name": "language",
                     "in": "path",
                     "required": true,
                     "style": "simple",
-                    "schema": { "type": "string", "default": "en" }
-                  }
+                    "schema": { "type": "string", "default": "en" },
+                  },
                 ],
               "requestBody":
                 {
@@ -853,19 +732,19 @@
                       "application/json":
                         {
                           "schema":
-                            { "type": "array", "items": { "type": "string" } }
+                            { "type": "array", "items": { "type": "string" } },
                         },
                       "text/json":
                         {
                           "schema":
-                            { "type": "array", "items": { "type": "string" } }
+                            { "type": "array", "items": { "type": "string" } },
                         },
                       "application/*+json":
                         {
                           "schema":
-                            { "type": "array", "items": { "type": "string" } }
-                        }
-                    }
+                            { "type": "array", "items": { "type": "string" } },
+                        },
+                    },
                 },
               "responses":
                 {
@@ -881,9 +760,9 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
+                                      "$ref": "#/components/schemas/CompatibilityResult",
+                                    },
+                                },
                             },
                           "application/json":
                             {
@@ -892,9 +771,9 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
+                                      "$ref": "#/components/schemas/CompatibilityResult",
+                                    },
+                                },
                             },
                           "text/json":
                             {
@@ -903,166 +782,20 @@
                                   "type": "array",
                                   "items":
                                     {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-      "/Compatibility_CheckSkusWithResults/{bike_key}/{skus}":
-        {
-          "get":
-            {
-              "summary": "Check SKUs With Results",
-              "operationId": "compatibilityCheckSkusWithResults",
-              "tags": ["Compatibility"],
-              "parameters":
-                [
-                  {
-                    "name": "bike_key",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string" }
-                  },
-                  {
-                    "name": "skus",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string" }
-                  }
-                ],
-              "responses":
-                {
-                  "200":
-                    {
-                      "description": "Success",
-                      "content":
-                        {
-                          "text/plain":
-                            {
-                              "schema":
-                                {
-                                  "type": "array",
-                                  "items":
-                                    {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
+                                      "$ref": "#/components/schemas/CompatibilityResult",
+                                    },
+                                },
                             },
-                          "application/json":
-                            {
-                              "schema":
-                                {
-                                  "type": "array",
-                                  "items":
-                                    {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
-                            },
-                          "text/json":
-                            {
-                              "schema":
-                                {
-                                  "type": "array",
-                                  "items":
-                                    {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        },
-      "/Compatibility_CheckSkusWithResults/{bike_key}/{skus}/{language}":
-        {
-          "get":
-            {
-              "summary": "Check SKUs With Results - Language",
-              "operationId": "compatibilityCheckSkusWithResultsLanguage",
-              "tags": ["Compatibility"],
-              "parameters":
-                [
-                  {
-                    "name": "bike_key",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string" }
-                  },
-                  {
-                    "name": "skus",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string" }
-                  },
-                  {
-                    "name": "language",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string", "default": "en" }
-                  }
-                ],
-              "responses":
-                {
-                  "200":
-                    {
-                      "description": "Success",
-                      "content":
-                        {
-                          "text/plain":
-                            {
-                              "schema":
-                                {
-                                  "type": "array",
-                                  "items":
-                                    {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
-                            },
-                          "application/json":
-                            {
-                              "schema":
-                                {
-                                  "type": "array",
-                                  "items":
-                                    {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
-                            },
-                          "text/json":
-                            {
-                              "schema":
-                                {
-                                  "type": "array",
-                                  "items":
-                                    {
-                                      "$ref": "#/components/schemas/CompatibilityResult"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+                        },
+                    },
+                },
+            },
         },
       "/GetProduct/{sku}":
         {
           "get":
             {
               "summary": "Get Product",
-              "operationId": "getProduct",
               "tags": ["Product"],
               "parameters":
                 [
@@ -1071,8 +804,8 @@
                     "in": "path",
                     "required": true,
                     "style": "simple",
-                    "schema": { "type": "string" }
-                  }
+                    "schema": { "type": "string" },
+                  },
                 ],
               "responses":
                 {
@@ -1084,40 +817,50 @@
                           "text/plain":
                             {
                               "schema":
-                                { "$ref": "#/components/schemas/Product" }
+                                { "$ref": "#/components/schemas/Product" },
                             },
                           "application/json":
                             {
                               "schema":
-                                { "$ref": "#/components/schemas/Product" }
+                                { "$ref": "#/components/schemas/Product" },
                             },
                           "text/json":
                             {
                               "schema":
-                                { "$ref": "#/components/schemas/Product" }
-                            }
-                        }
-                    }
-                }
-            }
+                                { "$ref": "#/components/schemas/Product" },
+                            },
+                        },
+                    },
+                },
+            },
         },
-      "/GetProducts/{skus}":
+      "/GetProductsWithResults":
         {
-          "get":
+          "post":
             {
-              "summary": "Get Products",
-              "operationId": "getProducts",
+              "summary": "Get Products With Results",
               "tags": ["Product"],
-              "parameters":
-                [
-                  {
-                    "name": "skus",
-                    "in": "path",
-                    "required": true,
-                    "style": "simple",
-                    "schema": { "type": "string" }
-                  }
-                ],
+              "requestBody":
+                {
+                  "content":
+                    {
+                      "application/json":
+                        {
+                          "schema":
+                            { "type": "array", "items": { "type": "string" } },
+                        },
+                      "text/json":
+                        {
+                          "schema":
+                            { "type": "array", "items": { "type": "string" } },
+                        },
+                      "application/*+json":
+                        {
+                          "schema":
+                            { "type": "array", "items": { "type": "string" } },
+                        },
+                    },
+                },
               "responses":
                 {
                   "200":
@@ -1129,28 +872,40 @@
                             {
                               "schema":
                                 {
-                                  "$ref": "#/components/schemas/AvailableSkusResult"
-                                }
+                                  "type": "array",
+                                  "items":
+                                    {
+                                      "$ref": "#/components/schemas/ProductResult",
+                                    },
+                                },
                             },
                           "application/json":
                             {
                               "schema":
                                 {
-                                  "$ref": "#/components/schemas/AvailableSkusResult"
-                                }
+                                  "type": "array",
+                                  "items":
+                                    {
+                                      "$ref": "#/components/schemas/ProductResult",
+                                    },
+                                },
                             },
                           "text/json":
                             {
                               "schema":
                                 {
-                                  "$ref": "#/components/schemas/AvailableSkusResult"
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+                                  "type": "array",
+                                  "items":
+                                    {
+                                      "$ref": "#/components/schemas/ProductResult",
+                                    },
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        },
     },
   "components":
     {
@@ -1161,7 +916,7 @@
               "type": "object",
               "properties":
                 { "availableSkus": { "type": "string", "nullable": true } },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "Bike":
             {
@@ -1184,9 +939,9 @@
                   "bike_Size_ID":
                     { "type": "integer", "format": "int32", "nullable": true },
                   "bike_Size": { "type": "string", "nullable": true },
-                  "year": { "type": "integer", "format": "int32" }
+                  "year": { "type": "integer", "format": "int32" },
                 },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "BikeBrand":
             {
@@ -1194,9 +949,9 @@
               "properties":
                 {
                   "bike_Brand_ID": { "type": "integer", "format": "int32" },
-                  "bike_Brand": { "type": "string", "nullable": true }
+                  "bike_Brand": { "type": "string", "nullable": true },
                 },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "BikeBrandProductCategory":
             {
@@ -1207,9 +962,9 @@
                   "bike_Brand": { "type": "string", "nullable": true },
                   "product_Category_ID":
                     { "type": "integer", "format": "int32" },
-                  "product_Category": { "type": "string", "nullable": true }
+                  "product_Category": { "type": "string", "nullable": true },
                 },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "BikeFrameSeries":
             {
@@ -1222,9 +977,9 @@
                   "model_Spec_ID": { "type": "integer", "format": "int32" },
                   "model_Spec": { "type": "string", "nullable": true },
                   "year":
-                    { "type": "integer", "format": "int32", "nullable": true }
+                    { "type": "integer", "format": "int32", "nullable": true },
                 },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "BikeModel":
             {
@@ -1236,9 +991,9 @@
                   "bike_Brand_ID": { "type": "integer", "format": "int32" },
                   "bike_Size_Group_ID":
                     { "type": "integer", "format": "int32", "nullable": true },
-                  "bike_Brand": { "type": "string", "nullable": true }
+                  "bike_Brand": { "type": "string", "nullable": true },
                 },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "BikeSize":
             {
@@ -1246,23 +1001,23 @@
               "properties":
                 {
                   "bike_Size_ID": { "type": "integer", "format": "int32" },
-                  "bike_Size": { "type": "string", "nullable": true }
+                  "bike_Size": { "type": "string", "nullable": true },
                 },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "BikeSpec":
             {
               "type": "object",
               "properties":
                 { "bike_Spec": { "type": "string", "nullable": true } },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "BikeYear":
             {
               "type": "object",
               "properties":
                 { "year": { "type": "integer", "format": "int32" } },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "CompatibilityResult":
             {
@@ -1281,10 +1036,10 @@
                       "type": "string",
                       "format": "uuid",
                       "nullable": true,
-                      "readOnly": true
-                    }
+                      "readOnly": true,
+                    },
                 },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "CompatibleSkusResult":
             {
@@ -1292,9 +1047,27 @@
               "properties":
                 {
                   "compatibleSkus": { "type": "string", "nullable": true },
-                  "compatibilityMessage": { "type": "string", "nullable": true }
+                  "compatibilityMessage":
+                    { "type": "string", "nullable": true },
                 },
-              "additionalProperties": false
+              "additionalProperties": false,
+            },
+          "FoundProduct":
+            {
+              "type": "object",
+              "properties":
+                {
+                  "product_ID": { "type": "integer", "format": "int32" },
+                  "name": { "type": "string", "nullable": true },
+                  "display_Name": { "type": "string", "nullable": true },
+                  "product_Category_ID":
+                    { "type": "integer", "format": "int32" },
+                  "skU_EAN": { "type": "string", "nullable": true },
+                  "skU_UPC": { "type": "string", "nullable": true },
+                  "manufacturer_Part_Number":
+                    { "type": "string", "nullable": true },
+                },
+              "additionalProperties": false,
             },
           "Log":
             {
@@ -1311,10 +1084,10 @@
                     {
                       "type": "string",
                       "format": "date-time",
-                      "nullable": true
-                    }
+                      "nullable": true,
+                    },
                 },
-              "additionalProperties": false
+              "additionalProperties": false,
             },
           "Product":
             {
@@ -1326,10 +1099,27 @@
                   "product_Category_Name":
                     { "type": "string", "nullable": true },
                   "sku": { "type": "string", "nullable": true },
-                  "name": { "type": "string", "nullable": true }
+                  "name": { "type": "string", "nullable": true },
                 },
-              "additionalProperties": false
-            }
-        }
-    }
+              "additionalProperties": false,
+            },
+          "ProductResult":
+            {
+              "type": "object",
+              "properties":
+                {
+                  "sku": { "type": "string", "nullable": true },
+                  "is_Supported": { "type": "boolean" },
+                  "is_Blacklisted": { "type": "boolean" },
+                  "display_Name": { "type": "string", "nullable": true },
+                  "product_Category_ID":
+                    { "type": "integer", "format": "int32", "nullable": true },
+                  "product_Category_Name":
+                    { "type": "string", "nullable": true },
+                  "sku_Type": { "type": "string", "nullable": true },
+                },
+              "additionalProperties": false,
+            },
+        },
+    },
 }

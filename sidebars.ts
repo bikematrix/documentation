@@ -90,6 +90,11 @@ const sidebars: SidebarsConfig = {
       ],
     },
     {
+      type: "doc",
+      id: "html-events",
+      label: "HTML Events",
+    },
+    {
       type: "category",
       label: "Shopify",
       items: [

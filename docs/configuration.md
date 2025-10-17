@@ -3,11 +3,11 @@ import TabItem from '@theme/TabItem';
 
 # SDK Configuration
 
-This details out all the SDK / Web Component JSON configuration, all stored under the object `data-bikematrix-config`.
+This provides details of the SDK / Web Component JSON configuration required. It is  all stored under the object `data-bikematrix-config`.
 
 :::info
 
-The SDK web components were originally designed for Shopify. This leads to much of the configuration seeming convoluted.
+The SDK web components are built to support Shopify and other e-commerce platforms and websites. There is some configuration that is specific to Shopify to allow us to overcome limitations of that platform.
 
 Our goal for this documentation is to simplify and explain the configuration as much as possible.
 
@@ -67,7 +67,7 @@ This is an example of the **site-wide core configuration** for the SDK:
 <script type="application/json" data-bikematrix-config>
   {
     "apiUrl": "https://api.bikematrix.io/proxy/v3/",
-    "apiToken": "sitename|012345678912345|abcdefghijklmnopqrstuvwxyz=",
+    "apiToken": "appname|012345678912345|abcdefghijklmnopqrstuvwxyz=",
     "categories": [
       {
         "title": "Brake Pads",
@@ -273,10 +273,9 @@ These options are to be set for the entire site:
 | `apiToken`           | string                                                        | Maybe    | An HMAC signature for secure API request. Detailed further at ['apiKey' and 'apiToken' explained](#apikey-and-apitoken-explained). | `"sitename\| 012345678912345\|abcdefghijklmnopqrstuvwxyz="`                              |
 | `categories`         | Array\<\{title: string, text_id: string, collection: string}> | Yes      | List of product categories. Detailed further at ['categories' and 'collections' explained](#categories-and-collections-explained). | `[{"title": "Brake Pads", "text_id": "category_brakepads", "collection": "Brake pads"}]` |
 | `collections`        | Array\<\{title: string, handle: string, url: string}>         | Yes      | List of collections. Detailed further at ['categories' and 'collections' explained](#categories-and-collections-explained).        | `[{"title": "Brake pads", "handle": "brake-pads", "url": "/collections/brake-pads"}]`    |
-| `bikeSelectorBrands` | string                                                        | No       | Comma separated list of bike brands to include. Empty string includes all bike brands. Default value is an empty string.           | `"Trek,Cube"`                                                                            |
+| `bikeSelectorBrands` | string                                                        | No       | Comma separated list of bike brand IDs to include. Empty string includes all bike brands. Default value is an empty string.           | `""`                                                                            |
 | `logLevel`           | "none" \| "verbose"                                           | No       | Logging verbosity level. Default is "none".                                                                                        | `"verbose"`                                                                              |
-| `virtualWorkshop`    | boolean                                                       | No       | Whether to enable virtualWorkshop. True by default.                                                                                | `true`                                                                                   |
-| `pageType`           | "collection"                                                  | Yes      | Always set this to "collection". (This should only be set to other values when used by Shopify)                                    | `"collection"`                                                                           |
+| `pageType`           | "collection" \| "product" \| "index" \| "search"                                                  | Yes      |                                     | `"collection"`                                                                           |
 
 #### 'apiKey' and 'apiToken' explained
 
@@ -337,6 +336,7 @@ The `categories` array uses objects of the following structure:
     ##### Bike Matrix Categories
 
     The following are the available options for the categories list. The values for `title` and `text_id` must be copied exactly.
+    The collection value can contain a comma separated list of collection titles. This is primarily used for Shopify integration where a store has multiple markets. The first available collection is used in the Bike Selector to link to the collection for that category.
 
 ```javascript
     "categories": [

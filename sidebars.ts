@@ -27,7 +27,6 @@ const sidebars: SidebarsConfig = {
       id: "quick-start",
       label: "Quick Start - SDK",
     },
-    { type: "doc", id: "installation", label: "Installation" },
     {
       type: "doc",
       id: "configuration",

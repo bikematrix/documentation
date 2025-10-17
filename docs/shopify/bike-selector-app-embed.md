@@ -21,7 +21,7 @@ If the Home Page Collection name has changed, you can enter it here. If not, lea
 ![Image of the product picker when a bike is selected](/img/shopify/Bike-Selector-Browse-Compatibility.png)
 
 Enter the name of the Collection, exactly as it is shown in the Collections box above (case does not matter). The Collection you enter here must be one of the ones selected in the Collections box above to function correctly.
-You can leave one or more of the categories empty. They will not be visible when a user selects 'Browse Compatibility' in the Bike Selector.
+You can leave one or more of the categories empty. They will not be visible when a user selects 'Browse Compatibility' in the Bike Selector. For Shopify stores that have multiple markets, you can enter a comma separated list of collection names. The first available collection will be used for that category.
 
 ![Image of where the user can enter the collection name for each collection](/img/shopify/Bike-Selector-Compatible-Collections.png)
 

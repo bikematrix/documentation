@@ -46,6 +46,8 @@ This is a token which provides the user time limited access to the Bike Matrix A
 
 This is typically used on e-commerce websites.
 
+We will provide you with the necessary details to generate the API Token as part of onboarding prior to going live.
+
 ### API Token Details
 
 The **API Token** has the format of `appId|timestamp|signature`.

@@ -10,7 +10,7 @@ Bike Matrix emits the following events which can be listened to:
 | BikeChanging                         | yes     | yes      | no         | Just before bike has changed.                                 |
 | BmToggleModal                        | yes     | yes      | no         | Toggle the Bike Selector visibility.                          |
 
-The following sections go into more detail for **some** events on how they can be used:
+The following section provides additional detail for **some** events:
 
 ## 'BikeChanged' Detailed
 

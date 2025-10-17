@@ -267,3 +267,15 @@ input[type="reset"] {
   cursor: pointer;
   outline: inherit;
 }
+
+.image-wrapper {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.image-with-border {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 5px;
+  max-width: 100%;
+}

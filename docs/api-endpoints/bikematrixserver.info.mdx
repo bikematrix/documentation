@@ -1,6 +1,6 @@
 ---
-id: bike-api
-title: "Walkthrough"
+id: bikematrixserver
+title: "BikeMatrixServer"
 description: ""
 sidebar_label: Walkthrough
 sidebar_position: 0
@@ -16,13 +16,13 @@ import Export from "@theme/ApiExplorer/Export";
 
 <span
   className={"theme-doc-version-badge badge badge--secondary"}
-  children={"Version: 2.0"}
+  children={"Version: 1.0"}
 ></span>
 
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Walkthrough"}
+  children={"BikeMatrixServer"}
 ></Heading>
 
 ## Get a Bike
@@ -43,7 +43,7 @@ Ie. passing a **model_Family_ID** of 87 will return a Trek, Fuel Ex.
 
 ### Bike Specs
 
-With a given **model_Spec_ID** and an optional **year**, you can get a list of the available Bike Specs by calling **GetBikeSpecSpecs** passing in the **model_Spec_ID ** and optional **year**. This will return the available Bike Specs.
+With a given **model_Spec_ID** and an optional **year**, you can get a list of the available Bike Specs by calling **GetBikeSpecSpecs** passing in the **model_Spec_ID** and optional **year**. This will return the available Bike Specs.
 Ie. **model_Spec_ID** of 237 and year of 2022 for Trek, Fuel EX 9.7 (and Trek, Fuel EX 9.5, Trek, Fuel EX 9.6, Trek, Fuel EX 9.8 and Trek, Fuel EX 9.9).
 
 ### Years
@@ -81,10 +81,11 @@ Ie. passing in a **bike_Brand_ID** of 6 (Trek) will return Brake Pads, Brake Rot
 You can check if a product is in the Bike Matrix Database by calling **GetProduct** and passing in the **SKU** (EAN, UPC or Original Manufacturers Part Number).
 Ie. passing a **sku** of 4550170639464 will return Brake Pad Shimano D02S-MX D Type Disc Pads Sintered Metallic Compound.
 
-### Get Products
+### Get Products With Results
 
-You can check if a number of products are in the Bike Matrix Database by calling **GetProducts** and passing in a comma separated list of **SKUs** (EAN, UPC or Original Manufacturers Part Number). The result is a comma separated list of SKUs that **do** exist in the Bike Matrix database.
-Ie. passing **skus** of '4550170639464, 4550170639465, 4550170327361' will return '4550170639464, 4550170327361' because these are SKUs that exist in the Bike Matrix database.
+You can check if a number of products are in the Bike Matrix Database by calling **GetProductsWithResults** and passing in an array of **SKUs** (EAN, UPC or Original Manufacturers Part Number) added to the body.
+
+The result is an array, where for each SKU passed to the API, information on if it is supported and the product category will be provided.
 
 ## Check Compatibility
 
@@ -92,10 +93,6 @@ Ie. passing **skus** of '4550170639464, 4550170639465, 4550170327361' will retur
 
 With a **bike_Key** and a **sku**, you can call **Compatibility_CheckSku** to determine if the specific part (by SKU EAN, UPC or Manufacturer Part Number) is compatible with the selected Bike.
 Ie. passing **bike_Key** '8a113328-a512-4b14-8f31-711259d9c4c8' and **sku** of 4550170639464 will return a Compatibility Result of 'Compatible with Front and Rear Brake'.
-
-### Check Batch SKU Compatibility
-
-With a **bike_Key** it is possible to send batches of SKUs by calling **Compatibility_CheckSkus** for bulk compatibility assessment. This is currently limited to batches of 50 SKUs and will return the list of compatible SKUs (comma delimited) from those that were passed in.
 
 ### Check Batch SKU Compatibility With Results
 

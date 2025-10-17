@@ -8,9 +8,11 @@ export const Links = () => {
     <div className={s.wrapper}>
       <div className={s.internalPages}>
         <LinkSection title="Documentation">
-          <MenuItem title={"Installation"} link="/docs/installation" />
-          <MenuItem title={"Getting Started"} link="/docs/getting-started" />
+          <MenuItem title={"Overview"} link="/docs/overview" />
+          <MenuItem title={"Quick Start - SDK"} link="/docs/quick-start" />
           <MenuItem title={"Configuration"} link="/docs/configuration" />
+          <MenuItem title={"Security"} link="/docs/security" />
+          <MenuItem title={"Multilingual Support"} link="/docs/multilingual" />
           <MenuItem
             title={"Web Components"}
             link="/docs/web-components/bike-selector"

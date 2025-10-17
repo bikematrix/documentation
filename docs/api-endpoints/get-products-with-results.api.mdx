@@ -1,0 +1,71 @@
+---
+id: get-products-with-results
+title: "Get Products With Results"
+description: "Get Products With Results"
+sidebar_label: "Get Products With Results"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVsFu2zAM/ZWCx01bs+7m29INxQ7bgqbDDkYQMDZjq5ElVaKyGIb/fZCcrO6Kbul66aE+2Ab9KD7yUZQ7YKw8ZDnMnClDwbAQ4OgmkOepKVvIOiiMZtIcX9FaJQtkafTptTc62nxRU4PxjVtLkAE6hy0IkEyNH9k9O6kr6PteANOOn7bCmMqr109YKi7myFujPSXE2WQSHyX5wkkbA0AG81AU5D2IcTlSFlahfFxss7qmgkGAdcaSYznE9Ztwn6AAHZTClSLI2AXqBUi/nAdrjWMqRw4rYxShhgExVVhslPQPYkrprcJ2+RUbOiqsHRpkeY5MlXHt8vPHkZ/UTBU5ELA2rkEeTO/PjlrpaA5+E5ZXCfRPcGyRspRRPlSzUaHXqDwJYMkRe+j7S/JB8f3WenRjvYj7vMX9v8nzoupzVjUJe3deXxCf7HH+5Ifk+mSAxwneENemhAys8UlT5BoyOL0gPrhEj1uH2C6Xt4fipx02NjLJD6ksBEi9NinHPcmp3NAXZCd3c3LbVOYtOT+we/d2EgWN8RtMnahTPf9K+06Cv4s5OoN6AcGp+G3IKIcHMloIqGPqWQ5dt0JP353q+2i+CeRayPKFgC06OYiTL3oBNWFJDrK8gw21kMH5cA6+SeJGuAppB/05PHtx8PhQFGR5hB1zX4x0mX2bX4GA1f4HpDFlRDv8CSLdMwABJlUibcNk60ChrgJWETtEjtcvE4wcKw==
+sidebar_class_name: "post api-method"
+info_path: docs/api-endpoints/bikematrixserver
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Products With Results"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/GetProductsWithResults"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Products With Results
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"array","items":{"type":"string"}}},"text/json":{"schema":{"type":"array","items":{"type":"string"}}},"application/*+json":{"schema":{"type":"array","items":{"type":"string"}}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"array","items":{"type":"object","properties":{"sku":{"type":"string","nullable":true},"is_Supported":{"type":"boolean"},"is_Blacklisted":{"type":"boolean"},"display_Name":{"type":"string","nullable":true},"product_Category_ID":{"type":"integer","format":"int32","nullable":true},"product_Category_Name":{"type":"string","nullable":true},"sku_Type":{"type":"string","nullable":true}},"additionalProperties":false,"title":"ProductResult"}}},"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"sku":{"type":"string","nullable":true},"is_Supported":{"type":"boolean"},"is_Blacklisted":{"type":"boolean"},"display_Name":{"type":"string","nullable":true},"product_Category_ID":{"type":"integer","format":"int32","nullable":true},"product_Category_Name":{"type":"string","nullable":true},"sku_Type":{"type":"string","nullable":true}},"additionalProperties":false,"title":"ProductResult"}}},"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"sku":{"type":"string","nullable":true},"is_Supported":{"type":"boolean"},"is_Blacklisted":{"type":"boolean"},"display_Name":{"type":"string","nullable":true},"product_Category_ID":{"type":"integer","format":"int32","nullable":true},"product_Category_Name":{"type":"string","nullable":true},"sku_Type":{"type":"string","nullable":true}},"additionalProperties":false,"title":"ProductResult"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

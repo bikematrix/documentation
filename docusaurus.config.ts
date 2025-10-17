@@ -29,7 +29,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"]
+    locales: ["en"],
   },
 
   presets: [
@@ -38,15 +38,15 @@ const config: Config = {
       {
         docs: {
           sidebarPath: "./sidebars.ts",
-          docItemComponent: "@theme/ApiItem"
+          docItemComponent: "@theme/ApiItem",
         },
 
         blog: false,
         theme: {
-          customCss: "./src/css/custom.css"
-        }
-      } satisfies Preset.Options
-    ]
+          customCss: "./src/css/custom.css",
+        },
+      } satisfies Preset.Options,
+    ],
   ],
 
   plugins: [
@@ -60,12 +60,12 @@ const config: Config = {
             specPath: "api/swagger.yaml",
             outputDir: "docs/api-endpoints",
             sidebarOptions: {
-              groupPathsBy: "tag"
-            }
-          } satisfies OpenApiPlugin.Options
-        }
-      }
-    ]
+              groupPathsBy: "tag",
+            },
+          } satisfies OpenApiPlugin.Options,
+        },
+      },
+    ],
   ],
   themes: ["docusaurus-theme-openapi-docs"],
 
@@ -76,39 +76,51 @@ const config: Config = {
       logo: {
         alt: "Bike Matrix Logo",
         src: "img/logo.png",
-        srcDark: "img/white-logo.png"
+        srcDark: "img/white-logo.png",
       },
       items: [
         {
           type: "docSidebar",
           sidebarId: "documentationSidebar",
           position: "right",
-          label: "Documentation"
+          label: "Documentation",
         },
         {
           label: "In Action",
           position: "right",
-          href: "https://examples.bikematrix.io"
+          href: "https://examples.bikematrix.io",
+        },
+        {
+          label: "Contact Us",
+          position: "right",
+          href: "https://www.bikematrix.io/contact",
         },
         {
           href: "https://github.com/bikematrix/web-components",
           position: "right",
           className: "header-github-link",
-          "aria-label": "GitHub repository"
-        }
-      ]
+          "aria-label": "GitHub repository",
+        },
+      ],
     },
     footer: {
       style: "dark",
       links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} Bike Matrix, Inc.`
+      copyright: `Copyright © ${new Date().getFullYear()} Bike Matrix, Inc.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-      additionalLanguages: ['php', 'csharp', 'python', 'javascript', 'typescript', 'powershell']
-    }
-  } satisfies Preset.ThemeConfig
+      additionalLanguages: [
+        "php",
+        "csharp",
+        "python",
+        "javascript",
+        "typescript",
+        "powershell",
+      ],
+    },
+  } satisfies Preset.ThemeConfig,
 };
 
 export default config;

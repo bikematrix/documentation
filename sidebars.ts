@@ -1,4 +1,5 @@
 import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
+import apisidebar from "./docs/api-endpoints/api-sidebar";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -20,33 +21,78 @@ const sidebars: SidebarsConfig = {
 
   documentationSidebar: [
     "intro",
-    { type: "doc", id: "installation", label: "Installation" },
-    { type: "doc", id: "getting-started", label: "Getting Started" },
+    { type: "doc", id: "overview", label: "Overview" },
+    {
+      type: "doc",
+      id: "quick-start",
+      label: "Quick Start - SDK",
+    },
     {
       type: "doc",
       id: "configuration",
-      label: "Configuration"
+      label: "Configuration",
     },
     {
       type: "doc",
       id: "security",
-      label: "Security"
+      label: "Security",
     },
     {
       type: "doc",
       id: "multilingual",
-      label: "Multilingual Support"
+      label: "Multilingual Support",
     },
     {
       type: "category",
       label: "Web Components",
       items: [
-        "web-components/bike-selector",
-        "web-components/bike-selector-banner",
-        "web-components/product-result",
-        "web-components/collection-result",
-        "web-components/compatible-list"
-      ]
+        {
+          type: "doc",
+          id: "web-components/bike-selector",
+          label: "Bike Selector",
+        },
+        {
+          type: "doc",
+          id: "web-components/bikon",
+          label: "Bikon",
+        },
+        {
+          type: "doc",
+          id: "web-components/bike-selector-banner",
+          label: "Bike Selector Banner",
+        },
+        {
+          type: "doc",
+          id: "web-components/compatibility-label",
+          label: "Compatibility Label",
+        },
+        {
+          type: "doc",
+          id: "web-components/collection-result",
+          label: "Collection Result",
+        },
+        {
+          type: "doc",
+          id: "web-components/compatible-list",
+          label: "Compatible List",
+        },
+        {
+          type: "doc",
+          id: "web-components/product-result",
+          label: "Product Result",
+        },
+
+        {
+          type: "doc",
+          id: "web-components/variant-selector",
+          label: "Variant Selector",
+        },
+      ],
+    },
+    {
+      type: "doc",
+      id: "html-events",
+      label: "HTML Events",
     },
     {
       type: "category",
@@ -58,38 +104,20 @@ const sidebars: SidebarsConfig = {
         "shopify/product-check-panel",
         "shopify/bike-compatibility-list-panel",
         "shopify/product-collection-compatibility-result",
-        "shopify/configure-app-proxy"
-      ]
+        "shopify/configure-app-proxy",
+      ],
     },
     {
       type: "doc",
       id: "framework-intergration",
-      label: "Framework Intergration"
+      label: "Framework Intergration",
     },
     {
       type: "category",
       label: "API",
-      items: [
-        "api-endpoints/bike-api",
-        "api-endpoints/get-bike-brands",
-        "api-endpoints/get-bike-models",
-        "api-endpoints/get-bike-frame-series",
-        "api-endpoints/get-bike-spec-specs",
-        "api-endpoints/get-bike-spec-years",
-        "api-endpoints/get-bike-spec-sizes",
-        "api-endpoints/get-bike-spec-bikes",
-        "api-endpoints/get-bike-brand-product-categories",
-        "api-endpoints/compatibility-check-sku",
-        "api-endpoints/compatibility-check-sku-language",
-        "api-endpoints/compatibility-check-skus",
-        "api-endpoints/compatibility-check-skus-language",
-        "api-endpoints/compatibility-check-skus-with-results",
-        "api-endpoints/compatibility-check-skus-with-results-language",
-        "api-endpoints/get-product",
-        "api-endpoints/get-products"
-      ]
-    }
-  ]
+      items: [apisidebar],
+    },
+  ],
 };
 
 export default sidebars;

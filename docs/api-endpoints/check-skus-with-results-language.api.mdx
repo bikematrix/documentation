@@ -1,0 +1,159 @@
+---
+id: check-skus-with-results-language
+title: "Check SKUs With Results - Language"
+description: "Check SKUs With Results - Language"
+sidebar_label: "Check SKUs With Results - Language"
+hide_title: true
+hide_table_of_contents: true
+api: eJztVk1P20AQ/SvRnPqxNLRH3wqqegAEIqAeogiN7Um8ZL1rdtcBy/J/r2btOA6JqlCqHhC5xN6dffP11vNq8LhwEE3h1OQFehlLJX0FMwEFWszJk+XtGjTmBBHEckl3S6pAgNQQQYE+AwGWHkppKYXI25IEOF8pNncyLxSBAJdklCNENfiqCDveSr2AphE9tkK9KHFB/wpbQEpzLJWHCEhD08xaMHL+xKQVH0iM9qQ9P2JRKJmgl0aP753RvLaDjNZiyN1T7vZl0wjw9ORfhzAM5dPnV0AxmCVXGO0oWHw7Pua/lFxiZcEOIIJJmSTkHIhhOUIWhUL5Mt8mvqfEg4DCmoKsl61fps0ZVft6pEulMOaOcnsbAW5ZHmSXdIzlpd48NkYR6j/ZB4ZfkHNMtUMcPaLVvHWQl874JfhbgZ2bxc9SpvsOzo3NkclcssFzIO40ppdaVR0wEylNJTcZ1dWgHXNUjgR46cM92rr51+T4wuzQ8MUkfCfC2yHC333R3hnwVhgQSLA9M04zSpajydmtG/2SPhu1xm50NDrfTPGcfGZSnuTGBSLwQI9gvOXmLkBNlqVjoA5nXK+FRjOu17qgAQHMwuvNDP/xhEEERNN1bWYsHuYmFK3L6kQu6QK9lU8TsiuyIGBF1rWJfP1yDI0IEeYYCN6pkYMy3CpK36bB7GwElFbxXpv8M6G1N3kQEA10VtTropmAjCsZTaGuY3R0a1XT8PJDSbaCaDoTsEIrWypMa0il4+e07/SzgPuBDx+uO5n1cQRifyLr+645qhWqkt9AAIc5UIas6P6j3746zawRkBGmZEPu7fZp6+nohkE2x3dmG0fdnvieJFT4ge0wmtmA1VeXkxsQEHdaMjcpW1t8ZNGKj22QJuQcvnxhrd4EHEHrmX+/ATX1Bjs=
+sidebar_class_name: "post api-method"
+info_path: docs/api-endpoints/bikematrixserver
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Check SKUs With Results - Language"}
+></Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/Compatibility_CheckSkusWithResults/{bike_key}/{language}"}
+  context={"endpoint"}
+></MethodEndpoint>
+
+Check SKUs With Results - Language
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+></Heading>
+
+<ParamsDetails
+  parameters={[
+    {
+      name: "bike_key",
+      in: "path",
+      required: true,
+      style: "simple",
+      schema: { type: "string" },
+    },
+    {
+      name: "language",
+      in: "path",
+      required: true,
+      style: "simple",
+      schema: { type: "string", default: "en" },
+    },
+  ]}
+></ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{
+    content: {
+      "application/json": {
+        schema: { type: "array", items: { type: "string" } },
+      },
+      "text/json": { schema: { type: "array", items: { type: "string" } } },
+      "application/*+json": {
+        schema: { type: "array", items: { type: "string" } },
+      },
+    },
+  }}
+></RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{
+    "200": {
+      description: "Success",
+      content: {
+        "text/plain": {
+          schema: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                bikeKey: { type: "string", nullable: true },
+                sku: { type: "string", nullable: true },
+                compatible: { type: "boolean", nullable: true },
+                compatibilityMessage: { type: "string", nullable: true },
+                warning: { type: "boolean", nullable: true },
+                warningMessage: { type: "string", nullable: true },
+                compatibilityLogGuid: {
+                  type: "string",
+                  format: "uuid",
+                  nullable: true,
+                  readOnly: true,
+                },
+              },
+              additionalProperties: false,
+              title: "CompatibilityResult",
+            },
+          },
+        },
+        "application/json": {
+          schema: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                bikeKey: { type: "string", nullable: true },
+                sku: { type: "string", nullable: true },
+                compatible: { type: "boolean", nullable: true },
+                compatibilityMessage: { type: "string", nullable: true },
+                warning: { type: "boolean", nullable: true },
+                warningMessage: { type: "string", nullable: true },
+                compatibilityLogGuid: {
+                  type: "string",
+                  format: "uuid",
+                  nullable: true,
+                  readOnly: true,
+                },
+              },
+              additionalProperties: false,
+              title: "CompatibilityResult",
+            },
+          },
+        },
+        "text/json": {
+          schema: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                bikeKey: { type: "string", nullable: true },
+                sku: { type: "string", nullable: true },
+                compatible: { type: "boolean", nullable: true },
+                compatibilityMessage: { type: "string", nullable: true },
+                warning: { type: "boolean", nullable: true },
+                warningMessage: { type: "string", nullable: true },
+                compatibilityLogGuid: {
+                  type: "string",
+                  format: "uuid",
+                  nullable: true,
+                  readOnly: true,
+                },
+              },
+              additionalProperties: false,
+              title: "CompatibilityResult",
+            },
+          },
+        },
+      },
+    },
+  }}
+></StatusCodes>

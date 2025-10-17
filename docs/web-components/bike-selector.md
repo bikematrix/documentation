@@ -1,34 +1,39 @@
 # Bike Selector
 
-The core component for selecting a bike.
+<div className="image-wrapper">
+  <img
+    src="/img/web-components/bike-selector.png"
+    alt="Bike Selector Component"
+    className="image-with-border"
+  />
+</div>
 
-#### Basic Button
+The core component required for all SDK implementations.
+
+This is an overlay which allows for selecting bikes, modifying bikes in the workshop and choosing product categories to find compatibility with.
+
+## Component Details
+
+The bike selector component needs to be added somewhere in your HTML. It has no attributes.
+
+```html
+<bikematrix-bikeselector></bikematrix-bikeselector>
+```
+
+A button will then be needed to open the bike selector.
 
 ```html
 <button id="bm_selectBikeButton">Select Bike</button>
 <bikematrix-bikeselector></bikematrix-bikeselector>
 ```
 
-#### Button with Bike Icon
+We also provide [Bikon](/docs/web-components/bikon) and [Bike Banner](/docs/web-components/bike-selector-banner) web components to open the bike selector.
 
-```html
-<bikematrix-bikon data-color='#000'></bikematrix-bikon>
-<bikematrix-bikeselector></bikematrix-bikeselector>
-```
+## Configuration
 
-[Configuration options](/docs/configuration#bike-selector-configuration)
+This component can use some core configuration. A detailed overview of configuration can be found in the [Configuration section](/docs/configuration).
 
-#### Change Bike Event
-
-A javascript 'BikeChanged' event will fire when the user selects or deselects a bike. You can listen for this event, and check the window.BikeMatrix.getCurrentBike() to see if it has a value or not (to determine selected/deselected). If there is a value, you can also use the 'name' parameter to get the Bike Name, and 'key' to get the Bike Matrix ID.
-
-```javascript
-document.addEventListener('BikeChanged', () => {
-  const bike = window.BikeMatrix?.getCurrentBike();
-  console.log('[BikeChanged] new bike:', bike);
-  if (bike) {
-    console.log('[BikeChanged] Bike Matrix ID:', bike.key);
-    console.log('[BikeChanged] Bike Name:', bike.name);
-  }
-});
-```
+| Option               | Type    | Required | Description                                                                                                              | Example       |
+| -------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| `bikeSelectorBrands` | string  | No       | Comma separated list of bike brands to include. Empty string includes all bike brands. Default value is an empty string. | `"Trek,Cube"` |
+| `virtualWorkshop`    | boolean | No       | Whether to enable virtualWorkshop. True by default.                                                                      | `true`        |

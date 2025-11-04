@@ -61,6 +61,10 @@ Ie. **model_Spec_ID** of 237**bike_Spec** of 'Fuel EX 9.7', **year** of 2022 for
 And finally, with a given **model_Spec_ID**, **bike_Spec** (optional), **year** (optional) and **bike_Size_ID** (optional), you can get one or more available Bikes by calling **GetBikeSpecBikes**. This will return one or more of the available Bikes.
 Ie. passing **model_Spec_ID** of 237, **bike_Spec** of 'Fuel EX 9.7', **year** of 2022 and **bike_Size_ID** of 29 will return a 2022 Trek Fuel Ex 9.7 18.5" with a **Bike_Key** of '8a113328-a512-4b14-8f31-711259d9c4c8'.
 
+### Bikes By Data Reference
+
+Some Bikes have a Data Reference field (for a specific bike Brand, Model, Spec and Year). You can get all sizes for a specific Data Reference by calling **GetBikesByDataReference** passing in the specific **dataReference** parameter. By passing a Data Reference of 'trek-fuel-ex-97-2022' you return a list of bike sizes for the 'Trek 2022 Fuel EX 9.7'.
+
 ### Bike Images
 
 For each bike there is a **bike_Thumbnail** and there may be additional **bike_Images**. The bike_Images field is a comma separated list of additional images. Each available colour is represented for a given bike to assist in the visual identification of the bike selection process.

@@ -1,0 +1,71 @@
+---
+id: get-bikes-by-data-reference
+title: "Get Bikes By Data Reference"
+description: "Get Bikes By Data Reference"
+sidebar_label: "Get Bikes By Data Reference"
+hide_title: true
+hide_table_of_contents: true
+api: eJztV8Fu2zAM/ZWAZ2HJuptvC7IFxbBhWLpdgiBgbCZWI0uaRAf1DP/7QLlrHQQr3FsPORmW+fQeKTyZbIHxECFbw1wfCTYKPAasiCnIagsWK4IMCmT8QXsKZHMCBdpCBr9rCg0oiNwYCdq7UMlrXlKFkLXAjZf1yEHbA3TdRkGg6J2NFOX7zWwmj4JiHrRn7WTXVZ3nFCMoyJ1lspx2ogeeeoPC214yYAgoSjRTFQfrbndPOYMCH5ynwLrn3ekjbb9Qc6lRpSSQIYO61gV0qg/+lspwGW1rY3An2XOo6V/0LwwaH4WPAjyXdjTkrqyrnUVtxkNuKzxQHB8/D2iL7e1igNCW6UBhWCdt+cMNnGFGUVSuILP9jJU2zXiSIeoVNCtP+WtJBDOKIo4NTBVa6T80UspLW4wibAjDqJw7BVgUWiyI5vvALHs0kRSw5mTxdEt0Kdx7o3MUxPQ+uqsvr768+vIN+DL9Ka+GvBryasi3YMjkyfMGd0k8kc9xMm8mC2ScDDvrirh0BWRwoORH5BIymC6JE2beLC5a8b1L0gfMX5GDflhROKUkThRiz/3+3UzOzbvIFaYr4rHBf1nUWQJPVRo05Z2COiSH9YLX8D/BGwWliywhbbvDSD+D6TpZ7scJGToKHeV0iqeqHuUKuhhCTmhq0QEyWJzkKklHut50CkrCgkLarQd/zHPyPEAN1W8GdV9+uoOu+wsn2Hz7
+sidebar_class_name: "get api-method"
+info_path: docs/api-endpoints/bikematrixserver
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get Bikes By Data Reference"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/GetBikesByDataReference"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get Bikes By Data Reference
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"dataReference","in":"query","style":"form","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Success","content":{"text/plain":{"schema":{"type":"array","items":{"type":"object","properties":{"bike_Key":{"type":"string","format":"uuid"},"bike_Name":{"type":"string","nullable":true},"bike_Variant":{"type":"string","nullable":true},"bike_Reference":{"type":"string","nullable":true},"bike_Thumbnail":{"type":"string","nullable":true},"bike_Images":{"type":"string","nullable":true},"bike_Brand_ID":{"type":"integer","format":"int32"},"bike_Brand":{"type":"string","nullable":true},"model_Family_ID":{"type":"integer","format":"int32"},"model_Family":{"type":"string","nullable":true},"model_Spec_ID":{"type":"integer","format":"int32"},"model_Spec":{"type":"string","nullable":true},"spec":{"type":"string","nullable":true},"bike_Size_ID":{"type":"integer","format":"int32","nullable":true},"bike_Size":{"type":"string","nullable":true},"year":{"type":"integer","format":"int32"}},"additionalProperties":false,"title":"Bike"}}},"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"bike_Key":{"type":"string","format":"uuid"},"bike_Name":{"type":"string","nullable":true},"bike_Variant":{"type":"string","nullable":true},"bike_Reference":{"type":"string","nullable":true},"bike_Thumbnail":{"type":"string","nullable":true},"bike_Images":{"type":"string","nullable":true},"bike_Brand_ID":{"type":"integer","format":"int32"},"bike_Brand":{"type":"string","nullable":true},"model_Family_ID":{"type":"integer","format":"int32"},"model_Family":{"type":"string","nullable":true},"model_Spec_ID":{"type":"integer","format":"int32"},"model_Spec":{"type":"string","nullable":true},"spec":{"type":"string","nullable":true},"bike_Size_ID":{"type":"integer","format":"int32","nullable":true},"bike_Size":{"type":"string","nullable":true},"year":{"type":"integer","format":"int32"}},"additionalProperties":false,"title":"Bike"}}},"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"bike_Key":{"type":"string","format":"uuid"},"bike_Name":{"type":"string","nullable":true},"bike_Variant":{"type":"string","nullable":true},"bike_Reference":{"type":"string","nullable":true},"bike_Thumbnail":{"type":"string","nullable":true},"bike_Images":{"type":"string","nullable":true},"bike_Brand_ID":{"type":"integer","format":"int32"},"bike_Brand":{"type":"string","nullable":true},"model_Family_ID":{"type":"integer","format":"int32"},"model_Family":{"type":"string","nullable":true},"model_Spec_ID":{"type":"integer","format":"int32"},"model_Spec":{"type":"string","nullable":true},"spec":{"type":"string","nullable":true},"bike_Size_ID":{"type":"integer","format":"int32","nullable":true},"bike_Size":{"type":"string","nullable":true},"year":{"type":"integer","format":"int32"}},"additionalProperties":false,"title":"Bike"}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

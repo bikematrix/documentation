@@ -54,6 +54,12 @@ const apisidebar: SidebarConfig = [
       },
       {
         type: "doc",
+        id: "api-endpoints/get-bikes-by-data-reference",
+        label: "Retrieve bikes by data reference",
+        className: "api-method get",
+      },
+      {
+        type: "doc",
         id: "api-endpoints/get-bike-brand-product-categories",
         label: "Retrieve bike's product categories",
         className: "api-method get",

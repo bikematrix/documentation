@@ -69,7 +69,7 @@ This product data is set in `products` variable in the [configuration](#configur
 
 ## Configuration
 
-A more detailed overview of configuration can be found in the [Configuration section](/docs/configuration).
+A more detailed overview of configuration can be found in the [Configuration section](/docs/sdk-integration/configuration.md).
 
 These options are to be set on a per web page basis:
 

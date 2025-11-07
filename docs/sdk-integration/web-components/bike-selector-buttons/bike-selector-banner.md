@@ -8,7 +8,7 @@
   />
 </div>
 
-A page banner button for opening the [Bike Selector](/docs/web-components/bike-selector).
+A page banner button for opening the [Bike Selector](/docs/sdk-integration/web-components/bike-selector.md).
 
 This is designed to be used at the top of a web page.
 

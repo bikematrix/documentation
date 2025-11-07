@@ -77,7 +77,7 @@ Now for each variant there are 4 bits of data to provide in the following order:
 
 ## Configuration
 
-A more detailed overview of configuration can be found in the [Configuration section](/docs/configuration).
+A more detailed overview of configuration can be found in the [Configuration section](/docs/sdk-integration/configuration.md).
 
 These options are to be set on a per web page basis:
 

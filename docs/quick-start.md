@@ -176,7 +176,6 @@ More detailed initialization code can be found in the initialize web components 
 Here are the web components you can add and see in action:
 
 ```html
-
 <!-- Main Web Component for the Bike Selector - must be on the page once -->
 <bikematrix-bikeselector></bikematrix-bikeselector>
 
@@ -295,10 +294,4 @@ Implementation of the compatible list component varies on installation method:
 
 ### Complete Examples
 
-The following are example repositories for the web component integration of our solution:
-
-- [HTML](https://github.com/bikematrix/web-components/tree/main/examples/basic)
-- [NextJS](https://github.com/bikematrix/web-components/tree/main/examples/nextjs)
-- [PHP](https://github.com/bikematrix/web-components/tree/main/examples/php)
-- [React](https://github.com/bikematrix/web-components/tree/main/examples/react)
-- [Vue](https://github.com/bikematrix/web-components/tree/main/examples/vue)
+We have complete examples for different SDK integrations. Check them out on the [SDK Examples Page](docs/sdk-integration/examples.md).

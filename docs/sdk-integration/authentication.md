@@ -11,7 +11,7 @@ When providing API access to external users (e.g., HTML/Javascript, Vue.js, Reac
 
 :::info
 
-This information is also detailed on [the configuration page](docs/sdk-integration/configuration#apikey-and-apitoken-explained).
+This information is also detailed on [the configuration page](configuration#apikey-and-apitoken-explained).
 
 :::
 

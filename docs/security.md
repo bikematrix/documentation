@@ -29,7 +29,7 @@ We will send your API Key as part of onboarding.
 
 ### SDK Integration
 
-This key is set in the [configuration](/docs/configuration.md).
+This key is set in the [configuration](/docs/sdk-integration/configuration.md).
 
 - `apiKey` should be set to the API Key we sent as part of onboarding.
 - `apiUrl` should be set to the Bike API, for example `"https://api.bikematrix.io/bike/v3/"`.

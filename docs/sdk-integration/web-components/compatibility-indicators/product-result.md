@@ -44,7 +44,7 @@ Designed to be used on a product's page.
 
 ## Configuration
 
-A more detailed overview of configuration can be found in the [Configuration section](/docs/configuration).
+A more detailed overview of configuration can be found in the [Configuration section](/docs/sdk-integration/configuration.md).
 
 These options are to be set on a per web page basis:
 

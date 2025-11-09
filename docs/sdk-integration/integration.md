@@ -1,4 +1,44 @@
-# Framework Integration
+# SDK Integration
+
+Integrating the Bike Matrix SDK required integrating numerous methods into your solution in order to initialise Bike Matrix.
+
+## SDK Methods
+
+```jsx
+// Initialize BikeMatrix (config is optional)
+BikeMatrix.init(config);
+
+// Check initialization status
+BikeMatrix.isInitialized();
+
+// Refresh compatibility data
+BikeMatrix.refresh();
+
+// Reset to initial state
+BikeMatrix.reset();
+
+// Reload components
+BikeMatrix.reload();
+
+// Clean up BikeMatrix
+BikeMatrix.destroy();
+
+// Update configuration
+BikeMatrix.updateConfig(config);
+
+// Get current configuration
+BikeMatrix.getConfig();
+
+// Get current bike
+BikeMatrix.getCurrentBike();
+
+// Update product result SKU
+BikeMatrix.updateSku(sku);
+```
+
+## SDK Method Integrations
+
+The following are some integrations for common frameworks.
 
 ### React Snippet
 
@@ -35,11 +75,7 @@ function BikeMatrixCore() {
 
 ### Complete Examples
 
-- [HTML](https://github.com/bikematrix/web-components/tree/main/examples/basic)
-- [NextJS](https://github.com/bikematrix/web-components/tree/main/examples/nextjs)
-- [PHP](https://github.com/bikematrix/web-components/tree/main/examples/php)
-- [React](https://github.com/bikematrix/web-components/tree/main/examples/react)
-- [Vue](https://github.com/bikematrix/web-components/tree/main/examples/vue)
+Please check out our full list of example integrations available on the [example page](docs/sdk-integration/examples.md)
 
 ## Common Scenarios
 
@@ -58,7 +94,7 @@ BikeMatrix.updateConfig({
   currentCollectionHandle: "new-collection",
   products: {
     // Updated collection products
-  }
+  },
 });
 ```
 

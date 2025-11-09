@@ -29,16 +29,16 @@ We will send your API Key as part of onboarding.
 
 ### SDK Integration
 
-This key is set in the [configuration](/docs/configuration.md).
+This key is set in the [configuration](/docs/sdk-integration/configuration.md).
 
 - `apiKey` should be set to the API Key we sent as part of onboarding.
 - `apiUrl` should be set to the Bike API, for example `"https://api.bikematrix.io/bike/v3/"`.
 
 ### API Integration
 
-You should target endpoints under our Bike API `"https://api.bikematrix.io/bike/v3/"`.
+You must target endpoints under our Bike API `"https://api.bikematrix.io/bike/v3/"`.
 
-You should add the header `bm-subscription-key` to your requests. Setting the value to the API Key we sent as part of onboarding.
+You must add the header `bm-subscription-key` to your requests. Setting the value to the API Key we sent as part of onboarding.
 
 ## API Token Authentication
 
@@ -165,7 +165,7 @@ You can now use this API token to contact the Bike Matrix API through [SDK Integ
 
 ### SDK Integration
 
-This key is set in the [configuration](/docs/configuration.md).
+This token is set in the [configuration](/docs/sdk-integration/configuration.md).
 
 - `apiToken` should be set to the API Token generated and passed to the user.
 - `apiUrl` should be set to the Proxy API, for example `"https://api.bikematrix.io/Proxy/v3/"`.

@@ -22,18 +22,18 @@ There are currently 3 integration methods for Bike Matrix.
 
 We have a [Shopify App](https://apps.shopify.com/bike-matrix) which includes our Web Components, allowing for fast and smooth integration into Shopify stores.
 
-Find out more in the [Shopify Integration section](shopify/shopify-intro).
+Find out more in the [Shopify Integration section](shopify-integration/introduction).
 
 #### SDK
 
-Our SDK (with Web Components) are available through [NPM](https://www.npmjs.com/package/@bikematrix/web-components/). These can be used on your website to allow for fast and customised integration.
+Our SDK (with Web Components) is available through [NPM](https://www.npmjs.com/package/@bikematrix/web-components/). These can be used on your website to allow for fast and customised integration.
 
 You can integrate with both our SDK and our API in one solution allowing for stores to create additional capabilities if the SDK does not currently offer what you need.
 
-Find out more in the [SDK Integration section](quick-start).
+Find out more in the [SDK Integration section](sdk-integration/introduction).
 
 #### API
 
 Our APIs can be integrated directly into your software, allowing for full customisation of the bike selection and compatibility checking process.
 
-Find out more in the [API Integration section](api-endpoints/bikematrixserver).
+Find out more in the [API Integration section](api-integration/introduction).

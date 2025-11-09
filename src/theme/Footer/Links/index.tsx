@@ -10,19 +10,20 @@ export const Links = () => {
         <LinkSection title="Documentation">
           <MenuItem title={"Overview"} link="/docs/overview" />
           <MenuItem title={"Quick Start - SDK"} link="/docs/quick-start" />
-          <MenuItem title={"Configuration"} link="/docs/configuration" />
           <MenuItem title={"Security"} link="/docs/security" />
           <MenuItem title={"Multilingual Support"} link="/docs/multilingual" />
           <MenuItem
-            title={"Web Components"}
-            link="/docs/web-components/bike-selector"
+            title={"Shopify Integration"}
+            link="/docs/shopify-integration/introduction"
           />
-          <MenuItem title={"Shopify"} link="/docs/shopify/shopify-intro" />
           <MenuItem
-            title={"Framework Intergration"}
-            link="/docs/framework-intergration"
+            title={"SDK Integration"}
+            link="/docs/sdk-integration/introduction"
           />
-          <MenuItem title={"API"} link="/docs/api-endpoints/get-bike-brands" />
+          <MenuItem
+            title={"API Intergration"}
+            link="/docs/api-integration/introduction"
+          />
         </LinkSection>
       </div>
       <div className={s.externalPages}>

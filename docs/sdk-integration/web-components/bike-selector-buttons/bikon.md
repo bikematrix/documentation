@@ -8,7 +8,7 @@
   />
 </div>
 
-A bike icon button for opening the [Bike Selector](/docs/web-components/bike-selector).
+A bike icon button for opening the [Bike Selector](/docs/sdk-integration/web-components/bike-selector.md).
 
 This is designed to be used in the menu bar.
 

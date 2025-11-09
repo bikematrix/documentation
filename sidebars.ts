@@ -1,5 +1,7 @@
 import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
-import apisidebar from "./docs/api-endpoints/api-sidebar";
+import { shopifySidebar } from "./docs/shopify-integration/shopify-integration-sidebar";
+import { sdkSidebar } from "./docs/sdk-integration/sdk-integration-sidebar";
+import { apiSidebar } from "./docs/api-integration/api-integration-sidebar";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -29,11 +31,6 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: "doc",
-      id: "configuration",
-      label: "Configuration",
-    },
-    {
-      type: "doc",
       id: "security",
       label: "Security",
     },
@@ -44,78 +41,18 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: "category",
-      label: "Web Components",
-      items: [
-        {
-          type: "doc",
-          id: "web-components/bike-selector",
-          label: "Bike Selector",
-        },
-        {
-          type: "doc",
-          id: "web-components/bikon",
-          label: "Bikon",
-        },
-        {
-          type: "doc",
-          id: "web-components/bike-selector-banner",
-          label: "Bike Selector Banner",
-        },
-        {
-          type: "doc",
-          id: "web-components/compatibility-label",
-          label: "Compatibility Label",
-        },
-        {
-          type: "doc",
-          id: "web-components/collection-result",
-          label: "Collection Result",
-        },
-        {
-          type: "doc",
-          id: "web-components/compatible-list",
-          label: "Compatible List",
-        },
-        {
-          type: "doc",
-          id: "web-components/product-result",
-          label: "Product Result",
-        },
-
-        {
-          type: "doc",
-          id: "web-components/variant-selector",
-          label: "Variant Selector",
-        },
-      ],
-    },
-    {
-      type: "doc",
-      id: "html-events",
-      label: "HTML Events",
+      label: "Shopify Integration",
+      items: [shopifySidebar],
     },
     {
       type: "category",
-      label: "Shopify",
-      items: [
-        "shopify/shopify-intro",
-        "shopify/bike-selector-app-embed",
-        "shopify/bike-icon",
-        "shopify/product-check-panel",
-        "shopify/bike-compatibility-list-panel",
-        "shopify/product-collection-compatibility-result",
-        "shopify/configure-app-proxy",
-      ],
-    },
-    {
-      type: "doc",
-      id: "framework-intergration",
-      label: "Framework Intergration",
+      label: "SDK Integration",
+      items: [sdkSidebar],
     },
     {
       type: "category",
-      label: "API",
-      items: [apisidebar],
+      label: "API Integration",
+      items: [apiSidebar],
     },
   ],
 };

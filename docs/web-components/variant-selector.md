@@ -58,7 +58,7 @@ The `data-variants` sets all the variants data to be used by the component.
 
 Now for each variant there are 4 bits of data to provide in the following order:
 
-1. **SKU**: This is the SKU of the variant. If this matches the variant ID, this can be set to `-` and the variant ID will be used as the SKU.
+1. **SKU**: This is the SKU of the variant. If this matches the variant ID, this can be set to `-` and the variant ID will be used as the SKU. A '*' can be passed in to indicate a 'Blacklisted' product, where no compatibility status will be shown.
 2. **Title**: This is the display name for the variant.
 3. **Variant ID**: This is the identifier for the variant of the product. This may be the same as the SKU.
 4. **Index**: This is just a simple numbering system for ordering the variants. The values should be `1`, `2`, `3` etc.

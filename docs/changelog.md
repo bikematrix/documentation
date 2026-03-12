@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.2.10] - 2026-02-26
+## [1.2.12] - 2026-03-12
 
 ### Added
 
@@ -10,20 +10,14 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-### Fixed
-
----
-
-## [1.2.9] - 2026-02-25
-
-### Added
-
-### Changed
-
+- Find Products in Virtual Workshop now shows up to 500 results
 - loDash removed
 - All pngs removed and now sourced from cdn
 
 ### Fixed
+
+- Bike Card name length fixed
+- Flashing modal on Safari and Firefox fixed - animation changed to gsap
 
 ---
 

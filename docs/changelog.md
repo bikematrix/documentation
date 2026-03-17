@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.2] - 2026-03-17
+
+### Added
+
+- updateCompatibleList public function for client side rendering of Compatible List after products have been added to the collection. The delayCompatibleListInitialization will ensure a spinner is shown until updateCompatibleList is called.
+- Compatible List now shows Wait State messages if data-current-count and data-total-count are provided by the client.
+- New Translations (Compatible List Wait State)
+
+### Changed
+
+- Updated Translations (Bike Selector Footer)
+
+### Fixed
+
+---
+
 ## [1.2.12] - 2026-03-12
 
 ### Added

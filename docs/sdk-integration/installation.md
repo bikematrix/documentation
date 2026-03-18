@@ -13,11 +13,11 @@ Include the script directly in your HTML:
 ```html
 <script
   type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@bikematrix/web-components@1.1/dist/bm_core.js"
+  src="https://cdn.jsdelivr.net/npm/@bikematrix/web-components@1.3/dist/bm_core.js"
 ></script>
 ```
 
-Note: Replace version `1.1` in the above URL with the latest version number, or the specific version you want to use.
+Note: Replace version `1.3` in the above URL with the latest version number, or the specific version you want to use.
 
 </TabItem>
 <TabItem value="npm" label="NPM Installation">

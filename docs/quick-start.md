@@ -5,11 +5,11 @@ import TabItem from '@theme/TabItem';
 
 Follow these steps to quickly see our solution in action with our staging API, checking compatibility with some brake pads.
 
-This covers simple SDK integration through either NPM installation or including the script from the CDN.
+This covers a simple SDK integration using either NPM installation or including the script from the CDN.
 
-### 1. Add the Script
+## 1. Add the Script
 
-Adding the BikeMatrix scripts varies on installation method.
+Adding the BikeMatrix scripts varies by installation method.
 
 <Tabs>
 <TabItem value="cdn" label="CDN Installation">
@@ -19,11 +19,11 @@ Include the script directly in your HTML:
 ```html
 <script
   type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@bikematrix/web-components@1.1/dist/bm_core.js"
+  src="https://cdn.jsdelivr.net/npm/@bikematrix/web-components@1.3/dist/bm_core.js"
 ></script>
 ```
 
-Note: Replace version `1.1` in the above URL with the latest version number, or the specific version you want to use.
+Note: Replace version `1.3` in the URL above with the latest version number, or the specific version you want to use.
 
 </TabItem>
 <TabItem value="npm" label="NPM Installation">
@@ -34,7 +34,7 @@ Install our SDK web components package:
 npm install @bikematrix/web-components
 ```
 
-Then import it in your JavaScript/TypeScript file:
+Then import it in your JavaScript / TypeScript file:
 
 ```javascript
 import BikeMatrix from "@bikematrix/web-components";
@@ -43,11 +43,11 @@ import BikeMatrix from "@bikematrix/web-components";
 </TabItem>
 </Tabs>
 
-### 2. Configure BikeMatrix
+## 2. Configure BikeMatrix
 
 Add the core configuration JSON block to your HTML.
 
-Bike Matrix will send you the API key to test out the solution. Please get in contact with us.
+Bike Matrix will send you an API key to test the solution. Please get in contact with us.
 
 <Tabs>
 <TabItem value="cdn" label="CDN Installation">
@@ -74,8 +74,9 @@ The following configuration can be copied into your HTML file.
       }
     ],
     "currentCollectionHandle": "brake-pads",
-    "collectionUrl": "/collection/brake-pads",
+    "collectionUrl": "/collections/brake-pads",
     "productCollections": ["brake-pads"],
+    "delayCompatibleListInitialization": false,
     "products": {
       "123": {
         "productUrl": "/product",
@@ -99,7 +100,7 @@ The following configuration can be copied into your HTML file.
 </TabItem>
 <TabItem value="npm" label="NPM Installation">
 
-If using a react based framework, the following configuration can be copied into your app.
+If using a React-based framework, the following configuration can be copied into your app.
 
 ```javascript
 <script type="application/json" data-bikematrix-config>
@@ -122,7 +123,9 @@ If using a react based framework, the following configuration can be copied into
       }
     ],
     "currentCollectionHandle": "brake-pads",
+    "collectionUrl": "/collections/brake-pads",
     "productCollections": ["brake-pads"],
+    "delayCompatibleListInitialization": false,
     "products": {
       "123": {
         "productUrl": "/product",
@@ -148,14 +151,14 @@ If using a react based framework, the following configuration can be copied into
 </TabItem>
 </Tabs>
 
-### 3. Initialize BikeMatrix
+## 3. Initialize BikeMatrix
 
 Initialize the BikeMatrix script on your site.
 
 <Tabs>
 <TabItem value="cdn" label="CDN Installation">
 
-The initialization happens automatically when you import the package, so no additional initialization code is needed.
+Initialization happens automatically when you include the script, so no additional initialization code is needed.
 
 </TabItem>
 <TabItem value="npm" label="NPM Installation">
@@ -171,21 +174,21 @@ More detailed initialization code can be found in the initialize web components 
 </TabItem>
 </Tabs>
 
-### 4. Add Web Components
+## 4. Add Web Components
 
 Here are the web components you can add and see in action:
 
 ```html
-<!-- Main Web Component for the Bike Selector - must be on the page once -->
+<!-- Main web component for the Bike Selector / Bike Lounge - must be on the page once -->
 <bikematrix-bikeselector></bikematrix-bikeselector>
 
-<!-- Header or navigation to trigger the bike selector -->
+<!-- Header or navigation button to trigger the Bike Selector -->
 <button id="bm_selectBikeButton">Select Bike</button>
 
-<!-- Or use our Bikon for triggering the bike selector -->
+<!-- Or use our Bikon to trigger the Bike Selector -->
 <bikematrix-bikon></bikematrix-bikon>
 
-<!-- Or use our banner for triggering the bike selector. Often used on PLP pages -->
+<!-- Or use our banner to trigger the Bike Selector. Often used on PLP pages -->
 <bikematrix-bikeselectorbanner
   data-title="Bike Selector Banner"
   data-color="#000000"
@@ -194,15 +197,15 @@ Here are the web components you can add and see in action:
   data-show="true"
 ></bikematrix-bikeselectorbanner>
 
-<!-- Product Result Web Component - often used on a Product PDP page -->
+<!-- Product Result web component - often used on product / PDP pages -->
 <bikematrix-productresult data-sku="710845642012"></bikematrix-productresult>
 
-<!-- Product cards for use on product collection or PLP pages -->
+<!-- Product cards for use on collection / PLP pages -->
 <bikematrix-collectionresult
   data-product-skus="710845642012,4715910041895"
 ></bikematrix-collectionresult>
 
-<!-- Compatible variants on a product PDP page where there are mutliple variants available -->
+<!-- Compatible variants on a PDP page where there are multiple variants available -->
 <bikematrix-variantselector
   data-title="Compatible Variants"
   data-override="true"
@@ -212,14 +215,15 @@ Here are the web components you can add and see in action:
 ></bikematrix-variantselector>
 ```
 
-Implementation of the compatible list component varies on installation method:
+Implementation of the Compatible List component varies by installation method:
 
 <Tabs>
 <TabItem value="cdn" label="CDN Installation">
 
 ```html
-<!-- List of all of the compatible results for the products configured in this collection, for the chosen bike -->
-<bikematrix-compatiblelist data-title="Compatible products">
+<!-- List of all compatible results for the configured products in this collection, for the selected bike -->
+<bikematrix-compatiblelist data-title="Compatible Products">
+
   <template slot="product-card">
     <div class="bm-compatible-product-wrapper">
       <div class="bm-compatible-product-image">
@@ -247,36 +251,37 @@ Implementation of the compatible list component varies on installation method:
 <TabItem value="npm" label="NPM Installation">
 
 ```javascript
-// List of all of the compatible results for the products configured in this collection, for the chosen bike
+// List of all compatible results for the configured products in this collection, for the selected bike
 <bikematrix-compatiblelist data-title="Compatible Products">
+
   <template
     slot="product-card"
     dangerouslySetInnerHTML={{
       __html: `
-          <div class="bm-compatible-product-wrapper">
-              <div class="bm-compatible-product-image">
-                  <a href="{{productUrl}}">
-                  <img
-                      src="{{featuredImage}}"
-                      width="80px"
-                      alt=""
-                      loading="lazy"
-                  ></img>
-                  </a>
-              </div>
-              <div class="bm-compatible-product-title">
-                  <a href="{{productUrl}}">{{ productTitle }}</a>
-              </div>
-              <div class="bm-compatible-product-price">
-                  <a href="{{productUrl}}" style="text-decoration: none">
-                  <p>
-                      <strong>{{ price }}</strong>
-                  </p>
-                  </a>
-              </div>
-              {{ compatibility }}
+        <div class="bm-compatible-product-wrapper">
+          <div class="bm-compatible-product-image">
+            <a href="{{productUrl}}">
+              <img
+                src="{{featuredImage}}"
+                width="80px"
+                alt=""
+                loading="lazy"
+              />
+            </a>
           </div>
-        `,
+          <div class="bm-compatible-product-title">
+            <a href="{{productUrl}}">{{ productTitle }}</a>
+          </div>
+          <div class="bm-compatible-product-price">
+            <a href="{{productUrl}}" style="text-decoration: none">
+              <p>
+                <strong>{{ price }}</strong>
+              </p>
+            </a>
+          </div>
+          {{ compatibility }}
+        </div>
+      `,
     }}
   ></template>
 </bikematrix-compatiblelist>
@@ -285,13 +290,13 @@ Implementation of the compatible list component varies on installation method:
 </TabItem>
 </Tabs>
 
-### 5. Test the Integration
+## 5. Test the Integration
 
 1. Open your webpage
-2. Click the "Select Bike" button (Or click on the Bikon or Bike Banner)
-3. Choose a bike from the selector
-4. Check that both the other components display the correct compatibility information
+2. Click the "Select Bike" button, or click the Bikon / Bike Banner.
+3. Choose a bike from the selector.
+4. Check that the other components display the correct compatibility information.
 
-### Complete Examples
+## Complete Examples
 
-We have complete examples for different SDK integrations. Check them out on the [SDK Examples Page](docs/sdk-integration/examples.md).
+We have complete examples for different SDK integrations. See them at the [SDK Examples Page](docs/sdk-integration/examples.md).

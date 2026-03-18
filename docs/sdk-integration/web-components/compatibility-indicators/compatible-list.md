@@ -8,7 +8,7 @@
   />
 </div>
 
-Displays a list of all products which are compatible.
+Displays a list of all products in the current collection which are compatible.
 
 This is designed to be used at the top of a page of a collection.
 

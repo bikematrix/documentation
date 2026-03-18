@@ -110,4 +110,9 @@ export const sdkSidebar: SidebarConfig = [
     id: "sdk-integration/examples",
     label: "Examples",
   },
+  {
+    type: "doc",
+    id: "sdk-integration/changelog",
+    label: "Changelog",
+  },
 ];

@@ -21,9 +21,9 @@ Designed to be added on a product card.
 
 ### Attributes
 
-| Attribute           | Default | Required | Description                                                | Example                  |
-| ------------------- | ------- | -------- | ---------------------------------------------------------- | ------------------------ |
-| `data-product-skus` | `""`    | Yes      | A comma separated list of SKUs to check compatibility for. | `"123456890,0987654321"` |
+| Attribute           | Default | Required | Description                                                                                                                                                         | Example                  |
+| ------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------ |
+| `data-product-skus` | `""`    | Yes      | A comma separated list of SKUs to check compatibility for. A '*' can be passed in to indicate a 'Blacklisted' product, where no compatibility status will be shown. | `"123456890,0987654321"` |
 
 ### Example
 

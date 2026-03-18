@@ -25,11 +25,11 @@ Designed to be used on a product's page.
 
 ### Attributes
 
-| Attribute             | Default | Required | Description                                    | Example       |
-| --------------------- | ------- | -------- | ---------------------------------------------- | ------------- |
-| `data-sku`            | `""`    | Yes      | A SKU to check compatibility with.             | `"123456890"` |
-| `data-padding-top`    | `"0"`   | No       | Padding above the element in number of pixels. | `"10"`        |
-| `data-padding-bottom` | `"0"`   | No       | Padding below the element in number of pixels. | `"10"`        |
+| Attribute             | Default | Required | Description                                                                                                                                            | Example       |
+| --------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------- |
+| `data-sku`            | `""`    | Yes      | A SKU to check compatibility with. A '*' can be passed in to indicate a 'Blacklisted' product, where no compatibility status will be shown.            | `"123456890"` |
+| `data-padding-top`    | `"0"`   | No       | Padding above the element in number of pixels.                                                                                                         | `"10"`        |
+| `data-padding-bottom` | `"0"`   | No       | Padding below the element in number of pixels.                                                                                                         | `"10"`        |
 
 ### Example
 

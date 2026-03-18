@@ -54,6 +54,11 @@ const sidebars: SidebarsConfig = {
       label: "API Integration",
       items: [apiSidebar],
     },
+    {
+      type: "doc",
+      id: "changelog",
+      label: "Changelog",
+    },
   ],
 };
 

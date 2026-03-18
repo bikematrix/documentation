@@ -38,3 +38,9 @@ endif
 ```
 
 Note: your theme may use 'product' or 'card_product' to reference the product in this liquid file (in the Dawn Theme, it uses 'card_product'). Replace 'card_product' with the appropriate variable name for the Product in the snippet above if required.
+
+Also note: If you Collection/PLP page uses automatic pagination (ie. infinite scroll), you will need to add the snippet of code in where your page pagination occurs so that it refreshes the compatibility on the new products.
+
+```html
+document.dispatchEvent(new Event("BikeMatrix:RefreshCompatibleSkus", { bubbles: true, composed: true }));
+```

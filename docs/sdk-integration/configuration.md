@@ -351,6 +351,21 @@ The `categories` array uses objects of the following structure:
         "collection": "{{brake_rotorCollectionTitle}}"
       },
       {
+        "title":"Brake Lever",
+        "text_id":"category_brakelever",
+        "collection": "{{brake_leverCollectionTitle}}"
+      },
+      {
+        "title":"Brake Caliper",
+        "text_id":"category_brakecaliper",
+        "collection": "{{brake_caliperCollectionTitle}}"
+      },
+      {
+        "title":"Brake System",
+        "text_id":"category_brakesystem",
+        "collection": "{{brake_systemCollectionTitle}}"
+      },
+      {
         "title":"Front Wheel",
         "text_id":"category_frontwheel",
         "collection": "{{front_wheelCollectionTitle}}"

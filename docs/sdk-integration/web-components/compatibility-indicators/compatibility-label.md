@@ -8,7 +8,7 @@
   />
 </div>
 
-A basic element for showing a product's compatibility status. This is used by the [Collection Result Component](/docs/web-components/collection-result.md).
+A basic element for showing a product's compatibility status. This is used by the [Collection Result Component](/docs/sdk-integration/web-components/compatibility-indicators/collection-result.md).
 
 ## Component Details
 

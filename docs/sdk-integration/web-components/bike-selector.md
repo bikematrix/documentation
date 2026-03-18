@@ -20,18 +20,11 @@ The bike selector component needs to be added somewhere in your HTML. It has no 
 <bikematrix-bikeselector></bikematrix-bikeselector>
 ```
 
-A button will then be needed to open the bike selector.
-
-```html
-<button id="bm_selectBikeButton">Select Bike</button>
-<bikematrix-bikeselector></bikematrix-bikeselector>
-```
-
-We also provide [Bikon](/docs/web-components/bikon) and [Bike Banner](/docs/web-components/bike-selector-banner) web components to open the bike selector.
+A button will then be needed to open the bike selector, these are detailed on the [Bike Selector Buttons page](docs/sdk-integration/web-components/bike-selector-buttons/overview.md).
 
 ## Configuration
 
-This component can use some core configuration. A detailed overview of configuration can be found in the [Configuration section](/docs/configuration).
+This component can use some core configuration. A detailed overview of configuration can be found in the [Configuration section](/docs/sdk-integration/configuration.md).
 
 | Option               | Type    | Required | Description                                                                                                              | Example       |
 | -------------------- | ------- | -------- | ------------------------------------------------------------------------------------------------------------------------ | ------------- |

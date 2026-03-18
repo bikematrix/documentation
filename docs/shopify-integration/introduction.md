@@ -1,4 +1,4 @@
-# Introduction
+# Shopify Introduction
 
 Thank you for installing the Bike Matrix App. This page describes the process for getting the App up running on your Storefront.
 

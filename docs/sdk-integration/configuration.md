@@ -54,6 +54,9 @@ This is the **site-wide core configuration** definition for the SDK:
     "logLevel": "none" | "verbose",
     "virtualWorkshop": boolean,
     "pageType": "collection" | "product" | "index" | "search"
+    ,
+    "showBrowseCategoryButtons": boolean,
+    "browseCompatibilityUrl": string
   }
 </script>
 ```
@@ -83,6 +86,9 @@ This is an example of the **site-wide core configuration** for the SDK:
       }
     ],
     "pageType": "collection"
+    ,
+    "showBrowseCategoryButtons": true,
+    "browseCompatibilityUrl": "/collections/compatibility"
   }
 </script>
 ```
@@ -318,6 +324,8 @@ These options are set for the entire site:
 | `logLevel`           | `"none"` \| `"verbose"`                                       | No       | Logging verbosity level. Default is `"none"`.                                                                                        | `"verbose"`                                                                              |
 | `virtualWorkshop`    | boolean                                                       | No       | Enables the Virtual Workshop functionality.                                                                                          | `true`                                                                                   |
 | `pageType`           | `"collection"` \| `"product"` \| `"index"` \| `"search"`     | Yes      | The page type for the current page.                                                                                                  | `"collection"`                                                                           |
+| `showBrowseCategoryButtons`  | boolean | No | Show or hide the built-in Browse Category buttons. If false, you can use your own button or link by setting `browseCompatibilityUrl`. Default is `true`. v1.3.3+ | `true` |
+| `browseCompatibilityUrl`     | string  | No | URL to direct users to your own "Shop by Bike" or compatibility page. If set, and the showBrowseCategoryButtons is `true`, the built-in Browse Compatibility button will use this URL. v1.3.3+ | `"/collections/compatibility"` |
 
 #### 'apiKey' and 'apiToken' explained
 

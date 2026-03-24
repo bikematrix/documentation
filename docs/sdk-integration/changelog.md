@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.3] - 2026-03-24
+
+### Added
+
+- showBrowseCategoryButtons and browseCompatibilityUrl variables added to the Bike Matrix config. Customer is now able to direct to their own "Shop By Bike" page rather than have to use the built in button system.
+
+### Changed
+
+### Fixed
+
+---
+
 ## [1.3.2] - 2026-03-17
 
 ### Added

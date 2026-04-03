@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.5] - 2026-04-03
+
+### Added
+
+### Changed
+
+- Update i18next with nonExplicitSupportedLngs to true so variants are supported ie, fr-FR will now pull in fr translations and de-DE will pull in de translations.
+
+### Fixed
+
+---
+
+## [1.3.4] - 2026-03-25
+
+### Added
+
+### Changed
+
+- i18n translations are now versioned and pulled in from CDN rather than being bundled with the package.
+
+### Fixed
+
+---
+
 ## [1.3.3] - 2026-03-24
 
 ### Added
@@ -130,6 +154,18 @@ All notable changes to this project will be documented in this file.
 - Check added on skusToCheck in order to prevent compatibility request firing when the array is empty
 - Space added between translations on Variant Selector Question
 - Collection result fallback option switched to unavailable
+
+---
+
+## [1.1.51] - 2026-04-03 (hotfix)
+
+### Added
+
+### Changed
+
+- Update i18next with nonExplicitSupportedLngs to true so variants are supported ie, fr-FR will now pull in fr translations and de-DE will pull in de translations.
+
+### Fixed
 
 ---
 

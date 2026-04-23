@@ -378,15 +378,11 @@ The `categories` array uses objects of the following structure:
 - `collection` is a comma separated list of collections included in this product category. Each item in the list must match the `title` of a collection.
   - e.g. `"Brake pads"`
 
-<details>
-  <summary><strong>Available Bike Matrix Product Categories</strong></summary>
-  <div>
+#### Available Bike Matrix Product Categories
 
-##### Bike Matrix Categories
+- The following are the available options for the categories list. The values for `title` and `text_id` must be copied exactly.
 
-The following are the available options for the categories list. The values for `title` and `text_id` must be copied exactly.
-
-The `collection` value can contain a comma separated list of collection titles. This is primarily used for Shopify integration where a store has multiple markets. The first available collection is used in the Bike Selector to link to the collection for that category.
+- The `collection` value can contain a comma separated list of collection titles. This is primarily used for Shopify integration where a store has multiple markets. The first available collection is used in the Bike Selector to link to the collection for that category.
 
 ```javascript
 "categories": [
@@ -482,9 +478,6 @@ The `collection` value can contain a comma separated list of collection titles. 
   }
 ]
 ```
-
-  </div>
-</details>
 
 ### Web Component Specific Configuration Options
 

@@ -24,5 +24,3 @@ Enter the name of the Collection, exactly as it is shown in the Collections box 
 You can leave one or more of the categories empty. They will not be visible when a user selects 'Browse Compatibility' in the Bike Selector. For Shopify stores that have multiple markets, you can enter a comma separated list of collection names. The first available collection will be used for that category.
 
 ![Image of where the user can enter the collection name for each collection](/img/shopify/Bike-Selector-Compatible-Collections.png)
-
-8. Bike Matrix requires a SKU, EAN or UPC which is stored against each prodcut and variant in the SKU, Barcode or a custom Bike Matrix Metafield in your store. If you cannot use the SKU or Barcode field on the Product/Variants because the SKU/EAN/UPC is inconsistently stored across these fields, and you cannot modify the data in these fields to be consistent, then you can create a Bike Matrix Metafield and store the SKU, EAN or UPC in this field. In the settings panel, choose whether your store uses SKU, Barcode or Bike Matrix Metafield.

@@ -1,7 +1,7 @@
-import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
-import { shopifySidebar } from "./docs/shopify-integration/shopify-integration-sidebar";
-import { sdkSidebar } from "./docs/sdk-integration/sdk-integration-sidebar";
-import { apiSidebar } from "./docs/api-integration/api-integration-sidebar";
+import type { SidebarsConfig } from '@docusaurus/plugin-content-docs';
+import { shopifySidebar } from './docs/shopify-integration/shopify-integration-sidebar';
+import { sdkSidebar } from './docs/sdk-integration/sdk-integration-sidebar';
+import { apiSidebar } from './docs/api-integration/api-integration-sidebar';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -22,36 +22,36 @@ const sidebars: SidebarsConfig = {
   // But you can create a sidebar manually
 
   documentationSidebar: [
-    "intro",
-    { type: "doc", id: "overview", label: "Overview" },
+    'intro',
+    { type: 'doc', id: 'overview', label: 'Overview' },
     {
-      type: "doc",
-      id: "quick-start",
-      label: "Quick Start - SDK",
+      type: 'doc',
+      id: 'quick-start',
+      label: 'Quick Start - SDK',
     },
     {
-      type: "doc",
-      id: "security",
-      label: "Security",
+      type: 'doc',
+      id: 'security',
+      label: 'Security',
     },
     {
-      type: "doc",
-      id: "multilingual",
-      label: "Multilingual Support",
+      type: 'doc',
+      id: 'multilingual',
+      label: 'Multilingual Support',
     },
     {
-      type: "category",
-      label: "Shopify Integration",
+      type: 'category',
+      label: 'Shopify Integration',
       items: [shopifySidebar],
     },
     {
-      type: "category",
-      label: "SDK Integration",
+      type: 'category',
+      label: 'SDK Integration',
       items: [sdkSidebar],
     },
     {
-      type: "category",
-      label: "API Integration",
+      type: 'category',
+      label: 'API Integration',
       items: [apiSidebar],
     },
   ],

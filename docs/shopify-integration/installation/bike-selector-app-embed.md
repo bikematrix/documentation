@@ -12,15 +12,3 @@
 ![Image of app's settings in Shopify theme section](/img/shopify/App-Embed-Settings.png)
 
 If the Home Page Collection name has changed, you can enter it here. If not, leave it as the default of 'frontpage'.
-
-6. Now choose the Collections that you want Bike Matrix compatibility results Displayed on.
-   Click ‘Select Collections’ (or click 'Change' if you have already slected your collections previously).
-   Select the collections, then click 'Select' at the bottom of the panel.
-7. The next section lets you configure the name of the Collection for each of the Product Categories that Bike Matrix provides compatibility for. When a customer selects a bike in the Bike Selector they have an option to 'Browse Components'. This will show the a list of the components that their selected bike can show compatibility for (based on their selected bike Brand), and will link to the correct collection that you configure here.
-
-![Image of the product picker when a bike is selected](/img/shopify/Bike-Selector-Browse-Compatibility.png)
-
-Enter the name of the Collection, exactly as it is shown in the Collections box above (case does not matter). The Collection you enter here must be one of the ones selected in the Collections box above to function correctly.
-You can leave one or more of the categories empty. They will not be visible when a user selects 'Browse Compatibility' in the Bike Selector. For Shopify stores that have multiple markets, you can enter a comma separated list of collection names. The first available collection will be used for that category.
-
-![Image of where the user can enter the collection name for each collection](/img/shopify/Bike-Selector-Compatible-Collections.png)

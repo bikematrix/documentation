@@ -2,6 +2,46 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.8] - 2026-05-19
+
+### Added
+
+### Changed
+
+- Regular security updates
+- PDP Product collection logic updated
+
+### Fixed
+
+---
+
+## [1.3.7] - 2026-05-13
+
+### Added
+
+- New checkbox confirmation in the save bike dialog (including translations)
+
+### Changed
+
+### Fixed
+
+- Scroll issue when modal is open
+- Package lock file issues fixed
+
+---
+
+## [1.3.6] - 2026-04-07
+
+### Added
+
+### Changed
+
+- Regular security updates
+
+### Fixed
+
+---
+
 ## [1.3.5] - 2026-04-03
 
 ### Added
@@ -154,18 +194,6 @@ All notable changes to this project will be documented in this file.
 - Check added on skusToCheck in order to prevent compatibility request firing when the array is empty
 - Space added between translations on Variant Selector Question
 - Collection result fallback option switched to unavailable
-
----
-
-## [1.1.51] - 2026-04-03 (hotfix)
-
-### Added
-
-### Changed
-
-- Update i18next with nonExplicitSupportedLngs to true so variants are supported ie, fr-FR will now pull in fr translations and de-DE will pull in de translations.
-
-### Fixed
 
 ---
 

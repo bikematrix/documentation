@@ -32,8 +32,8 @@ export const shopifySidebar: SidebarConfig = [
       },
       {
         type: 'doc',
-        id: 'shopify-integration/installation/compatibility-list-panel',
-        label: 'Add Compatibility List Panel',
+        id: 'shopify-integration/installation/configure-app-proxy',
+        label: 'Configure App Proxy',
       },
       {
         type: 'doc',
@@ -42,13 +42,13 @@ export const shopifySidebar: SidebarConfig = [
       },
       {
         type: 'doc',
-        id: 'shopify-integration/installation/product-collection-compatibility-result',
-        label: 'Add Product Collection Compatibility Results',
+        id: 'shopify-integration/installation/compatibility-list-panel',
+        label: 'Add Compatibility List Panel',
       },
       {
         type: 'doc',
-        id: 'shopify-integration/installation/configure-app-proxy',
-        label: 'Configure App Proxy',
+        id: 'shopify-integration/installation/product-collection-compatibility-result',
+        label: 'Add Product Collection Compatibility Results',
       },
     ],
   },

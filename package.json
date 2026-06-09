@@ -16,22 +16,22 @@
     "prebuild": "cp -r docs/shopify-integration static/raw"
   },
   "dependencies": {
-    "@docusaurus/core": "^3.9.2",
-    "@docusaurus/preset-classic": "^3.9.2",
+    "@docusaurus/core": "^3.10.1",
+    "@docusaurus/preset-classic": "^3.10.1",
     "@mdx-js/react": "^3.0.0",
     "@types/react": "^19.0.10",
     "clsx": "^2.0.0",
-    "docusaurus-plugin-openapi-docs": "^4.3.7",
-    "docusaurus-theme-openapi-docs": "^4.3.7",
+    "docusaurus-plugin-openapi-docs": "^5.0.2",
+    "docusaurus-theme-openapi-docs": "^5.0.2",
     "gsap": "^3.12.7",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/tsconfig": "3.7.0",
-    "@docusaurus/types": "3.7.0",
+    "@docusaurus/module-type-aliases": "^3.10.1",
+    "@docusaurus/tsconfig": "^3.10.1",
+    "@docusaurus/types": "^3.10.1",
     "typescript": "~5.6.2"
   },
   "browserslist": {

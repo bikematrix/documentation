@@ -341,7 +341,7 @@ Details on how to generate the `apiToken` can be found in our [Security Document
 
 [Categories](https://help.shopify.com/en/manual/products/details/product-category) and [collections](https://help.shopify.com/en/manual/products/collections) are Shopify concepts for grouping [products](https://help.shopify.com/en/manual/products). Each product belongs to a single product category. A product can also be part of many collections, and a category can map to many collections.
 
-From a non-Shopify perspective, collections map to your store's component groupings (e.g. Brakes, Tyres, Tubes), while categories map directly to Bike Matrix component groupings. The available Bike Matrix groups are detailed [below](#bike-matrix-categories).
+From a non-Shopify perspective, collections map to your store's component groupings (e.g. Brakes, Tyres, Tubes), while categories map directly to Bike Matrix component groupings. The available Bike Matrix groups are detailed [below](/docs/sdk-integration/configuration#available-bike-matrix-product-categories).
 
 The `collections` array uses objects of the following structure:
 
@@ -371,9 +371,9 @@ The `categories` array uses objects of the following structure:
 }
 ```
 
-- `title` is the name of the product category. As this maps directly to Bike Matrix product categories, this value must match one of the available Bike Matrix product categories listed [below](#bike-matrix-categories).
+- `title` is the name of the product category. As this maps directly to Bike Matrix product categories, this value must match one of the available Bike Matrix product categories listed [below](/docs/sdk-integration/configuration#available-bike-matrix-product-categories).
   - e.g. `"Brake Pads"`
-- `text_id` is an internal identifier used for translation. Like `title`, this must match one of the available Bike Matrix values listed [below](#bike-matrix-categories).
+- `text_id` is an internal identifier used for translation. Like `title`, this must match one of the available Bike Matrix values listed [below](/docs/sdk-integration/configuration#available-bike-matrix-product-categories).
   - e.g. `"category_brakepads"`
 - `collection` is a comma separated list of collections included in this product category. Each item in the list must match the `title` of a collection.
   - e.g. `"Brake pads"`

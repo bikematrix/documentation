@@ -298,7 +298,7 @@ Implementation of the Compatible List component varies by installation method:
 4. Check that the other components display the correct compatibility information.
 
 :::note
-If you are performing automated integration testing, please review our [Automated Traffic Monitoring](docs/security#automated-traffic-monitoring) guidance before testing.
+If you are performing automated integration testing, please review our [Automated Traffic Monitoring](/docs/security#automated-traffic-monitoring) guidance before testing.
 :::
 
 ## Complete Examples

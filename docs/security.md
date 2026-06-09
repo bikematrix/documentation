@@ -175,3 +175,13 @@ This token is set in the [configuration](/docs/sdk-integration/configuration.md)
 You should target endpoints under our Bike API `"https://api.bikematrix.io/proxy/v3/"`.
 
 You should add the header `bm-app-token` to your requests. Setting the value to the API Token you generated and passed to the user.
+
+## Automated Traffic Monitoring
+
+Bike Matrix continuously monitors API and SDK traffic for unusual activity, including automated requests, scraping attempts, abuse, and other behaviour that may impact service reliability or data security.
+
+To protect the platform, automated mitigation measures may be applied, including rate limiting, traffic filtering, and/or temporary IP address blocking when unusual or potentially malicious activity is detected.
+
+If you are performing any form of automated integration testing, or other high-volume validation activities, please contact the Bike Matrix team in advance. We can review your testing requirements and, where appropriate, whitelist your IP addresses to prevent disruption during testing.
+
+For assistance, contact <contact@bikematrix.io>.

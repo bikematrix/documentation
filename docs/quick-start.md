@@ -297,6 +297,10 @@ Implementation of the Compatible List component varies by installation method:
 3. Choose a bike from the selector.
 4. Check that the other components display the correct compatibility information.
 
+:::note
+If you are performing automated integration testing, please review our [Automated Traffic Monitoring](docs/security#automated-traffic-monitoring) guidance before testing.
+:::
+
 ## Complete Examples
 
 We have complete examples for different SDK integrations. See them at the [SDK Examples Page](docs/sdk-integration/examples.md).

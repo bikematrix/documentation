@@ -2,7 +2,34 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.3.8] - 2026-05-19
+## [1.3.11] - 2026-06-05
+
+### Added
+
+- Fallback image added to bike cards to avoid 400 view
+
+### Changed
+
+### Fixed
+
+---
+
+## [1.3.10] - 2026-06-03
+
+### Added
+
+- Language check and added to compatible categories session cache
+
+### Changed
+
+### Fixed
+
+- Variant selector preserves existing query params and any trailing hash when navigating to a new URL
+- updateCompatibleCollections prioritises the order defined in the categories array rather than order of collections
+
+---
+
+## [1.3.9] - 2026-05-28
 
 ### Added
 

@@ -184,4 +184,4 @@ To protect the platform, automated mitigation measures may be applied, including
 
 If you are performing any form of automated integration testing, or other high-volume validation activities, please contact the Bike Matrix team in advance. We can review your testing requirements and, where appropriate, whitelist your IP addresses to prevent disruption during testing.
 
-For assistance, contact <contact@bikematrix.io>.
+For assistance, contact [contact@bikematrix.io](mailto:contact@bikematrix.io).

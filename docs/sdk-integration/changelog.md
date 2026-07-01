@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.15] - 2026-07-01
+
+### Added
+
+### Changed
+
+- location of bike images updated in the CDN
+
+## [1.3.13] - 2026-06-25
+
+### Added
+
+### Changed
+
+### Fixed
+
+- If a bike is de-selected on a PDP page, still show the 'Add your ride' Product Result Card
+
+---
+
+## [1.3.12] - 2026-06-18
+
+### Added
+
+- Additional diagnostic information added
+
+### Changed
+
+- Regular security updates
+
+### Fixed
+
+- Reset Bike Lounge error once successful API call completes
+
+---
+
 ## [1.3.11] - 2026-06-05
 
 ### Added

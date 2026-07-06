@@ -31,8 +31,10 @@ We will send your API Key as part of onboarding.
 
 This key is set in the [configuration](/docs/sdk-integration/configuration.md).
 
+SDK integration using the API Key is only supported for internal server-side usage (e.g., Node.js backend, Next.js API routes, Nuxt server routes) or for early integration testing. It is not supported for public facing pages where the API Key would be exposed to the public. Please use the API Token (see below) for public facing pages. 
+
 - `apiKey` should be set to the API Key we sent as part of onboarding.
-- `apiUrl` should be set to the Bike API, for example `"https://api.bikematrix.io/bike/v3/"`.
+- `apiUrl` should be set to the Bike API, for example `"https://api.bikematrix.io/bike/v3/"`. For integration testing, please use our Staging API, for example `"https://api-staging.bikematrix.io/bike/v3/"`.
 
 ### API Integration
 
@@ -42,9 +44,7 @@ You must add the header `bm-subscription-key` to your requests. Setting the valu
 
 ## API Token Authentication
 
-This is a token which provides the user time limited access to the Bike Matrix API, therefore the token will expire. This is designed to be given to your service's users.
-
-This is typically used on e-commerce websites.
+This is a token which provides the user time limited access to the Bike Matrix API, therefore the token will expire.
 
 We will provide you with the necessary details to generate the API Token as part of onboarding prior to going live.
 
@@ -168,11 +168,11 @@ You can now use this API token to contact the Bike Matrix API through [SDK Integ
 This token is set in the [configuration](/docs/sdk-integration/configuration.md).
 
 - `apiToken` should be set to the API Token generated and passed to the user.
-- `apiUrl` should be set to the Proxy API, for example `"https://api.bikematrix.io/Proxy/v3/"`.
+- `apiUrl` should be set to the Proxy API, for example `"https://api.bikematrix.io/Proxy/v3/"`. For integration testing, please use our Staging API, for example `"https://api-staging.bikematrix.io/Proxy/v3/"`.
 
 ### API Integration
 
-You should target endpoints under our Bike API `"https://api.bikematrix.io/proxy/v3/"`.
+You should target endpoints under our Proxy API `"https://api.bikematrix.io/proxy/v3/"`.
 
 You should add the header `bm-app-token` to your requests. Setting the value to the API Token you generated and passed to the user.
 

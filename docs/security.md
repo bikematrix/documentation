@@ -53,7 +53,7 @@ We will provide you with the necessary details to generate the API Token as part
 The **API Token** has the format of `appId|timestamp|signature`.
 
 - `appId` - Your assigned application ID (e.g. `radbikeparts`)
-- `timestamp` – The current UTC time in **Unix seconds**
+- `timestamp` – The current UTC time in **Unix milliseconds**.
 - `signature` – A base64-encoded HMAC-SHA256 signature of `appId|timestamp`, signed using your shared secret which we will provide as part of your onboarding.
 
 An example **API Token**: `radbikeparts|012345678912345|abcdefghijklmnopqrstuvwxyz=`.
@@ -108,7 +108,7 @@ You can now use this API token to contact the Bike Matrix API through [SDK Integ
     $secret = base64_decode($base64Secret);
 
     // Current Unix timestamp
-    $timestamp = time();
+    $timestamp = (int) (new DateTime())->format('Uv');
 
     // Create payload
     $payload = "{$appId}|{$timestamp}";
@@ -141,7 +141,7 @@ You can now use this API token to contact the Bike Matrix API through [SDK Integ
             byte[] secretBytes = Convert.FromBase64String(base64Secret);
 
             // Get current Unix timestamp
-            long timestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+            long timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds();
 
             // Create payload
             string payload = $"{appId}|{timestamp}";

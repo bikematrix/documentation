@@ -112,6 +112,11 @@ export const sdkSidebar: SidebarConfig = [
   },
   {
     type: "doc",
+    id: "sdk-integration/uat-checklist",
+    label: "UAT Checklist",
+  },
+  {
+    type: "doc",
     id: "sdk-integration/changelog",
     label: "Changelog",
   },

@@ -2,13 +2,29 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.16] - 2026-07-08
+
+### Added
+
+- Added Danish (da) and Slovenian (sl) to the supported languages
+
+### Changed
+
+### Fixed
+
+- Minor bug fixes to Bike Lounge and Virtual Workshop
+
 ## [1.3.15] - 2026-07-01
 
 ### Added
 
 ### Changed
 
-- location of bike images updated in the CDN
+- Location of bike images updated in the CDN
+
+### Fixed
+
+---
 
 ## [1.3.13] - 2026-06-25
 

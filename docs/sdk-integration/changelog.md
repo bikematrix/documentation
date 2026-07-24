@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.17] - 2026-07-27
+
+### Added
+
+- `BikeAdded` DOM event dispatched when a bike is added to the Bike Lounge (`detail: { bike }`, including `isCustomBike` — true for an owned or shared custom build — and `isSharedCustomBike` — true when the custom bike was shared with the user)
+- `BikeRemoved` DOM event dispatched when a bike is removed from the Bike Lounge (`detail: { bikeKey, bikeName }`)
+
+### Changed
+
+### Fixed
+
 ## [1.3.16] - 2026-07-08
 
 ### Added
@@ -20,7 +31,7 @@ All notable changes to this project will be documented in this file.
 
 ### Changed
 
-- Location of bike images updated in the CDN
+- location of bike images updated in the CDN
 
 ### Fixed
 

@@ -158,7 +158,7 @@ These options are set on a per-page basis:
 | Option                              | Type                          | Required | Description                                                                                                                             | Example                                                  |
 | ----------------------------------- | ----------------------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------- |
 | `currentCollectionHandle`           | string                        | Yes      | The collection handle of the current page. This must match a `handle` defined under `collections`.                                     | `"brake-pads"`                                           |
-| `products`                          | \{[key: string]: ProductInfo} | No       | Information for all products to check compatibility on. See the ['products' explained](#products-explained) section.                   | See ['products' explained](#products-explained) section. |
+| `products`                          | \{[key: string]: ProductInfo} | No       | Information for all products to check compatibility on. There is a maximum number of 5000 products supported. See the ['products' explained](#products-explained) section.                   | See ['products' explained](#products-explained) section. |
 | `collectionUrl`                     | string                        | No       | URL for the current collection, used to link back to the first page of the collection. Default is empty.                               | `"/collections/brake-pads"`                              |
 | `compatiblityListCurrentPage`       | number                        | No       | Current page number of the collection. After page 1, the component links back to the first page for compatible results. Default is 0. | `1`                                                      |
 | `showCompatibleList`                | boolean                       | No       | Whether to show the Compatible List component. Default is `true`.                                                                       | `true`                                                   |
@@ -184,7 +184,7 @@ These options are set on a per-page basis:
 }
 ```
 
-This is a keyed list of all products to include as part of the Compatible List check.
+This is a keyed list of all products to include as part of the Compatible List check. There is a maximum of 5000 products supported.
 
 - The first `key` value should be your product ID.
 - The `skus` value should be a list of all SKUs for the product, as the product may have multiple variants.

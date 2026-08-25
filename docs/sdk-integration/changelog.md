@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.20] - 2026-08-20
+
+### Added
+
+### Changed
+
+- In a mobile viewport the gray bar has been removed and replaced with a close symbol in the right hand corner
+- Updated some translations for bike selector
+
+### Fixed
+
+- Fix a spelling mistake in bike selector
+
 ## [1.3.17] - 2026-07-27
 
 ### Added

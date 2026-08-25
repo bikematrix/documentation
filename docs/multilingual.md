@@ -17,6 +17,8 @@ The following languages are supported by the Bike Matrix and are based on the IS
 | Dutch        | `nl`              | `<html lang="nl">`       |
 | Finnish      | `fi`              | `<html lang="fi">`       |
 | Polish       | `pl`              | `<html lang="pl">`       |
+| Danish       | `da`              | `<html lang="da">`       |
+| Slovenian    | `sl`              | `<html lang="sl">`       |
 
 ## Shopify & SDK Integrations
 

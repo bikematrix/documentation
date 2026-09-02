@@ -24,7 +24,7 @@ export const HomepageHeader = () => {
             <Button text={"Documentation"} link={"/docs/intro"} />
             <Button
               text={"The Solution"}
-              link={"https://www.bikematrix.io/see-it-in-action"}
+              link={"https://www.bikematrix.io/how-it-works"}
               blank
               secondary
             />

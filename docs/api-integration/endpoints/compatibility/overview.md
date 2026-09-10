@@ -1,5 +1,9 @@
 # Compatibility Endpoints
 
+:::danger[Warning]
+Due to security and contractual considerations please speak to the Bike Matrix team first before building elements that directly call our API.
+:::
+
 Under [available endpoints](#available-endpoints) is the list of available compatibility endpoints.
 
 For each endpoint there is the option to use a specific language endpoint option. The language options are detailed in the [multilingual section](docs/multilingual.md).

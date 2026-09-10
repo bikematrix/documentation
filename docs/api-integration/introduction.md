@@ -1,5 +1,9 @@
 # API Introduction
 
+:::danger[Warning]
+Due to security and contractual considerations please speak to the Bike Matrix team first before building elements that directly call our API.
+:::
+
 The **API** integration with Bike Matrix allows for creation of a fully customisable compatibility solution.
 
 Our production API URL is `"https://api.bikematrix.io/proxy/v3/"`.

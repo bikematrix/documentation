@@ -49,6 +49,8 @@ const sidebars: SidebarsConfig = {
       label: 'SDK Integration',
       items: [sdkSidebar],
     },
+  ],
+  hiddenSidebar: [
     {
       type: 'category',
       label: 'API Integration',

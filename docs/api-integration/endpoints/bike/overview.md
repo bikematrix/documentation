@@ -1,5 +1,9 @@
 # Bike Endpoints
 
+:::danger
+Due to security considerations please speak to the Bike Matrix team first before building elements that directly call our API.
+:::
+
 Under [available endpoints](#available-endpoints) is the list of available bike endpoints.
 
 Endpoints providing bike keys will also provide bike image information, handling this is detailed in the [bike images section](#bike-images).

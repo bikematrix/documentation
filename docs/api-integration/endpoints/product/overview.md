@@ -1,5 +1,9 @@
 # Product Endpoints
 
+:::danger[Warning]
+Due to security and contractual considerations please speak to the Bike Matrix team first before building elements that directly call our API.
+:::
+
 Under [available endpoints](#available-endpoints) is the list of available product endpoints.
 
 ## Available Endpoints

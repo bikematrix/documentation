@@ -36,4 +36,6 @@ Find out more in the [SDK Integration section](sdk-integration/introduction).
 
 Our APIs can be integrated directly into your software, allowing for full customisation of the bike selection and compatibility checking process.
 
-Find out more in the [API Integration section](api-integration/introduction).
+There are specific headers that we require for security and rate limiting purposes (such as client IP address). Please get in touch with the Bike Matrix team for detailed guidance on these headers.
+
+If you would like to call the API directly, contact [contact@bikematrix.io](mailto:contact@bikematrix.io).

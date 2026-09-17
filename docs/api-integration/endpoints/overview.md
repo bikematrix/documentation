@@ -2,6 +2,8 @@
 
 :::danger[Warning]
 Due to security and contractual considerations please speak to the Bike Matrix team first before building elements that directly call our API.
+
+There are specific headers that we require for security and rate limiting purposes (such as client IP address). Please get in touch with the Bike Matrix team for detailed guidance on these headers.
 :::
 
 Our endpoints are separated into 3 groups:

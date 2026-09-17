@@ -42,6 +42,8 @@ You must target endpoints under our Bike API `"https://api.bikematrix.io/bike/v3
 
 You must add the header `bm-subscription-key` to your requests. Setting the value to the API Key we sent as part of onboarding.
 
+There are other headers that we require for security and rate limiting purposes (such as client IP address). Please get in touch with the Bike Matrix team for detailed guidance on these headers.
+
 ## API Token Authentication
 
 This is a token which provides the user time limited access to the Bike Matrix API, therefore the token will expire.
@@ -175,6 +177,8 @@ This token is set in the [configuration](/docs/sdk-integration/configuration.md)
 You should target endpoints under our Proxy API `"https://api.bikematrix.io/proxy/v3/"`.
 
 You should add the header `bm-app-token` to your requests. Setting the value to the API Token you generated and passed to the user.
+
+There are other headers that we require for security and rate limiting purposes (such as client IP address). Please get in touch with the Bike Matrix team for detailed guidance on these headers.
 
 ## Automated Traffic Monitoring
 

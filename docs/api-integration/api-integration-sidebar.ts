@@ -12,6 +12,11 @@ export const apiSidebar: SidebarConfig = [
     label: "Authentication",
   },
   {
+    type: "doc",
+    id: "api-integration/required_headers",
+    label: "Required Headers",
+  },
+  {
     type: "category",
     label: "Endpoints",
     items: [

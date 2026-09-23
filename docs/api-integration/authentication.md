@@ -23,11 +23,9 @@ You must add the header `bm-subscription-key` to your requests. Setting the valu
 
 ## API Token Authentication
 
-You should target endpoints under our Bike API `"https://api.bikematrix.io/proxy/v3/"`.
+You should target endpoints under our Proxy API `"https://api.bikematrix.io/proxy/v3/"`.
 
-You should add the header `bm-app-token` to your requests. Setting the value to the API Token you generated and passed to the user.
-
-Generating the API Token is detailed on the [security page](docs/security.md).
+You must add the header `bm-app-token` to your requests. Generating the API Token is detailed on the [security page](docs/security.md).
 
 ## Obtaining Credentials
 

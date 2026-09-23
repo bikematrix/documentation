@@ -1,5 +1,9 @@
 # Additional Required Headers
 
+:::danger[Warning]
+Due to security and contractual considerations please speak to the Bike Matrix team first before building elements that directly call our API.
+:::
+
 In order for Bike Matrix to function properly, we require a combination of the following four headers to be sent with each request to our API.
 
 1. `bm-request-type`:
